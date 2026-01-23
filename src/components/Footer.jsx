@@ -12,13 +12,13 @@ export default function Footer() {
                             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
 
                             <img
-                                src="/images/alvas-logo.png"
+                                src="/images/logo-1.png"
                                 alt="Alvas Logo"
                                 className="w-24 mb-4"
                             />
 
                             <p className="leading-relaxed text-sm mb-4">
-                                Alva's Medical Centre<br />
+                                Alva`s Medical Centre<br />
                                 Dakshina Kannada, Karnataka.
                             </p>
 
@@ -40,6 +40,20 @@ export default function Footer() {
                         {/* COURSES */}
                         <div className="flex-1">
                             <h3 className="text-xl font-bold mb-4">Courses</h3>
+                            <ul className="space-y-2 text-sm">
+                                    <li>
+                                        <a href="/departments/anatomy" className="hover:text-gray-300">
+                                        Undergraduate 
+                                        Programmes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/departments/physiology" className="hover:text-gray-300">
+                                        Postgraduate 
+                                        Programmes
+                                        </a>
+                                    </li>
+                                </ul>
                             {/* <ul className="space-y-2 text-sm">
                                 <li>
                                     <a href="/college/courses/bped" className="hover:text-gray-300">
@@ -53,6 +67,31 @@ export default function Footer() {
                                 </li>
                             </ul> */}
                         </div>
+
+                        {/* DEPARTMENTS */}
+                        <div className="flex-1">
+                            <h3 className="text-xl font-bold mb-4">Departments</h3>
+                                <ul className="space-y-2 text-sm">
+                                    <li>
+                                        <a href="/departments/anatomy" className="hover:text-gray-300">
+                                        Pre-Clinical
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/departments/physiology" className="hover:text-gray-300">
+                                        Para-Clinical
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/departments/biochemistry" className="hover:text-gray-300">
+                                        Clinical
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+
+
+                        
 
                         {/* ABOUT */}
                         <div className="flex-1">

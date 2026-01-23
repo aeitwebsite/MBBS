@@ -15,7 +15,7 @@ export default function ChairmanMessage() {
                     <div className="relative h-[320px] w-[260px] bg-white p-2 shadow-md">
                         <div className="relative h-full w-full overflow-hidden">
                         <Image
-    src="/images/banner-4.jpg"
+    src="/images/Chairman.jpeg"
     alt="Chairman"
     fill
     className="object-cover"

@@ -73,11 +73,11 @@ export default function RootLayout({ children }) {
             {/* LEFT: LOGO + TITLE */}
             <div className="flex items-center gap-3 md:gap-7">
               <Link href="/" className="cursor-pointer">
-                <Image src="/images/banner-4.jpg" width={89} height={60} alt="Alva's Logo" />
+                <Image src="/images/logo-1.png" width={89} height={60} alt="Alva's Logo" />
               </Link>
               <div className="leading-tight">
                 <div className="text-sm md:text-lg text-black font-semibold tracking-wide">
-                  Alva's Medical Centre
+                  Alva`s Medical Centre
                 </div>
               </div>
             </div>

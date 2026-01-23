@@ -121,7 +121,8 @@ export default function AboutSection() {
       {/* RIGHT CONTENT */}
       <div className="w-3/4 p-8 bg-white shadow-inner">
         {renderContent()}
-      </div>
-    </div>
+      </div> 
+    </div> 
   );
+  
 }

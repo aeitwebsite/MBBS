@@ -1,10 +1,24 @@
 "use client";
+import { useRef } from "react";
 
-import { motion } from "framer-motion";
+import { motion} from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useScroll, useTransform } from "framer-motion";
+
+
 
 export default function Departments() {
     const pathname = usePathname();
+    
+    const leftRef = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: leftRef,
+        offset: ["start end", "end start"],
+    });
+
+// slow parallax movement
+const logoY = useTransform(scrollYProgress, [0, 1], [-120, 120]);
 
     const deptBtn =
         "w-fit text-left px-3 py-1 rounded-md transition " +
@@ -23,14 +37,14 @@ export default function Departments() {
     };
 
     const itemVariants = {
-        hidden: { 
-            y: 30, 
-            x: -30, 
-            opacity: 0 
+        hidden: {
+            y: 30,
+            x: -30,
+            opacity: 0
         },
-        visible: { 
-            y: 0, 
-            x: 0, 
+        visible: {
+            y: 0,
+            x: 0,
             opacity: 1,
             transition: {
                 duration: 0.6,
@@ -40,14 +54,14 @@ export default function Departments() {
     };
 
     const leftSectionVariants = {
-        hidden: { 
-            y: 50, 
-            x: -50, 
-            opacity: 0 
+        hidden: {
+            y: 50,
+            x: -50,
+            opacity: 0
         },
-        visible: { 
-            y: 0, 
-            x: 0, 
+        visible: {
+            y: 0,
+            x: 0,
             opacity: 1,
             transition: {
                 duration: 0.8,
@@ -57,14 +71,14 @@ export default function Departments() {
     };
 
     const departmentButtonVariants = {
-        hidden: { 
-            y: 20, 
-            x: -20, 
-            opacity: 0 
+        hidden: {
+            y: 20,
+            x: -20,
+            opacity: 0
         },
-        visible: (i) => ({ 
-            y: 0, 
-            x: 0, 
+        visible: (i) => ({
+            y: 0,
+            x: 0,
             opacity: 1,
             transition: {
                 duration: 0.5,
@@ -80,23 +94,27 @@ export default function Departments() {
 
                 {/* 30% / 70% GRID */}
                 <div className="grid w-full grid-cols-[30%_70%]">
-
-                    {/* LEFT 30% */}
-                    <motion.div 
-                        className="flex items-center justify-center py-14"
+                    {/* LEFT 30% — PARALLAX LOGO */}
+                    <motion.div
+                        ref={leftRef}   // ← THIS IS THE MISSING PIECE
+                        className="relative overflow-hidden min-h-[700px]"
                         initial="hidden"
                         animate="visible"
                         variants={leftSectionVariants}
                     >
-                        <div className="relative h-[240px] w-[240px] rounded-full bg-gray-200">
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="h-[190px] w-[190px] rounded-full border-[20px] border-gray-300" />
-                            </div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="h-[110px] w-[110px] rounded-full border-[20px] border-gray-400" />
-                            </div>
-                        </div>
-                    </motion.div>
+                    {/* PARALLAX LOGO */}
+                    <motion.div
+                        style={{ y: logoY }}
+                        className="absolute inset-0 flex items-center justify-center opacity-10"
+                    >
+                    <img
+                        src="/images/logo_black.jpeg"
+                        alt="Logo"
+                        className="w-[120%] max-w-[650px] object-contain"
+                    />
+                        </motion.div>
+                </motion.div>
+
 
                     {/* RIGHT 70% (ANIMATED EVERY VISIT) */}
                     <motion.div
