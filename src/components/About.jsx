@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function AboutSection() {
   const [activeTab, setActiveTab] = useState("aboutCollege");
@@ -11,11 +12,14 @@ export default function AboutSection() {
         return (
           <>
             <h2 className="text-2xl font-bold mb-3">About the College</h2>
-            <img
-              src="/images/college.jpg"
-              alt="College"
-              className="w-full h-60 object-cover rounded mb-4"
-            />
+            <div className="relative w-full h-60 mb-4 rounded overflow-hidden">
+              <Image
+                src="/images/college.jpg"
+                alt="College"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-gray-700">
               Alva’s College is committed to excellence in education, research,
               and innovation. The institution provides world-class
@@ -28,13 +32,16 @@ export default function AboutSection() {
         return (
           <>
             <h2 className="text-2xl font-bold mb-3">
-              About Alva’s Education Foundation
+              About Alva's Education Foundation
             </h2>
-            <img
-              src="/images/alvas.jpg"
-              alt="Alvas"
-              className="w-full h-60 object-cover rounded mb-4"
-            />
+            <div className="relative w-full h-60 mb-4 rounded overflow-hidden">
+              <Image
+                src="/images/alvas.jpg"
+                alt="Alvas"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-gray-700">
               Alva’s Education Foundation aims to empower students through
               quality education, cultural values, and leadership development.
@@ -45,12 +52,15 @@ export default function AboutSection() {
       case "chairman":
         return (
           <>
-            <h2 className="text-2xl font-bold mb-3">Chairman’s Message</h2>
-            <img
-              src="/images/chairman.jpg"
-              alt="Chairman"
-              className="w-48 h-48 object-cover rounded-full mb-4"
-            />
+            <h2 className="text-2xl font-bold mb-3">Chairman's Message</h2>
+            <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/images/chairman.jpg"
+                alt="Chairman"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-gray-700">
               Education is the foundation of progress. Our goal is to nurture
               students into responsible citizens and professionals.
@@ -61,12 +71,15 @@ export default function AboutSection() {
       case "principal":
         return (
           <>
-            <h2 className="text-2xl font-bold mb-3">Principal’s Message</h2>
-            <img
-              src="/images/principal.jpg"
-              alt="Principal"
-              className="w-48 h-48 object-cover rounded-full mb-4"
-            />
+            <h2 className="text-2xl font-bold mb-3">Principal's Message</h2>
+            <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/images/principal.jpg"
+                alt="Principal"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-gray-700">
               We focus on academic excellence, discipline, and innovation to
               shape the future of our students.

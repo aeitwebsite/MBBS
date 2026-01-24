@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Departments() {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -55,10 +56,13 @@ export default function Departments() {
               style={{ y: logoY }}
               className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none"
             >
-              <img
+              <Image
                 src="/images/logo_black.jpeg"
                 alt="Logo"
+                width={720}
+                height={720}
                 className="w-[135%] max-w-[720px]"
+                priority={false}
               />
             </motion.div>
           </motion.div>
