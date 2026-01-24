@@ -1,0 +1,42 @@
+name: Azure Static Web Apps - No Oryx Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.9.0'
+          
+      - name: Install and Build
+        run: |
+          npm ci
+          cat > next.config.mjs << 'EOF'
+          const nextConfig = {
+            output: 'export',
+            trailingSlash: true,
+            images: { unoptimized: true }
+          };
+          export default nextConfig;
+          EOF
+          npm run build
+          mv out build
+          
+      - name: Deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_WAVE_06E37BC10 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: 'upload'
+          # Don't specify app_location to avoid Oryx build
+          output_location: 'build'
+          skip_app_build: true
+          skip_api_build: true
