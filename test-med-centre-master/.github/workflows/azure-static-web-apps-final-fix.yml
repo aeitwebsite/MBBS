@@ -1,4 +1,4 @@
-name: Azure Static Web Apps - Complete Fix
+name: Azure Static Web Apps - Final Fix
 
 on:
   push:
@@ -36,10 +36,13 @@ jobs:
           const nextConfig = {
             output: 'export',
             trailingSlash: true,
+            skipTrailingSlashRedirect: true,
             images: {
               unoptimized: true
             },
-            assetPrefix: undefined
+            assetPrefix: undefined,
+            basePath: '',
+            distDir: 'build'
           };
           export default nextConfig;
           EOF
@@ -47,22 +50,23 @@ jobs:
       - name: Build Next.js app for static export
         run: npm run build
         
-      - name: Verify and prepare build output
+      - name: Verify build output
         run: |
-          echo "Build completed. Checking output directories:"
-          if [ -d "out" ]; then
-            echo "✅ Static export successful - out directory exists"
-            ls -la out/
-            echo "Contents of out directory:"
-            find out -type f -name "*.html" | head -10
+          echo "Build completed. Checking for build directory:"
+          if [ -d "build" ]; then
+            echo "✅ Build directory exists"
+            echo "Contents:"
+            ls -la build/
+            echo "HTML files found:"
+            find build -name "*.html" | head -5
+            echo "Total files in build:"
+            find build -type f | wc -l
           else
-            echo "❌ No out directory found"
+            echo "❌ Build directory not found"
+            echo "Available directories:"
+            ls -la
             exit 1
           fi
-          
-          # Create build symlink for Azure compatibility
-          ln -sf out build
-          echo "Created build -> out symlink for Azure compatibility"
         
       - name: Build And Deploy
         id: builddeploy
