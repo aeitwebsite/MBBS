@@ -79,6 +79,8 @@ export default function Programs() {
 
                 <span className="text-gray-400">|</span>
 
+                {/* ANNOUNCEMENT TEXT COMMENTED OUT */}
+                {/*
                 <div className="relative h-[24px] w-full overflow-hidden">
                   <AnimatePresence mode="wait">
                     <motion.div
@@ -93,9 +95,10 @@ export default function Programs() {
                     </motion.div>
                   </AnimatePresence>
                 </div>
+                */}
               </div>
 
-              {/* ARROWS */}
+              {/* ARROWS (kept for future use) */}
               <div className="flex gap-4">
                 <button
                   onClick={prev}
@@ -130,7 +133,9 @@ export default function Programs() {
           {/* ================= PROGRAMMES ================= */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
 
-            {/* UNDERGRADUATE */}
+            {/*
+            UNDERGRADUATE PROGRAMMES
+
             <div>
               <h4 className="mb-4 text-xl font-bold">
                 Undergraduate Programmes
@@ -156,7 +161,8 @@ export default function Programs() {
               </div>
             </div>
 
-            {/* POSTGRADUATE */}
+            POSTGRADUATE PROGRAMMES
+
             <div>
               <h4 className="mb-4 text-xl font-bold">
                 Postgraduate Programmes
@@ -181,7 +187,7 @@ export default function Programs() {
                 </button>
               </div>
             </div>
-
+            */}
           </div>
         </div>
       </div>
