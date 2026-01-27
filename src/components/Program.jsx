@@ -52,7 +52,7 @@ export default function Programs() {
             </div>
 
             <div className="mb-12">
-              <div className="text-[64px] font-extrabold">232</div>
+              <div className="text-[64px] font-extrabold">206</div>
               <div>Faculty Members</div>
             </div>
 
