@@ -59,11 +59,11 @@ export default function RootLayout({ children }) {
               </div>
               <div className="hidden md:flex items-center gap-2">
                 <span className="text-red-400">📍</span>
-                <span>Moodubidire Dakshina Kannada - 574227</span>
+                <span>Tenka Mijar,Moodubidire - 574227</span>
               </div>
               <div className="hidden sm:flex items-center gap-2">
                 <span className="text-red-400"></span>
-                <Link href="mailto:acpe@alvas.org"><span>acpe@alvas.org</span></Link>
+                <Link href="mailto:Office@Aimsarc.org"><span>Office@Aimsarc.org</span></Link>
               </div>
             </div>
           </div>
