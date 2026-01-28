@@ -13,10 +13,10 @@ export default function ChairmanMessage() {
                 <div className="grid grid-cols-[260px_1fr] gap-20 items-start">
 
                     {/* IMAGE WITH BORDER */}
-                    <div className="relative h-[320px] w-[260px] bg-white p-2 shadow-md">
+                    <div className="relative h-[420px] w-[320px] bg-white p-2 shadow-md">
                         <div className="relative h-full w-full overflow-hidden">
                         <Image
-    src="/images/Chairman.jpeg"
+    src="/images/chairman.jpeg"
     alt="Chairman"
     fill
     className="object-cover"
@@ -35,21 +35,19 @@ export default function ChairmanMessage() {
                         </h2>
 
                         {/* PARAGRAPH */}
-                        <p className="mt-6 text-[18px] leading-relaxed text-[#333] max-w-4xl">
-                            It is with great pleasure and pride that I welcome you
-                            to the Ramaiah Medical College website. The ethos of the
-                            college is to continuously strive towards excellence.
-                            This sentiment has led to the receipt of NAAC A+
-                            accreditation and a NIRF ranking of 50<sup>th</sup>.
+                        <p className="mt-6 text-[18px] leading-relaxed text-[#333] max-w-4xl text-justify">
+                           Knowledge is power and education is a path to imbibe it. Alva’s Education Foundation (AEF) purports to do exactly the same that is, transform education into knowledge. It is knowledge that will empower the youth of today to understand the information explosions taking place in the rapidly globalizing world. Personal integrity and ethics can be maintained only with a strong mind and a mind can become strong only with knowledge.
+
+Alva’s Education Foundation (AEF) aims to develop individuals who will be ready to take up real challenges presented to them. At the same time foundation wants these individuals to be culturally and ethically enlightened because not only the industry but our country needs such individuals today.
                         </p>
 
                         {/* AUTHOR */}
                         <div className="mt-10">
                             <div className="text-[18px] font-bold text-[#000]">
-                                Dr. M. Mohan Alva
+                                Dr. Mohan Alva
                             </div>
                             <div className="mt-1 text-[16px] text-[#444]">
-                                Chairman, Alva's Education Foundation
+                                Chairman, Alva’s Institute of Medical Sciences and Research Centre, Moodubidire.
                             </div>
                         </div>
 
