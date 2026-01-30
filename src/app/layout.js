@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
         <header className="w-full">
           {/* TOP DARK STRIP */}
           <div className="w-full flex">
-            <div className="bg-[#e4322f] px-6 flex items-center justify-center text-white text-xl font-bold">
+            <div className="bg-[#e4322f] px-6 py-4 flex items-center justify-center text-white text-xl font-bold">
               <Link href="https://www.instagram.com/alvas_physical_education/"></Link>
             </div>
             <div className="flex-1 bg-[#0A0B49] text-white text-sm flex items-center justify-between px-4 md:px-10 gap-4">
@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
                                   </Link>
                                 ))}
                               </div>
-                              <div className="border-l border-gray-200 pl-6 pr-4">
+                              <div className="border-l border-gray-200 pl-6 pr-4"> 
                                 <div className="grid grid-cols-2 gap-6">
                                   {richItems.map((sub) => (
                                     <div key={sub.id} className="flex flex-col">
