@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
                                   </Link>
                                 ))}
                               </div>
-                              <div className="border-l border-gray-200 pl-6 pr-4">
+                              <div className="border-l border-gray-200 pl-6 pr-4"> 
                                 <div className="grid grid-cols-2 gap-6">
                                   {richItems.map((sub) => (
                                     <div key={sub.id} className="flex flex-col">
