@@ -15,7 +15,6 @@ export default function HeroCarousel() {
   const [index, setIndex] = useState(1);
   const [transition, setTransition] = useState(true);
 
-  // Auto slide
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((prev) => prev + 1);
@@ -23,7 +22,6 @@ export default function HeroCarousel() {
     return () => clearInterval(id);
   }, []);
 
-  // Infinite loop fix
   useEffect(() => {
     if (index === images.length - 1) {
       setTimeout(() => {
@@ -48,7 +46,7 @@ export default function HeroCarousel() {
         marginLeft: "calc(50% - 50vw)",
         marginRight: "calc(50% - 50vw)",
       }}
-      className="overflow-hidden bg-[#f4f6f9]"
+      className="overflow-hidden bg-white"
     >
       <div
         className={`flex ${transition ? "transition-transform duration-700 ease-in-out" : ""}`}
@@ -57,36 +55,15 @@ export default function HeroCarousel() {
         {images.map((src, i) => (
           <div
             key={i}
-            className="
-              min-w-full
-              h-[220px]
-              sm:h-[300px]
-              md:h-[380px]
-              lg:h-[460px]
-              flex items-center justify-center
-              bg-[#f4f6f9]
-            "
+            className="relative min-w-full h-[260px] sm:h-[360px] md:h-[450px] lg:h-[560px]"
           >
-            {/* 🔽 THIS WRAPPER IS THE REAL ZOOM-OUT FIX */}
-            <div className="
-              relative
-              w-full
-              max-w-[1100px]
-              h-full
-              px-6
-              sm:px-12
-              md:px-20
-              lg:px-28
-            ">
-              <Image
-                src={src}
-                alt={`Slide ${i}`}
-                fill
-                priority={i === 1}
-                sizes="(max-width: 768px) 100vw, 1100px"
-                className="object-contain object-center"
-              />
-            </div>
+            <Image
+              src={src}
+              alt={`Slide ${i}`}
+              fill
+              priority={i === 1}
+              className="object-contain"
+            />
           </div>
         ))}
       </div>
