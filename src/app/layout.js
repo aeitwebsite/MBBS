@@ -1,4 +1,5 @@
 "use client";
+
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Footer from "@/components/Footer";
@@ -6,15 +7,14 @@ import Script from "next/script";
 import HeroCarousel from "@/components/HeroCarousel";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navRoutes } from "@/config/routeConfig";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { usePathname } from "next/navigation";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-roboto",
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 export default function RootLayout({ children }) {
@@ -22,94 +22,118 @@ export default function RootLayout({ children }) {
   const isHomePage = pathname === "/";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
+  const getRouteName = (name) => {
+    if (name === "Programs") return "Student Portal";
+    if (name === "Campus Life") return "Happenings@AIMSARC";
+    return name;
+  };
+
   return (
     <html lang="en">
       <body className={roboto.className}>
 
-        {/* 🔵 BLUE TOP BAR 
-            Stays in normal flow; will scroll out of view. */}
-        <div className="w-full flex bg-[#0A0B49] text-white text-xs md:text-sm items-center justify-between px-4 md:px-10 h-[48px]">
-          <div className="flex gap-4">
-            <span>+91-9945449784</span>
-            <span className="hidden sm:inline">08258-236821</span>
-          </div>
-          <span className="hidden lg:flex items-center gap-2">
-            📍 Tenka Mijar, Moodubidire - 574227
-          </span>
-          <Link href="mailto:office@aimsarc.org" className="hover:underline">
-            office@aimsarc.org
-          </Link>
+        {/* TOP BAR */}
+        <div className="w-full flex bg-[#0A0B49] text-white text-xs md:text-sm
+                        items-center justify-between px-4 md:px-10 h-[48px]">
+          <span>+91-9945449784</span>
+          <Link href="mailto:office@aimsarc.org">office@aimsarc.org</Link>
         </div>
 
-        {/* ⚪ WHITE NAVBAR 
-            Sticky: It will scroll with the page until it hits top-0, then it sticks. */}
-        <header className="sticky top-0 left-0 w-full z-[100] bg-white shadow-md">
-          <div className="w-full py-2 px-4 md:px-10 flex items-center justify-between gap-6">
+        {/* NAVBAR */}
+        <header className="sticky top-0 z-[200] bg-white shadow-md">
+          <div className="flex items-center justify-between px-4 md:px-10 py-2">
 
-            {/* LOGO + TITLE */}
-            <div className="flex items-center gap-3 md:gap-7">
-              <Link href="/">
-                <Image
-                  src="/images/logo-1.png"
-                  width={80}
-                  height={54}
-                  alt="Alva's Logo"
-                  className="shrink-0"
-                />
-              </Link>
-              <h1 className="text-xs md:text-base lg:text-lg font-bold tracking-wide text-[#0A0B49] leading-tight max-w-[400px]">
-                ALVA'S INSTITUTE OF MEDICAL SCIENCES AND RESEARCH CENTRE
-              </h1>
-            </div>
+            {/* LOGO + TWO-LINE TITLE */}
+            <Link href="/" className="flex items-center gap-3 min-w-0">
+              <Image
+                src="/images/logo-1.png"
+                width={72}
+                height={72}
+                alt="Logo"
+                className="shrink-0"
+              />
+
+              <div className="leading-tight">
+                <div className="text-[15px] md:text-[16px] font-semibold text-[#0A0B49]">
+                  ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
+                </div>
+                <div className="text-[14px] md:text-[15px] font-semibold text-[#0A0B49]">
+                  AND RESEARCH CENTRE
+                </div>
+              </div>
+            </Link>
 
             {/* DESKTOP NAV */}
-            <nav className="hidden lg:flex items-center gap-6 text-sm xl:text-base font-medium text-gray-700">
-              {navRoutes.map((route) => (
+            <nav className="hidden lg:flex gap-6 items-center">
+              {navRoutes.map((r) => (
                 <Link
-                  key={route.id}
-                  href={route.path}
-                  className="hover:text-orange-600 transition-colors py-4"
+                  key={r.id}
+                  href={r.path}
+                  className="text-[14px] font-medium whitespace-nowrap
+                             text-gray-800 hover:text-[#0A0B49] transition"
                 >
-                  {route.name}
+                  {getRouteName(r.name)}
                 </Link>
               ))}
             </nav>
 
-            {/* MOBILE BUTTON */}
+            {/* MOBILE MENU BUTTON */}
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-md hover:bg-gray-100"
-              aria-label="Toggle Menu"
+              className="lg:hidden"
+              onClick={() => setMobileMenuOpen(true)}
             >
-              {mobileMenuOpen ? <Cross1Icon /> : <HamburgerMenuIcon />}
+              <HamburgerMenuIcon />
+            </button>
+          </div>
+        </header>
+
+        {/* BACKDROP */}
+        {mobileMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black/40 z-[500]"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+        )}
+
+        {/* MOBILE DRAWER */}
+        <div
+          className={`fixed top-0 right-0 w-[85%] max-w-[360px]
+          bg-white z-[1000] h-screen overflow-y-auto
+          transform transition-transform duration-300
+          ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+        >
+          <div className="flex justify-between items-center px-4 py-4 border-b">
+            <span className="font-semibold">Menu</span>
+            <button onClick={() => setMobileMenuOpen(false)}>
+              <Cross1Icon />
             </button>
           </div>
 
-          {/* MOBILE NAV DROPDOWN (Optional implementation) */}
-          {mobileMenuOpen && (
-            <div className="lg:hidden bg-white border-t p-4 space-y-4 shadow-xl">
-              {navRoutes.map((route) => (
-                <Link
-                  key={route.id}
-                  href={route.path}
-                  className="block text-gray-700 hover:text-orange-600"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {route.name}
-                </Link>
-              ))}
-            </div>
-          )}
-        </header>
+          <nav className="px-2">
+            {navRoutes.map((route) => (
+              <Link
+                key={route.id}
+                href={route.path}
+                className="block px-3 py-4 text-sm font-medium
+                           text-gray-700 hover:bg-gray-100 rounded-md"
+              >
+                {getRouteName(route.name)}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-        {/* PAGE CONTENT 
-            No 'mt-[128px]' needed because sticky elements occupy space in the layout flow. */}
-        <main>
-          {isHomePage && (
-            <section className="relative">
-              <HeroCarousel />
-            </section>
-          )}
+        {/* MAIN CONTENT */}
+        <main className="pt-[112px] lg:pt-0">
+          {isHomePage && <HeroCarousel />}
           {children}
         </main>
 
@@ -119,10 +143,6 @@ export default function RootLayout({ children }) {
           {`document.documentElement.classList.add('js')`}
         </Script>
 
-        <Script
-          src="https://unpkg.com/taos@latest/dist/taos.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
