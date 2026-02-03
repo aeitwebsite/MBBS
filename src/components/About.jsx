@@ -218,16 +218,7 @@ export default function AboutSection() {
           </>
         );
 
-      case "principal":
-        return (
-          <>
-            <h2 className="text-2xl font-bold mb-3">Principal’s Message</h2>
-            <p className="text-gray-700 text-justify">
-              We focus on academic excellence, discipline, and innovation to
-              shape the future of our students.
-            </p>
-          </>
-        );
+     
 
       case "visionMission":
         return (
@@ -290,7 +281,7 @@ export default function AboutSection() {
           ["aboutCollege", "About College"],
           ["aboutAlvas", "About Alva’s"],
           ["chairman", "Chairman Message"],
-          ["principal", "Principal Message"],
+          
           ["dean", "Dean’s Message"],
           ["visionMission", "Vision & Mission"],
           ["codeOfConduct", "Code of Conduct"],
