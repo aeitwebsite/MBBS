@@ -12,7 +12,7 @@ export default function Footer() {
                             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
 
                             <img
-                                src="/images/logo-1.png"
+                                src="/images/logo_home.png"
                                 alt="Alvas Logo"
                                 className="w-24 mb-4"
                             />
