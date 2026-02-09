@@ -20,6 +20,7 @@ export default function AboutSection() {
     setActiveTab(key);
     setSelectedPdf(null);
   };
+  
 
   const renderContent = () => {
     /* ================= EMBEDDED PDF VIEWER ================= */
@@ -77,22 +78,77 @@ export default function AboutSection() {
             </ul>
           </>
         );
-
       case "facilities":
         return (
           <>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Campus Facilities</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Our campus provides state-of-the-art facilities to support academic excellence and student well-being.
-            </p>
-            <ul className="list-disc ml-6 text-gray-700 space-y-2">
-              <li>Modern lecture halls and laboratories</li>
-              <li>Teaching hospital with advanced medical equipment</li>
-              <li>Library with digital and print resources</li>
-              <li>Hostel and recreational facilities</li>
-            </ul>
-          </>
-        );
+      <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        Student Facilities
+      </h2>
+
+      {/* Academic & Research Excellence */}
+      <h3 className="text-xl font-semibold text-gray-800 mb-3">
+        Academic & Research Excellence
+      </h3>
+      <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
+        <li>
+          <b>Advanced Digital Library:</b> 24/7 access to international medical
+          journals, E-books, and global research databases.
+        </li>
+        <li>
+          <b>Multi-Purpose Auditorium:</b> A state-of-the-art venue for medical
+          conferences, guest lectures by renowned clinicians, and white coat
+          ceremonies.
+        </li>
+        <li>
+          <b>Arts & Cultural Centre:</b> Encouraging holistic education through
+          creative expression, essential for maintaining a balanced perspective
+          in healthcare.
+        </li>
+        <li>
+          <b>Specialized Arts Department:</b> Fostering medical illustration and
+          creative communication skills.
+        </li>
+      </ul>
+
+      {/* Student Life & Wellness */}
+      <h3 className="text-xl font-semibold text-gray-800 mb-3">
+        Student Life & Wellness
+      </h3>
+      <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
+        <li>
+          <b>Nutritional Cafeteria:</b> Serving healthy, balanced meals designed
+          to fuel long hours of clinical rotations and study.
+        </li>
+        <li>
+          <b>Integrated Sports Complex:</b> Features both indoor and outdoor
+          playgrounds to promote physical fitness and stress relief.
+        </li>
+        <li>
+          <b>Premium Hostel Facilities:</b> Secure, comfortable on-campus housing
+          that fosters a close-knit medical community.
+        </li>
+      </ul>
+
+      {/* Campus Services & Safety */}
+      <h3 className="text-xl font-semibold text-gray-800 mb-3">
+        Campus Services & Safety
+      </h3>
+      <ul className="list-disc ml-6 text-gray-700 space-y-2">
+        <li>
+          <b>Eco-Friendly Transit:</b> E-golf cart facilities for quick,
+          sustainable movement between the college, hospital wings, and hostels.
+        </li>
+        <li>
+          <b>On-Site Support:</b> Dedicated stationary and photocopying centers
+          for rapid preparation of case studies, records, and research papers.
+        </li>
+        <li>
+          <b>Comprehensive Security:</b> A safe learning environment protected by
+          24/7 CCTV monitoring and professional security patrols.
+        </li>
+      </ul>
+    </>
+  );
 
       case "committees":
         return (
