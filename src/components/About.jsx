@@ -257,17 +257,52 @@ export default function AboutSection() {
         );
 
       case "objectives":
-        return (
-          <>
-            <h2 className="text-2xl font-bold mb-3">Objectives</h2>
-            <ul className="list-disc ml-6 text-gray-700 space-y-2">
-              <li>Provide high-quality education and training.</li>
-              <li>Encourage research and innovation.</li>
-              <li>Develop leadership and professional skills.</li>
-              <li>Contribute to societal and national development.</li>
-            </ul>
-          </>
-        );
+  return (
+    <div className="py-4">
+      <h2 className="text-3xl font-extrabold mb-6 text-blue-900 flex items-center">
+        <span className="w-8 h-1 bg-blue-600 mr-3 rounded-full"></span>
+        Objectives
+      </h2>
+      
+      <div className="grid gap-4">
+        {[
+          {
+            title: "Academic Excellence",
+            desc: "Undergraduate and postgraduate medical education focused on rural and community health standards.",
+            color: "border-blue-500 bg-blue-50"
+          },
+          {
+            title: "Clinical Mastery",
+            desc: "Hands-on patient-centered care through our affiliated hospitals and healthcare centers.",
+            color: "border-emerald-500 bg-emerald-50"
+          },
+          {
+            title: "Impactful Research",
+            desc: "Addressing regional public health issues through evidence-based medical research.",
+            color: "border-purple-500 bg-purple-50"
+          },
+          {
+            title: "Community Wellness",
+            desc: "Building local partnerships to enhance regional health programs and medical outreach.",
+            color: "border-orange-500 bg-orange-50"
+          },
+          {
+            title: "Ethical Leadership",
+            desc: "Developing professional ethics, leadership, and a culture of lifelong learning.",
+            color: "border-red-500 bg-red-50"
+          }
+        ].map((obj, index) => (
+          <div 
+            key={index} 
+            className={`p-4 border-l-4 rounded-r-lg shadow-sm transition-transform hover:scale-[1.01] ${obj.color}`}
+          >
+            <h3 className="font-bold text-gray-800 text-lg">{obj.title}</h3>
+            <p className="text-gray-600 leading-relaxed">{obj.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
       default:
         return null;
