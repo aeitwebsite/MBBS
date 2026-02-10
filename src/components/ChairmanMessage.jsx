@@ -55,11 +55,11 @@ export default function ChairmanMessage() {
               Personal integrity and ethics can be maintained only with a
               strong mind and a mind can become strong only with knowledge.
               <br /><br />
-              Alva’s Education Foundation (AEF) aims to develop individuals who
+              {/* Alva’s Education Foundation (AEF) aims to develop individuals who
               will be ready to take up real challenges presented to them. At
               the same time foundation wants these individuals to be culturally
               and ethically enlightened because not only the industry but our
-              country needs such individuals today.
+              country needs such individuals today. */}
             </p>
 
             {/* AUTHOR */}
@@ -75,7 +75,7 @@ export default function ChairmanMessage() {
             {/* BUTTON */}
             <div className="mt-8">
               <Link
-                href="/about"
+                href="/about/chairman-message"
                 className="inline-block bg-[#14D7E7] hover:bg-[#12c4d3] text-black font-extrabold px-8 py-3 text-[14px] transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg rounded"
               >
                 Read Full Message
