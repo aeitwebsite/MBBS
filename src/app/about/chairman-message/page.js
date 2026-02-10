@@ -9,7 +9,7 @@ export default function ChairmanMessage() {
 
       <div className="flex flex-col md:flex-row gap-8">
               <Image
-                src="/images/chairman.jpeg"
+                src="/images/Chairman.jpeg"
                 alt="Chairman"
                 width={320}
                 height={420}
