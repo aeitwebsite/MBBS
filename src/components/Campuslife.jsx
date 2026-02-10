@@ -10,29 +10,29 @@ export default function AboutSection() {
     switch (activeTab) {
 
       /* ================= ADMISSION ================= */
-      case "admission":
-        return (
-          <>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Admission
-            </h2>
+      // case "admission":
+      //   return (
+      //     <>
+      //       <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      //         Admission
+      //       </h2>
 
-            <Image
-              src="/images/banner-4.jpg"
-              alt="Admission"
-              width={1200}
-              height={400}
-              className="w-full h-64 object-cover rounded mb-6"
-            />
+      //       <Image
+      //         src="/images/banner-4.jpg"
+      //         alt="Admission"
+      //         width={1200}
+      //         height={400}
+      //         className="w-full h-64 object-cover rounded mb-6"
+      //       />
 
-            <p className="text-gray-700 leading-relaxed text-justify">
-              Admission details, eligibility criteria, important dates, and
-              notifications related to undergraduate and postgraduate programs
-              at Alva’s Institute of Medical Sciences and Research Centre will be
-              published here.
-            </p>
-          </>
-        );
+      //       <p className="text-gray-700 leading-relaxed text-justify">
+      //         Admission details, eligibility criteria, important dates, and
+      //         notifications related to undergraduate and postgraduate programs
+      //         at Alva’s Institute of Medical Sciences and Research Centre will be
+      //         published here.
+      //       </p>
+      //     </>
+      //   );
 
       /* ================= PHOTO GALLERY ================= */
       case "photoGallery":
@@ -90,7 +90,7 @@ export default function AboutSection() {
       {/* LEFT SIDEBAR */}
       <div className="w-1/4 bg-white shadow-md p-4">
         {[
-          ["admission", "Admission"],
+          //["admission", "Admission"],
           ["photoGallery", "Photo Gallery"],
           ["videoGallery", "Video Gallery"],
           ["newsletter", "Newsletter"],

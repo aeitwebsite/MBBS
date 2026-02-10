@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
             {/* LOGO + TWO-LINE TITLE */}
             <Link href="/" className="flex items-center gap-3 min-w-0">
               <Image
-                src="/images/logo-1.png"
+                src="/images/logo_home.png"
                 width={72}
                 height={72}
                 alt="Logo"
