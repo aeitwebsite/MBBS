@@ -3,26 +3,27 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function Departments1({ categoryTitle, departmentData }) {
-
   if (!departmentData) return null;
 
   const keys = Object.keys(departmentData);
   const [activeKey, setActiveKey] = useState(keys[0]);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-
   const [selectedFaculty, setSelectedFaculty] = useState(null);
 
   const activeDept = departmentData[activeKey];
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
-
+      
       {/* ================= SIDEBAR ================= */}
-      <div className={`w-full md:w-1/3 lg:w-1/4 p-6 bg-white border-r
-        ${isMobileOpen ? 'hidden md:block' : 'block'}`}>
-
-        <Link href="/departments"
-          className="text-blue-600 font-medium mb-6 flex items-center hover:underline">
+      <div
+        className={`w-full md:w-1/3 lg:w-1/4 p-6 bg-white border-r
+        ${isMobileOpen ? "hidden md:block" : "block"}`}
+      >
+        <Link
+          href="/departments"
+          className="text-blue-600 font-medium mb-6 flex items-center hover:underline"
+        >
           ← All Categories
         </Link>
 
@@ -39,9 +40,10 @@ export default function Departments1({ categoryTitle, departmentData }) {
                 setIsMobileOpen(true);
               }}
               className={`w-full text-left p-4 rounded-xl transition-all border-2
-                ${activeKey === key
-                  ? "bg-blue-600 text-white border-blue-600 shadow-lg"
-                  : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
+                ${
+                  activeKey === key
+                    ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+                    : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
                 }`}
             >
               <div className="flex justify-between items-center">
@@ -56,9 +58,10 @@ export default function Departments1({ categoryTitle, departmentData }) {
       </div>
 
       {/* ================= CONTENT ================= */}
-      <div className={`w-full md:w-2/3 lg:w-3/4 bg-white p-8 md:p-16
-        ${isMobileOpen ? 'block' : 'hidden md:block'}`}>
-
+      <div
+        className={`w-full md:w-2/3 lg:w-3/4 bg-white p-8 md:p-16
+        ${isMobileOpen ? "block" : "hidden md:block"}`}
+      >
         <button
           onClick={() => setIsMobileOpen(false)}
           className="md:hidden mb-6 text-blue-600 font-semibold"
@@ -67,7 +70,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
         </button>
 
         {/* TITLE + DESC */}
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-full mb-14">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-4 text-gray-900">
             {activeDept?.title}
           </h1>
@@ -85,7 +88,6 @@ export default function Departments1({ categoryTitle, departmentData }) {
             <h2 className="text-2xl font-bold mb-6">Faculty</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
               {activeDept.faculties.map((f, i) => (
                 <div
                   key={i}
@@ -116,21 +118,19 @@ export default function Departments1({ categoryTitle, departmentData }) {
                   </button>
                 </div>
               ))}
-
             </div>
           </>
         )}
-
       </div>
 
       {/* ================= MODAL ================= */}
       {selectedFaculty && (
         <div className="fixed inset-0 bg-black/50 z-50
                         flex items-center justify-center">
-
-          <div className="bg-white w-[90%] max-w-3xl
-                          rounded-xl p-8 relative">
-
+          <div
+            className="bg-white w-[90%] max-w-3xl
+                           rounded-xl p-8 relative"
+          >
             <button
               onClick={() => setSelectedFaculty(null)}
               className="absolute top-4 right-4 text-xl"
@@ -139,7 +139,6 @@ export default function Departments1({ categoryTitle, departmentData }) {
             </button>
 
             <div className="flex flex-col md:flex-row gap-6">
-
               <img
                 src={selectedFaculty.image || "/images/user.png"}
                 className="w-40 h-40 rounded-full object-cover"
@@ -158,13 +157,10 @@ export default function Departments1({ categoryTitle, departmentData }) {
                   More faculty details can be added here.
                 </p>
               </div>
-
             </div>
-
           </div>
         </div>
       )}
-
     </div>
   );
 }
