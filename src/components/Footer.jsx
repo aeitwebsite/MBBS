@@ -8,8 +8,8 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row gap-12">
 
                         {/* CONTACT US - LOGO ONLY */}
-                        <div className="flex-1">
-                            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+                        <div className="flex-1 -mt-6">
+                            
 
                             <img
                                 src="/images/logo_home.png"
@@ -20,8 +20,7 @@ export default function Footer() {
 
                         {/* CONTACT US - DETAILS */}
                         <div className="flex-1">
-            
-
+                            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
                             <p className="leading-relaxed text-sm mb-4">
                                 Alva&apos;s Medical Centre <br />
                                 Dakshina Kannada, Karnataka.
