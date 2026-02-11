@@ -122,45 +122,60 @@ export default function Departments1({ categoryTitle, departmentData }) {
           </>
         )}
       </div>
+    {/* ================= MODAL ================= */}
+{selectedFaculty && (
+  <div
+    className="fixed top-[80px] left-0 right-0 bottom-0
+               bg-black/50 z-50
+               flex justify-center overflow-y-auto"
+  >
+    <div
+      className="bg-white w-[90%] max-w-3xl
+                 rounded-xl p-8 relative mt-10 mb-10"
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setSelectedFaculty(null)}
+        className="absolute top-4 right-4 text-xl font-bold"
+      >
+        ✕
+      </button>
 
-      {/* ================= MODAL ================= */}
-      {selectedFaculty && (
-        <div className="fixed inset-0 bg-black/50 z-50
-                        flex items-center justify-center">
-          <div
-            className="bg-white w-[90%] max-w-3xl
-                           rounded-xl p-8 relative"
-          >
-            <button
-              onClick={() => setSelectedFaculty(null)}
-              className="absolute top-4 right-4 text-xl"
-            >
-              ✕
-            </button>
+      <div className="flex flex-col md:flex-row gap-6">
+        <img
+          src={selectedFaculty.image || "/images/user.png"}
+          alt={selectedFaculty.name}
+          className="w-40 h-40 rounded-full object-cover flex-shrink-0"
+        />
 
-            <div className="flex flex-col md:flex-row gap-6">
-              <img
-                src={selectedFaculty.image || "/images/user.png"}
-                className="w-40 h-40 rounded-full object-cover"
-              />
+        <div className="flex-1">
+          <h2 className="text-2xl font-bold">
+            {selectedFaculty.name}
+          </h2>
 
-              <div>
-                <h2 className="text-2xl font-bold">
-                  {selectedFaculty.name}
-                </h2>
+          <p className="mt-2 text-gray-800">
+            <b>Designation:</b> {selectedFaculty.designation}
+          </p>
 
-                <p className="mt-2">
-                  <b>Designation:</b> {selectedFaculty.designation}
-                </p>
+          {/* ✅ HOD MESSAGE (Scrollable & Well-Fitted) */}
+          {selectedFaculty.message && (
+            <div className="mt-5 p-5 bg-gray-50 border-l-4 border-blue-600 rounded">
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Message from HOD
+              </h3>
 
-                <p className="mt-4 text-gray-600">
-                  More faculty details can be added here.
+              <div className="max-h-[280px] overflow-y-auto pr-2">
+                <p className="text-gray-700 leading-relaxed text-justify whitespace-pre-line">
+                  {selectedFaculty.message}
                 </p>
               </div>
             </div>
-          </div>
+          )}
         </div>
-      )}
+      </div>
+    </div>
+  </div>
+)}
     </div>
   );
 }
