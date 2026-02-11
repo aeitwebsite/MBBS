@@ -47,7 +47,7 @@ export default function Programs() {
 
           <div className="bg-[#e5532d] px-6 py-10 text-white">
             <div className="mb-10">
-              <div className="text-[64px] font-extrabold">38</div>
+              <div className="text-[64px] font-extrabold">19</div>
               <div>Academic Programmes</div>
             </div>
 
