@@ -4,7 +4,24 @@ const clinicalData = {
 
   medicine: {
     title: "Department of General Medicine",
-    description: "General Medicine deals with the diagnosis and non-surgical treatment of internal diseases.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of General Medicine at Alva’s Institute of Medical Sciences and Research Centre forms the foundation of clinical training for MBBS students. It offers in-depth knowledge and hands-on exposure to the diagnosis and management of a wide spectrum of adult medical conditions, ranging from common infections to complex multi-system disorders. The department ensures that students learn the art of history-taking, physical examination, clinical reasoning, and appropriate use of investigations.
+        </p>
+        <p>
+          Students participate in outpatient clinics, inpatient care, intensive care units, and emergency services under the guidance of experienced faculty. Emphasis is placed on developing strong diagnostic skills, ethical medical practice, and a holistic understanding of patient care. Regular case presentations, clinical discussions, and integrated teaching sessions with other departments enhance both the knowledge and confidence of medical students.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Nirmala", designation: "Professor" },
       { name: "Dr PVR Leela Mohan", designation: "Associate Professor" },
@@ -27,7 +44,24 @@ const clinicalData = {
 
   surgery: {
     title: "Department of General Surgery",
-    description: "General Surgery focuses on operative procedures for various conditions across the body.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of General Surgery provides structured clinical exposure to surgical diseases and procedures. MBBS students are trained in the evaluation, diagnosis, and management of surgical cases, ranging from hernias and appendicitis to trauma and tumors. The department plays a key role in teaching sterile techniques, surgical ethics, pre-operative and post-operative care, and wound management.
+        </p>
+        <p>
+          Students are encouraged to observe and assist in minor and major surgeries and actively participate in patient rounds and case discussions. They are trained to recognize surgical emergencies and understand the role of teamwork in the operating theatre. With a focus on clinical acumen and hands-on learning, the department helps students build a solid foundation for any future surgical specialty.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Harish Nayak", designation: "Medical Superintendent" },
       { name: "Dr Sathyanarayan", designation: "Professor" },
@@ -50,7 +84,24 @@ const clinicalData = {
 
   pediatrics: {
     title: "Department of Paediatrics",
-    description: "Paediatrics provides specialized medical care for infants, children, and adolescents.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Paediatrics focuses on the healthcare of infants, children, and adolescents, emphasizing both preventive and curative aspects. Students learn about growth and development, nutritional needs, immunization, and the management of common and complex pediatric illnesses. The department introduces the principles of family-centered care, where communication and empathy are central.
+        </p>
+        <p>
+          Clinical exposure includes pediatric outpatient departments, inpatient wards, and neonatal intensive care units (NICU). Students are trained to perform pediatric examinations, assess developmental milestones, and manage childhood emergencies. Case discussions, bedside teaching, and regular academic activities help students develop competence in managing young patients with compassion and confidence.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Vasantha T", designation: "Professor" },
       { name: "Dr Ushakiran", designation: "Professor" },
@@ -67,7 +118,24 @@ const clinicalData = {
 
   obg: {
     title: "Department of Obstetrics & Gynaecology",
-    description: "This department focuses on women’s reproductive health, pregnancy management, and childbirth.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Obstetrics & Gynaecology introduces MBBS students to the medical and surgical care of the female reproductive system, including pregnancy, childbirth, and associated disorders. The department trains students in antenatal care, normal and high-risk deliveries, and common gynecological procedures. Emphasis is placed on maternal and fetal well-being, safe motherhood, and reproductive health.
+        </p>
+        <p>
+          Students gain practical exposure through labor room postings, obstetric clinics, and gynecological surgery observations. They learn how to handle obstetric emergencies, counsel patients, and understand ethical issues related to women's health. The department integrates classroom learning with clinical exposure, shaping students into sensitive and skilled future practitioners.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Rajashekara M Hangarki", designation: "Professor & HOD" },
       { name: "Dr Ramesh", designation: "Associate Professor" },
@@ -86,7 +154,24 @@ const clinicalData = {
 
   ortho: {
     title: "Department of Orthopaedics",
-    description: "Orthopaedics deals with disorders and injuries of bones, joints, and the musculoskeletal system.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Orthopaedics trains MBBS students in the assessment and management of musculoskeletal injuries and disorders. Topics include fractures, joint diseases, congenital anomalies, and rehabilitation. Students learn through clinical postings, where they interact with patients, interpret radiographs, and assist in basic procedures.
+        </p>
+        <p>
+          Hands-on experience is provided in plaster application, traction techniques, and orthopedic ward care. In addition to trauma management, students are introduced to elective orthopedic surgeries and physiotherapy principles. The department encourages a multidisciplinary approach involving pain management, physical therapy, and surgical intervention.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Sachin Shetty", designation: "Professor" },
       { name: "Dr Chaithanya Shetty", designation: "Associate Professor" },
@@ -104,7 +189,24 @@ const clinicalData = {
 
   ophthal: {
     title: "Department of Ophthalmology",
-    description: "Ophthalmology specializes in eye care, vision treatment, and ophthalmic surgery.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Ophthalmology provides students with knowledge and skills related to the anatomy, physiology, and diseases of the eye. It focuses on common conditions such as refractive errors, cataract, glaucoma, and conjunctivitis. Students are taught how to perform basic eye examinations, including visual acuity testing, fundoscopy, and slit-lamp examination.
+        </p>
+        <p>
+          Clinical postings allow students to participate in outpatient consultations, minor procedures, and community screening programs. The department emphasizes early detection and prevention of blindness and integrates theoretical learning with community eye health awareness. Regular demonstrations and clinical case discussions ensure a strong foundation in ocular care.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Cynthia", designation: "Professor" },
       { name: "Dr Vikram Jain", designation: "Associate Professor" },
@@ -117,7 +219,24 @@ const clinicalData = {
 
   ent: {
     title: "Department of ENT",
-    description: "ENT focuses on medical and surgical management of disorders of the ear, nose, and throat.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of ENT introduces MBBS students to the clinical assessment and management of diseases related to the ear, nose, throat, head, and neck. Students learn to evaluate symptoms such as hearing loss, nasal obstruction, throat pain, and balance disorders. Diagnostic skills include otoscopy, rhinoscopy, and laryngoscopy.
+        </p>
+        <p>
+          Students participate in ENT outpatient clinics, observe common procedures such as ear syringing and nasal packing, and attend minor OT sessions. They are also trained in managing ENT emergencies like epistaxis and airway obstruction. The department promotes problem-solving and practical skill development, enhancing student confidence in clinical ENT practice.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Roshan R Jalisatgi", designation: "Professor & HOD" },
       { name: "Dr Mahaveer Jain", designation: "Associate Professor" },
@@ -131,7 +250,24 @@ const clinicalData = {
 
   derm: {
     title: "Department of Dermatology",
-    description: "Dermatology deals with diseases of the skin, hair, and nails, including medical and cosmetic concerns.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Dermatology provides insight into skin, hair, nail disorders, and sexually transmitted infections. Students are taught to recognize and differentiate between various dermatological conditions through visual inspection and clinical history. Emphasis is placed on common diseases such as eczema, psoriasis, acne, fungal infections, and scabies.
+        </p>
+        <p>
+          Clinical exposure includes outpatient consultations and procedural dermatology, such as skin biopsies, cryotherapy, and patch testing. Students learn about systemic associations of skin diseases and the psychological impact of dermatological conditions. The department promotes compassionate care and a methodical approach to diagnosis and treatment.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Narendra Shetty", designation: "Professor" },
       { name: "Dr Bhavishya Shetty", designation: "Assistant Professor" },
@@ -142,7 +278,24 @@ const clinicalData = {
 
   psych: {
     title: "Department of Psychiatry",
-    description: "Psychiatry focuses on mental health, behavioral disorders, and clinical psychology.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Psychiatry introduces students to mental health, behavioral sciences, and psychological aspects of medical care. It focuses on conditions such as depression, anxiety, schizophrenia, substance abuse, and personality disorders. Students are taught how to communicate effectively with patients and understand the bio-psycho-social model of illness.
+        </p>
+        <p>
+          Clinical exposure includes outpatient psychiatry clinics, in-patient ward rounds, and case discussions. Students are trained to identify psychiatric symptoms, perform mental status examinations, and understand treatment modalities including pharmacotherapy and psychotherapy. The department also sensitizes students to mental health stigma and ethical considerations in psychiatric practice.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Aniruddah Shetty", designation: "Assistant Professor" },
       { name: "Dr Prajaktha", designation: "Senior Resident" },
@@ -152,7 +305,24 @@ const clinicalData = {
 
   radio: {
     title: "Department of Radiology",
-    description: "Radiology uses imaging techniques like MRI, CT, and X-ray for diagnosis and treatment guidance.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Radiology teaches the role of imaging in diagnosis, treatment planning, and follow-up care. Students are introduced to various modalities such as X-ray, ultrasound, CT scan, and MRI. They are trained to understand the indications, basic interpretation, and limitations of each imaging technique.
+        </p>
+        <p>
+          Through practical exposure in the radiology department, students learn how to correlate clinical findings with imaging results. Emphasis is placed on the appropriate use of diagnostic imaging, radiation safety, and ethical considerations. The department supports interdisciplinary learning and plays a critical role in integrated patient care.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Ramesh", designation: "Professor" },
       { name: "Dr Keshav", designation: "Associate Professor" },
@@ -168,7 +338,24 @@ const clinicalData = {
 
   anesthesia: {
     title: "Department of Anaesthesiology",
-    description: "Anaesthesiology manages anesthesia, pain relief, and critical care during surgical procedures.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Anaesthesiology educates MBBS students on the principles of anesthesia, perioperative care, and pain management. Students are introduced to the preparation of patients for surgery, types of anesthesia, and basic life-saving procedures such as airway management and resuscitation.
+        </p>
+        <p>
+          In clinical postings, students observe anesthetic techniques in operation theatres and learn the basics of patient monitoring and post-operative care. The department also trains students in emergency protocols, including CPR and Basic Life Support (BLS). This early exposure helps build confidence in handling critical care situations and understanding the importance of teamwork during surgeries.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Bhanuprakash", designation: "Professor" },
       { name: "Dr Swarna Rekha", designation: "Associate Professor" },
@@ -186,9 +373,11 @@ const clinicalData = {
 
 export default function ClinicalPage() {
   return (
-    <Departments1
-      categoryTitle="Clinical"
-      departmentData={clinicalData}
-    />
+    <div style={{ width: "100%", margin: 0, padding: 0 }}>
+      <Departments1
+        categoryTitle="Clinical"
+        departmentData={clinicalData}
+      />
+    </div>
   );
 }

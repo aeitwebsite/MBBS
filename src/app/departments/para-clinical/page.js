@@ -3,7 +3,33 @@ import Departments1 from "@/components/Departments1";
 const paraClinicalData = {
   pathology: { 
     title: "Department of Pathology", 
-    description: "Pathology studies the causes, mechanisms, and effects of diseases through laboratory analysis and diagnostics.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Pathology at Alva’s Institute of Medical Sciences and Research Centre plays a central role in bridging the gap between basic medical sciences and clinical practice. As one of the key subjects taught during the second professional year of the MBBS course, Pathology provides students with a strong foundation in understanding the mechanisms of disease and the principles of diagnosis.
+        </p>
+        <p>
+          Our department is led by experienced and dedicated faculty who are passionate about teaching and mentoring future doctors. Students gain hands-on exposure through well-structured practical sessions, case-based discussions, and access to real-time diagnostic work, helping them develop critical thinking and diagnostic skills early in their medical journey.
+        </p>
+        <p>
+          The department also operates a fully functional Central Diagnostic Laboratory and a NABH-certified Blood Bank, both of which are essential components of our teaching hospital. The lab offers diagnostic services in Clinical Pathology, Hematology, Cytology, Surgical Pathology, and Onco pathology, providing students with valuable opportunities to observe and understand real-world medical investigations.
+        </p>
+        <p>
+          While our primary focus is on undergraduate education, we ensure that students are introduced to the broad scope of pathology and its relevance in various fields such as cancer screening, genetics, immunology, forensic medicine, and biomedical research. With over 17 recognized subspecialties in pathology, students are encouraged to explore future career opportunities and develop a deeper interest in the subject.
+        </p>
+        <p>
+          At Alva’s, the Department of Pathology is committed to nurturing analytical thinking, scientific curiosity, and clinical relevance—equipping MBBS students with the knowledge and skills needed to contribute meaningfully to healthcare.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Magad Rangaswamy", designation: "Professor" },
       { name: "Dr Damodar", designation: "Associate Professor" },
@@ -25,7 +51,30 @@ const paraClinicalData = {
 
   pharmacology: { 
     title: "Department of Pharmacology", 
-    description: "Pharmacology focuses on drugs, their actions, therapeutic uses, and potential side effects.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          Pharmacology is a vital discipline in medical education that bridges the gap between basic science and clinical practice. It is the study of drugs and their effects on the human body, focusing on how medications are developed, how they work, and how they are used to treat diseases. Understanding pharmacology is essential for safe and effective prescribing, patient care, and the rational use of medicines.
+        </p>
+        <p>
+          At Alva’s Institute of Medical Sciences and Research Centre, the Department of Pharmacology is dedicated to training MBBS students to become competent and responsible future prescribers. The curriculum is designed to provide a strong foundation in drug mechanisms, therapeutic uses, adverse effects, and interactions, along with recent advancements in pharmacological research.
+        </p>
+        <p>
+          The department adopts a student-centered approach with the use of interactive teaching methods, case-based learning, and practical sessions in prescription writing and experimental pharmacology. Emphasis is also placed on ethics in drug use, pharmacovigilance, and evidence-based medicine.
+        </p>
+        <p>
+          By combining scientific knowledge with clinical relevance, the Department of Pharmacology plays a crucial role in shaping the professional judgment and prescribing skills of future doctors.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Ravindra S Beedimani", designation: "Professor and HOD" },
       { name: "Dr Laxminarayana Bairy", designation: "Professor" },
@@ -43,7 +92,30 @@ const paraClinicalData = {
 
   microbiology: { 
     title: "Department of Microbiology", 
-    description: "Microbiology studies microorganisms and their role in human health, infectious diseases, and immunology.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Microbiology at Alva’s Institute of Medical Sciences and Research Centre plays a crucial role in medical education by introducing MBBS students to the world of microorganisms and their impact on human health. Microbiology is a core subject that helps students understand the etiology, pathogenesis, diagnosis, treatment, and prevention of infectious diseases—knowledge that is vital for every medical professional.
+        </p>
+        <p>
+          The department is dedicated to providing a strong foundation in both theoretical and practical aspects of microbiology, including bacteriology, virology, mycology, parasitology, and immunology. Through a combination of interactive lectures, practical laboratory sessions, and case-based discussions, students are trained to identify pathogens, interpret laboratory results, and apply microbiological principles in clinical settings.
+        </p>
+        <p>
+          Our well-equipped laboratories and experienced faculty ensure a hands-on, inquiry-based learning environment. The department also emphasizes infection control practices, hospital-acquired infections, antibiotic resistance, and the rational use of antimicrobials—topics highly relevant to modern-day healthcare.
+        </p>
+        <p>
+          With a strong commitment to academic excellence and clinical relevance, the Department of Microbiology at Alva’s aims to prepare students to play an active role in disease diagnosis, prevention, and public health.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Yashwanth Rai", designation: "Professor and HOD" },
       { name: "Dr Indira Bairy", designation: "Professor" },
@@ -61,7 +133,30 @@ const paraClinicalData = {
 
   forensic: { 
     title: "Department of Forensic Medicine", 
-    description: "Forensic Medicine applies medical knowledge to legal investigations, including post-mortem examinations.",
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Forensic Medicine at Alva’s Institute of Medical Sciences and Research Centre plays a vital role in equipping MBBS students with knowledge at the intersection of medicine and law. Forensic Medicine involves the application of medical principles to assist in the administration of justice. It deals with medico-legal cases such as unnatural deaths, injuries, sexual offences, poisoning, and identification of individuals.
+        </p>
+        <p>
+          As part of the MBBS curriculum, the subject is introduced during the second professional year, with a focus on theoretical understanding as well as practical skills. Students learn how to conduct medico-legal examinations, interpret post-mortem findings, and document injuries accurately and ethically. The department also trains students in legal responsibilities, consent, medical ethics, and handling of forensic evidence.
+        </p>
+        <p>
+          Our well-equipped mortuary, demonstration halls, and museum support hands-on learning, helping students gain real-world exposure to post-mortem procedures and medico-legal documentation under the guidance of experienced faculty.
+        </p>
+        <p>
+          By integrating legal awareness with medical knowledge, the Department of Forensic Medicine at Alva’s prepares future doctors to fulfil their ethical and legal duties responsibly in both clinical and community settings.
+        </p>
+      </div>
+    ),
     faculties: [
       { name: "Dr Mahabalesh Shetty", designation: "Dean / Principal" },
       { name: "Dr Meena Kiran", designation: "Associate Professor" },
@@ -90,9 +185,11 @@ const paraClinicalData = {
 
 export default function ParaClinicalPage() {
   return (
-    <Departments1
-      categoryTitle="Para-Clinical"
-      departmentData={paraClinicalData}
-    />
+    <div style={{ width: "100%", margin: 0, padding: 0 }}>
+      <Departments1
+        categoryTitle="Para-Clinical"
+        departmentData={paraClinicalData}
+      />
+    </div>
   );
 }
