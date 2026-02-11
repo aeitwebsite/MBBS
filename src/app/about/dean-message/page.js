@@ -9,7 +9,7 @@ export default function DeanMessage() {
 
       <div className="flex flex-col md:flex-row gap-8">
               <Image
-                src="/images/dean.jpg"
+                src="/images/Dean.jpg"
                 alt="Dean"
                 width={320}
                 height={420}
