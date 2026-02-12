@@ -51,17 +51,17 @@ export default function Programs() {
               <div>Academic Programmes</div>
             </div>
 
-            <div className="mb-12">
+            {/* <div className="mb-12">
               <div className="text-[64px] font-extrabold">206</div>
               <div>Faculty Members</div>
-            </div>
+            </div> */}
 
-            <Link
+            {/* <Link
               href="/courses"
               className="inline-flex items-center gap-4 border border-white px-6 py-3 font-bold hover:bg-white hover:text-[#e5532d] transition"
             >
               VIEW ALL COURSES →
-            </Link>
+            </Link> */}
           </div>
         </div>
 

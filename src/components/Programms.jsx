@@ -14,6 +14,9 @@ export default function AboutSection() {
     { name: "Gender Harassment Committee", file: "/pdfs/Gender Harassment Committee.pdf" },
     { name: "Scientific Committee", file: "/pdfs/Scientific Committee.pdf" },
     { name: "Ethical Committee", file: "/pdfs/Ethical Committee.pdf" },
+    { name: "Antimicrobial Stewardship Committee", file: "/pdfs/antimicrobial stewardship committee.pdf" },
+    { name: "Hospital Inspection Control Committee", file: "/pdfs/hospital inspection control commitee.pdf" },
+    { name: "Pharmacovigilance Committee", file: "/pdfs/Pharmacovigilance committe.pdf" },
   ];
 
   const handleTabChange = (key) => {
