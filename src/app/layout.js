@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
 
        {/* ================= TOP BAR ================= */}
 <div className="w-full bg-[#0A0B49] text-white text-xs md:text-sm">
-  <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-10 h-[38px]">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-10 h-[34px]">
     <span>+91-9945449784</span>
     <Link href="mailto:office@aimsarc.org">
       office@aimsarc.org
@@ -53,19 +53,18 @@ export default function RootLayout({ children }) {
 
        {/* ================= NAVBAR ================= */}
 <header className="sticky top-0 z-[200] bg-white border-b">
-  <div className="max-w-7xl mx-auto flex items-center px-4 md:px-10 h-[72px]">
+  <div className="w-full flex items-center h-[84px] px-7">
 
-    {/* LOGO + TITLE (LEFT CORNER) */}
     <Link href="/" className="flex items-center gap-3 shrink-0">
       <Image
         src="/images/logo_home.png"
-        width={56}
-        height={56}
+        width={64}
+        height={64}
         alt="Logo"
         priority
       />
 
-      <div className="leading-[1.2]">
+      <div className="leading-[1.3]">
         <div className="text-[16px] font-semibold text-[#0A0B49]">
           ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
         </div>
@@ -75,7 +74,6 @@ export default function RootLayout({ children }) {
       </div>
     </Link>
 
-    {/* DESKTOP NAV (PUSHED TO RIGHT) */}
     <nav className="hidden lg:flex items-center gap-8 ml-auto">
       {navRoutes.map((r) => (
         <Link
@@ -89,7 +87,6 @@ export default function RootLayout({ children }) {
       ))}
     </nav>
 
-    {/* MOBILE MENU BUTTON */}
     <button
       className="lg:hidden ml-auto"
       onClick={() => setMobileMenuOpen(true)}
@@ -98,6 +95,7 @@ export default function RootLayout({ children }) {
     </button>
   </div>
 </header>
+
 
 
         {/* BACKDROP */}
