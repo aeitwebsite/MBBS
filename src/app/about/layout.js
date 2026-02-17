@@ -5,19 +5,25 @@ import { usePathname } from "next/navigation";
 
 export default function AboutLayout({ children }) {
   const pathname = usePathname();
+ const tabClass = (path) => {
+  const isActive =
+    path === "/about"
+      //? pathname === "/about"
+       ? pathname === "/about" || pathname === "/about/"
+      : pathname.startsWith(path);
 
-  const tabClass = (path) =>
-    `block w-full rounded-lg px-4 py-3 font-medium ${
-      pathname === path
-        ? "bg-blue-600 text-white"   // 🔵 DARK BLUE
-        : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+  return `block w-full text-left p-4 rounded-xl transition-all border-2 font-medium
+    ${
+      isActive
+        ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+        : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
     }`;
-
+};
   return (
     <div className="flex min-h-screen bg-white">
 
       {/* SIDEBAR */}
-      <aside className="w-72 p-4 space-y-3">
+     <aside className="w-full md:w-1/3 lg:w-1/4 p-6 space-y-4">
         <Link href="/about" className={tabClass("/about")}>
           About College
         </Link>

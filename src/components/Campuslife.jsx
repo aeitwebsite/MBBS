@@ -88,24 +88,22 @@ export default function AboutSection() {
     <div className="flex w-full min-h-screen bg-gray-100">
 
       {/* LEFT SIDEBAR */}
-      <div className="w-1/4 bg-white shadow-md p-4">
-        {[
-          //["admission", "Admission"],
-          ["photoGallery", "Photo Gallery"],
-          ["videoGallery", "Video Gallery"],
-          ["newsletter", "Newsletter"],
-        ].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setActiveTab(key)}
-            className={`w-full text-left px-4 py-3 mb-2 rounded-md
-              transition
-              ${
-                activeTab === key
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-900 hover:bg-gray-200"
-              }`}
-          >
+     <div className="w-1/4 bg-white shadow-md p-4 space-y-2">
+  {[
+    ["photoGallery", "Photo Gallery"],
+    ["videoGallery", "Video Gallery"],
+    ["newsletter", "Newsletter"],
+  ].map(([key, label]) => (
+    <button
+      key={key}
+      onClick={() => setActiveTab(key)}
+      className={`w-full text-left p-4 rounded-xl transition-all border-2 font-medium
+        ${
+          activeTab === key
+            ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+            : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
+        }`}
+    >
             {label}
           </button>
         ))}
