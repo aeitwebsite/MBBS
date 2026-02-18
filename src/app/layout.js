@@ -11,6 +11,10 @@ import { useState, useEffect } from "react";
 import { navRoutes } from "@/config/routeConfig";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { usePathname } from "next/navigation";
+import IntroScreen from "@/components/IntroScreen";
+
+
+
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,6 +25,8 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
@@ -30,6 +36,13 @@ export default function RootLayout({ children }) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  const handleIntroFinish = () => {
+    setFadeOut(true);
+    setTimeout(() => {
+      setShowIntro(false);
+    }, 500);
+  };
+
   const getRouteName = (name) => {
     if (name === "Programs") return "Student Portal";
     if (name === "Campus Life") return "Happenings@AIMSARC";
@@ -37,8 +50,15 @@ export default function RootLayout({ children }) {
   };
 
   return (
+    
     <html lang="en">
       <body className={roboto.className}>
+        {/* ================= INTRO SCREEN ================= */}
+        {showIntro && (
+          <div className={`transition-opacity duration-500 ${fadeOut ? "opacity-0" : "opacity-100"}`}>
+            <IntroScreen onFinish={handleIntroFinish} />
+          </div>
+        )}
 
        {/* ================= TOP BAR ================= */}
 <div className="w-full bg-[#0A0B49] text-white text-xs md:text-sm">
