@@ -11,6 +11,10 @@ import { useState, useEffect } from "react";
 import { navRoutes } from "@/config/routeConfig";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { usePathname } from "next/navigation";
+import IntroScreen from "@/components/IntroScreen";
+
+
+
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,6 +25,8 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
@@ -30,6 +36,13 @@ export default function RootLayout({ children }) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  const handleIntroFinish = () => {
+    setFadeOut(true);
+    setTimeout(() => {
+      setShowIntro(false);
+    }, 500);
+  };
+
   const getRouteName = (name) => {
     if (name === "Programs") return "Student Portal";
     if (name === "Campus Life") return "Happenings@AIMSARC";
@@ -37,63 +50,73 @@ export default function RootLayout({ children }) {
   };
 
   return (
+    
     <html lang="en">
       <body className={roboto.className}>
-
-        {/* TOP BAR */}
-        <div className="w-full flex bg-[#0A0B49] text-white text-xs md:text-sm
-                        items-center justify-between px-4 md:px-10 h-[48px]">
-          <span>+91-9945449784</span>
-          <Link href="mailto:office@aimsarc.org">office@aimsarc.org</Link>
-        </div>
-
-        {/* NAVBAR */}
-        <header className="sticky top-0 z-[200] bg-white shadow-md">
-          <div className="flex items-center justify-between px-4 md:px-10 py-2">
-
-            {/* LOGO + TWO-LINE TITLE */}
-            <Link href="/" className="flex items-center gap-3 min-w-0">
-              <Image
-                src="/images/logo_home.png"
-                width={72}
-                height={72}
-                alt="Logo"
-                className="shrink-0"
-              />
-
-              <div className="leading-tight">
-                <div className="text-[15px] md:text-[16px] font-semibold text-[#0A0B49]">
-                  ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
-                </div>
-                <div className="text-[14px] md:text-[15px] font-semibold text-[#0A0B49]">
-                  AND RESEARCH CENTRE
-                </div>
-              </div>
-            </Link>
-
-            {/* DESKTOP NAV */}
-            <nav className="hidden lg:flex gap-6 items-center">
-              {navRoutes.map((r) => (
-                <Link
-                  key={r.id}
-                  href={r.path}
-                  className="text-[14px] font-medium whitespace-nowrap
-                             text-gray-800 hover:text-[#0A0B49] transition"
-                >
-                  {getRouteName(r.name)}
-                </Link>
-              ))}
-            </nav>
-
-            {/* MOBILE MENU BUTTON */}
-            <button
-              className="lg:hidden"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <HamburgerMenuIcon />
-            </button>
+        {/* ================= INTRO SCREEN ================= */}
+        {showIntro && (
+          <div className={`transition-opacity duration-500 ${fadeOut ? "opacity-0" : "opacity-100"}`}>
+            <IntroScreen onFinish={handleIntroFinish} />
           </div>
-        </header>
+        )}
+
+       {/* ================= TOP BAR ================= */}
+<div className="w-full bg-[#0A0B49] text-white text-xs md:text-sm">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-10 h-[34px]">
+    <span>+91-9945449784</span>
+    <Link href="mailto:office@aimsarc.org">
+      office@aimsarc.org
+    </Link>
+  </div>
+</div>
+
+
+       {/* ================= NAVBAR ================= */}
+<header className="sticky top-0 z-[200] bg-white border-b">
+  <div className="w-full flex items-center h-[84px] px-7">
+
+    <Link href="/" className="flex items-center gap-3 shrink-0">
+      <Image
+        src="/images/logo_home.png"
+        width={64}
+        height={64}
+        alt="Logo"
+        priority
+      />
+
+      <div className="leading-[1.3]">
+        <div className="text-[16px] font-semibold text-[#0A0B49]">
+          ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
+        </div>
+        <div className="text-[14px] font-medium text-[#0A0B49]">
+          AND RESEARCH CENTRE
+        </div>
+      </div>
+    </Link>
+
+    <nav className="hidden lg:flex items-center gap-8 ml-auto">
+      {navRoutes.map((r) => (
+        <Link
+          key={r.id}
+          href={r.path}
+          className="text-[14px] font-medium text-gray-700
+                     hover:text-[#0A0B49] transition whitespace-nowrap"
+        >
+          {getRouteName(r.name)}
+        </Link>
+      ))}
+    </nav>
+
+    <button
+      className="lg:hidden ml-auto"
+      onClick={() => setMobileMenuOpen(true)}
+    >
+      <HamburgerMenuIcon />
+    </button>
+  </div>
+</header>
+
+
 
         {/* BACKDROP */}
         {mobileMenuOpen && (
@@ -132,7 +155,7 @@ export default function RootLayout({ children }) {
         </div>
 
         {/* MAIN CONTENT */}
-        <main className="pt-[112px] lg:pt-0">
+        <main className="pt-0">
           {isHomePage && <HeroCarousel />}
           {children}
         </main>

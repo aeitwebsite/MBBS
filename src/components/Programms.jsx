@@ -198,23 +198,23 @@ export default function AboutSection() {
   return (
     <div className="flex w-full min-h-screen bg-white">
       {/* LEFT SIDEBAR */}
-      <div className="w-1/4 bg-gray-100 border-r border-gray-200 p-6">
-        {[
-          ["academic", "Academic"],
-          ["rules", "Rules and Regulation"],
-          ["facilities", "Campus Facilities"],
-          ["committees", "Committees"],
-        ].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => handleTabChange(key)}
-            className={`w-full text-left px-4 py-4 mb-2 rounded transition-all font-semibold
-              ${
-                activeTab === key
-                  ? "bg-[#04044a] text-white shadow-md scale-105"
-                  : "bg-[#f8f9f9] text-gray-700 hover:bg-gray-200 border border-gray-100"
-              }`}
-          >
+          <div className="w-1/4 p-6">
+  {[
+    ["academic", "Academic"],
+    ["rules", "Rules and Regulation"],
+    ["facilities", "Campus Facilities"],
+    ["committees", "Committees"],
+  ].map(([key, label]) => (
+    <button
+      key={key}
+      onClick={() => handleTabChange(key)}
+      className={`w-full text-left px-4 py-4 mb-3 rounded-xl transition-all duration-200 font-semibold border-2
+        ${
+          activeTab === key
+            ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+            : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
+        }`}
+    >
             {label}
           </button>
         ))}

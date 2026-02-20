@@ -18,7 +18,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
       
       {/* ================= SIDEBAR ================= */}
       <div
-        className={`w-full md:w-1/3 lg:w-1/4 p-6 bg-white border-r
+        className={`w-full md:w-1/3 lg:w-1/4 p-6 bg-white 
         ${isMobileOpen ? "hidden md:block" : "block"}`}
       >
         <Link
@@ -51,7 +51,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
                 <span className="font-medium">
                   {departmentData[key].title.replace("Department of ", "")}
                 </span>
-                <span>›</span>
+                {/* <span>›</span> */}
               </div>
             </button>
           ))}
