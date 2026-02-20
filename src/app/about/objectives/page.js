@@ -32,7 +32,7 @@ export default function Objectives() {
         {/* Changed from Coral to Dusty Blue (#96BDD5) */}
         <div className="h-1.5 w-16 bg-[#96BDD5] rounded-full"></div>
       </div>
-
+   
       {/* Simple, Attractive List without numbering */}
       <div className="space-y-6">
         {objectives.map((obj, index) => (

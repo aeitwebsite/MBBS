@@ -76,4 +76,4 @@ export default function AboutCollegePage() {
       </p>
     </div>
   );
-}
+}   
