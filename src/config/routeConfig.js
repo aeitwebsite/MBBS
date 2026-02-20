@@ -180,7 +180,7 @@ export const navRoutes = [
     },
     {
         name: 'Hospital',
-        path: 'https://alvashealthcentre.com/',
+        path: '/hospital',
         id: 'ncte',
     },
     {
