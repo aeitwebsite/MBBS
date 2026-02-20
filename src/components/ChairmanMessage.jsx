@@ -1,26 +1,38 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ChairmanMessage() {
   return (
-    <section className="w-full bg-amc-grayStrip py-16">
+    <section className="w-full bg-amc-grayStrip py-20 overflow-hidden">
       <div className="w-full px-6 md:px-[12%]">
 
-        {/* RESPONSIVE GRID */}
+        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-10 md:gap-20 items-start">
 
-          {/* IMAGE */}
-          <div className="w-full px-2 md:px-4">
+          {/* IMAGE — LIGHT → DARK, FROM LEFT (ONCE, SLOW) */}
+          <motion.div
+            initial={{ x: -80, opacity: 0.2, filter: "blur(4px)" }}
+            whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+            transition={{
+              duration: 2.2,                 // ⬅️ slow & calm
+              ease: [0.22, 1, 0.36, 1],      // cinematic ease
+            }}
+            viewport={{ once: true, amount: 0.4 }}
+            className="w-full px-2 md:px-4"
+          >
             <div
               className="
-                relative 
-                w-full 
+                relative
+                w-full
                 h-[420px]
                 sm:h-[460px]
-                md:w-[320px] 
+                md:w-[320px]
                 md:h-[420px]
-                bg-white 
-                p-2 
+                bg-white
+                p-2
                 shadow-md
                 mx-auto md:mx-0
               "
@@ -35,11 +47,20 @@ export default function ChairmanMessage() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* MESSAGE CONTENT */}
-          <div className="relative px-4 md:px-8">
-
+          {/* CONTENT — LIGHT → DARK, FROM RIGHT (ONCE, SLOW) */}
+          <motion.div
+            initial={{ x: 80, opacity: 0.2, filter: "blur(4px)" }}
+            whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+            transition={{
+              duration: 2.2,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.2,                   // gentle stagger
+            }}
+            viewport={{ once: true, amount: 0.4 }}
+            className="relative px-4 md:px-8"
+          >
             {/* TITLE */}
             <h2 className="text-2xl md:text-[36px] font-extrabold text-[#2b1a63]">
               Message From The Chairman
@@ -54,12 +75,6 @@ export default function ChairmanMessage() {
               explosions taking place in the rapidly globalizing world.
               Personal integrity and ethics can be maintained only with a
               strong mind and a mind can become strong only with knowledge.
-              <br /><br />
-              {/* Alva’s Education Foundation (AEF) aims to develop individuals who
-              will be ready to take up real challenges presented to them. At
-              the same time foundation wants these individuals to be culturally
-              and ethically enlightened because not only the industry but our
-              country needs such individuals today. */}
             </p>
 
             {/* AUTHOR */}
@@ -82,12 +97,11 @@ export default function ChairmanMessage() {
               </Link>
             </div>
 
-            {/* DECORATIVE QUOTE (DESKTOP ONLY) */}
+            {/* DECORATIVE QUOTE */}
             <div className="hidden md:block absolute right-0 bottom-0 text-[180px] font-bold text-[#e0e0e0] leading-none pointer-events-none">
               "
             </div>
-
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
