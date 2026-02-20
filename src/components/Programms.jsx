@@ -1,193 +1,264 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 export default function AboutSection() {
   const [activeTab, setActiveTab] = useState("academic");
-  const [selectedPdf, setSelectedPdf] = useState(null);
+  const [activeCommittee, setActiveCommittee] = useState(null);
 
   const committees = [
-    { name: "Medical Education Unit Committee", file: "/pdfs/Medical Education Unit.pdf" },
-    { name: "Curriculum Committee", file: "/pdfs/Curriculum Committee.pdf" },
-    { name: "Anti Ragging Committee", file: "/pdfs/Anti Ragging Committee.pdf" },
-    { name: "Gender Harassment Committee", file: "/pdfs/Gender Harassment Committee.pdf" },
-    { name: "Scientific Committee", file: "/pdfs/Scientific Committee.pdf" },
-    { name: "Ethical Committee", file: "/pdfs/Ethical Committee.pdf" },
-    { name: "Antimicrobial Stewardship Committee", file: "/pdfs/antimicrobial stewardship committee.pdf" },
-    { name: "Hospital Inspection Control Committee", file: "/pdfs/hospital inspection control commitee.pdf" },
-    { name: "Pharmacovigilance Committee", file: "/pdfs/Pharmacovigilance committe.pdf" },
+    { name: "Medical Education Unit Committee", key: "meu" },
+    { name: "Curriculum Committee", key: "curriculum" },
+    { name: "Anti Ragging Committee", key: "anti" },
+    { name: "Gender Harassment Committee", key: "gender" },
+    { name: "Scientific Committee", key: "scientific" },
+    { name: "Ethical Committee", key: "ethical" },
+    { name: "Antimicrobial Stewardship Committee", key: "ams" },
+    { name: "Hospital Infection Control Committee", key: "hic" },
+    { name: "Pharmacovigilance Committee", key: "pv" },
   ];
 
   const handleTabChange = (key) => {
     setActiveTab(key);
-    setSelectedPdf(null);
+    setActiveCommittee(null);
   };
-  
 
-  const renderContent = () => {
-    /* ================= EMBEDDED PDF VIEWER ================= */
-    if (activeTab === "committees" && selectedPdf) {
-      return (
-        <div className="flex flex-col h-full animate-fadeIn">
-          <button 
-            onClick={() => setSelectedPdf(null)}
-            className="mb-6 flex items-center text-[#04044a] hover:opacity-80 font-bold transition-all"
-          >
-            <span className="mr-2 text-2xl">←</span> Back 
-          </button>
-          
-          <div className="flex-grow border-4 border-gray-100 rounded-xl overflow-hidden shadow-2xl bg-gray-50">
-            <iframe
-              src={`${selectedPdf}#toolbar=0&navpanes=0`}
-              className="w-full h-[70vh]"
-              title="Committee PDF Viewer"
-            />
-          </div>
-        </div>
-      );
-    }
-
-    switch (activeTab) {
-      case "academic":
-        return (
-          <>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Academic</h2>
-            <Image
-              src="/images/banner-4.jpg"
-              alt="Academic"
-              width={1200}
-              height={400}
-              className="w-full h-64 object-cover rounded mb-6"
-            />
-            <p className="text-gray-700 leading-relaxed text-justify">
-              The academic framework at Alva’s Institute of Medical Sciences and
-              Research Centre is designed to deliver comprehensive medical
-              education through a balanced integration of theory, clinical
-              practice, research, and community engagement.
-            </p>
-          </>
-        );
-
-      case "rules":
-        return (
-          <>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Rules and Regulations</h2>
-            <ul className="list-disc ml-6 text-gray-700 space-y-2">
-              <li>Students must maintain discipline and professionalism.</li>
-              <li>Attendance as per university and institutional norms.</li>
-              <li>Strict adherence to academic integrity.</li>
-              <li>Respect towards faculty, staff, and peers.</li>
-            </ul>
-          </>
-        );
-      case "facilities":
-        return (
-          <>
-      <h2 className="text-3xl font-bold text-gray-900 mb-6">
-        Student Facilities
-      </h2>
-
-      {/* Academic & Research Excellence */}
-      <h3 className="text-xl font-semibold text-gray-800 mb-3">
-        Academic & Research Excellence
-      </h3>
-      <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-        <li>
-          <b>Advanced Digital Library:</b> 24/7 access to international medical
-          journals, E-books, and global research databases.
-        </li>
-        <li>
-          <b>Multi-Purpose Auditorium:</b> A state-of-the-art venue for medical
-          conferences, guest lectures by renowned clinicians, and white coat
-          ceremonies.
-        </li>
-        <li>
-          <b>Arts & Cultural Centre:</b> Encouraging holistic education through
-          creative expression, essential for maintaining a balanced perspective
-          in healthcare.
-        </li>
-        <li>
-          <b>Specialized Arts Department:</b> Fostering medical illustration and
-          creative communication skills.
-        </li>
-      </ul>
-
-      {/* Student Life & Wellness */}
-      <h3 className="text-xl font-semibold text-gray-800 mb-3">
-        Student Life & Wellness
-      </h3>
-      <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-        <li>
-          <b>Nutritional Cafeteria:</b> Serving healthy, balanced meals designed
-          to fuel long hours of clinical rotations and study.
-        </li>
-        <li>
-          <b>Integrated Sports Complex:</b> Features both indoor and outdoor
-          playgrounds to promote physical fitness and stress relief.
-        </li>
-        <li>
-          <b>Premium Hostel Facilities:</b> Secure, comfortable on-campus housing
-          that fosters a close-knit medical community.
-        </li>
-      </ul>
-
-      {/* Campus Services & Safety */}
-      <h3 className="text-xl font-semibold text-gray-800 mb-3">
-        Campus Services & Safety
-      </h3>
-      <ul className="list-disc ml-6 text-gray-700 space-y-2">
-        <li>
-          <b>Eco-Friendly Transit:</b> E-golf cart facilities for quick,
-          sustainable movement between the college, hospital wings, and hostels.
-        </li>
-        <li>
-          <b>On-Site Support:</b> Dedicated stationary and photocopying centers
-          for rapid preparation of case studies, records, and research papers.
-        </li>
-        <li>
-          <b>Comprehensive Security:</b> A safe learning environment protected by
-          24/7 CCTV monitoring and professional security patrols.
-        </li>
-      </ul>
-    </>
+  const BackButton = () => (
+    <button
+      onClick={() => setActiveCommittee(null)}
+      className="mb-6 flex items-center text-[#04044a] font-bold"
+    >
+      <span className="mr-2 text-2xl">←</span> Back
+    </button>
   );
 
-      case "committees":
-        return (
-          <div className="animate-fadeIn">
-            <div className="flex justify-between items-center mb-6">
-              <div className="flex items-center gap-6">
-                <h2 className="text-5xl font-bold text-[#2d2e2e]">Committee List</h2>
-                <div className="w-32 h-[2px] bg-[#e36d5d] mt-4"></div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-              {committees.map((item, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedPdf(item.file)}
-                  className="flex items-center justify-between bg-[#04044a] hover:bg-[#060661] transition-all p-8 shadow-sm group text-left border-l-4 border-transparent hover:border-orange-400"
-                >
-                  <div className="text-white">
-                    <h3 className="font-semibold text-xl tracking-tight leading-tight group-hover:underline">
-                      {item.name}
-                    </h3>
-                  </div>
-                  <div className="bg-white p-2 rounded-sm shrink-0 ml-4 shadow-inner">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <path d="M6 2V30H26V10L18 2H6Z" fill="#F4F4F4"/>
-                        <path d="M18 2V10H26L18 2Z" fill="#D9D9D9"/>
-                        <path d="M11 18H14.5C15.3 18 16 18.7 16 19.5V20.5C16 21.3 15.3 22 14.5 22H13V24H11V18ZM13 20H14V19.5C14 19.2 13.8 19 13.5 19H13V20Z" fill="#E21B1B"/>
-                        <path d="M17 18H19.5C20.9 18 22 19.1 22 20.5V21.5C22 22.9 20.9 24 19.5 24H17V18ZM19 22H19.5C19.8 22 20 21.8 20 21.5V20.5C20 20.2 19.8 20 19.5 20H19V22Z" fill="#E21B1B"/>
-                        <path d="M23 18H28V19H25V20H27V21H25V24H23V18Z" fill="#E21B1B"/>
-                    </svg>
-                  </div>
-                </button>
+  const Table = ({ head, rows }) => (
+    <div className="overflow-x-auto bg-white shadow-lg rounded-xl border">
+      <table className="w-full border-collapse">
+        <thead className="bg-[#04044a] text-white">
+          <tr>
+            {head.map((h, i) => (
+              <th key={i} className="p-3 border">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="text-gray-700">
+          {rows.map((row, i) => (
+            <tr key={i} className="odd:bg-gray-50">
+              {row.map((cell, j) => (
+                <td key={j} className="p-3 border">{cell}</td>
               ))}
-            </div>
-          </div>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+
+  const renderCommittee = () => {
+    switch (activeCommittee) {
+
+      case "meu":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Medical Education Unit Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Mahabalesh Shetty", "Dean", "Head"],
+  ["2", "Dr. Chethana K", "MEU Coordinator (Community Medicine)", "Member"],
+  ["3", "Dr. Asharani N", "Professor & HOD – Biochemistry", "Member"],
+  ["4", "Dr. Jayaprakash B.R", "Professor & HOD – Anatomy", "Member"],
+  ["5", "Dr. Meena Kiran", "Associate Professor – Forensic Medicine", "Member"],
+  ["6", "Dr. Ravindra S Beedimani", "Professor & HOD – Pharmacology", "Member"],
+  ["7", "Dr. Anirudh Shetty", "Assistant Professor – Psychiatry", "Member"],
+  ["8", "Dr. Dhanya Hegde", "Assistant Professor – General Medicine", "Member"],
+  ["9", "Dr. Hana Shetty", "Assistant Professor – OBG", "Member"],
+  ["10", "Dr. Aishwarya Ramakrishna", "Assistant Professor – ENT", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "curriculum":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Curriculum Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Mahabalesh Shetty", "Dean", "Head"],
+  ["2", "Dr. Jnaneshwar P Shenoy", "Professor & HOD – Physiology", "Member"],
+  ["3", "Dr. Yashwanth Kumar Rai K", "Professor & HOD – Microbiology", "Member"],
+  ["4", "Dr. Vasanth T", "Professor – Paediatrics", "Member"],
+  ["5", "Dr. Roshan R Jalisatgi", "Professor & HOD – ENT", "Member"],
+  ["6", "Dr. Sadananda Naik", "Professor – General Medicine", "Member"],
+  ["7", "Dr. Swarna Rekha", "Associate Professor – Anaesthesia", "Member"],
+  ["8", "Dr. Chethana K", "MEU Coordinator – Community Medicine", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "anti":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Anti Ragging Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Mahabalesh Shetty", "Dean", "Head"],
+  ["2", "Dr. Mamatha", "Advocate", "Member"],
+  ["3", "Mr. Deviprasad Shetty", "NGO Representative", "Member"],
+  ["4", "Mrs. Mookambika", "MSW Department", "Member"],
+  ["5", "Police Inspector, Moodubidire", "-", "Member"],
+  ["6", "Mr. Dhananjay", "Press", "Member"],
+  ["7", "Mrs. Prarthana / Mr. Santhosh", "Resident Warden (F/M)", "Member"],
+  ["8", "Dr. Cynthia", "Professor & HOD – Biochemistry", "Member"],
+  ["9", "Dr. Jnaneshwar Shenoy", "Professor & HOD – Physiology", "Member"],
+  ["10", "Dr. Hana Shetty", "Assistant Professor – OBG", "Member"],
+  ["11", "Dr. Shamanth Shetty", "Deputy Medical Superintendent", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "gender":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Gender Harassment Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Swarnarekha", "Associate Professor – Anaesthesiology", "Head"],
+  ["2", "Dr. Madhumala", "NGO Representative", "Member"],
+  ["3", "Dr. Prajakta V Rao", "Senior Resident – Psychiatry", "Member"],
+  ["4", "Dr. Aishwarya Ramakrishnan", "Assistant Professor – ENT", "Member"],
+  ["5", "Mrs. Chandrika", "HR Department", "Member"],
+  ["6", "Ms. Deepika", "External Member", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "scientific":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Scientific Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Mahabalesh Shetty", "Dean", "Head"],
+  ["2", "Dr. Ravindra S Beedimani", "Secretary – Pharmacology", "Member"],
+  ["3", "Dr. Jebitha", "Biostatistician", "Member"],
+  ["4", "Dr. Roshan Jalisatgi", "Professor & HOD – ENT", "Member"],
+  ["5", "Dr. Yashwanth Rai", "Professor & HOD – Microbiology", "Member"],
+  ["6", "Dr. Shabina Inayath", "Associate Professor – OBG", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "ethical":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Ethical Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Padmaja Uday Kumar", "Father Muller Medical College,Professor – Pharmacology", "Head"],
+  ["2", "Dr. Ravindra S Beedimani", "Professor & HOD – Pharmacology", "Secretary"],
+  ["3", "Dr. Mamatha", "Advocate", "Member"],
+  ["4", "Dr. Sachin Shetty", "Professor", "Member"],
+  ["5", "Dr. Sai K", "Assistant Professor – Pathology", "Member"],
+  ["6", "Dr. Jayaprakash B R", "Professor & HOD – Anatomy", "Member"],
+  ["7", "Dr. Chethan", "Professor – Physiology", "Member"],
+  ["8", "Mr. Devi Prasad Shetty", "NGO", "Member"],
+  ["9", "Dr. Aishwarya Ramakrishna", "Assistant Professor – ENT", "Member"],
+  ["10", "Mr. Venugopal Shetty", "External Member", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "ams":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Antimicrobial Stewardship Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Department", "Position"]}
+              rows={[
+  ["1", "Dr. Sadananda Naik", "General Medicine", "Chairperson"],
+  ["2", "Dr. Rekha Rai", "Microbiology", "Coordinator"],
+  ["3", "Dr. Sattar Khan", "General Surgery", "Secretary"],
+  ["4", "Dr. Vasantha Venkappa Belchada", "Paediatrics", "Member"],
+  ["5", "Dr. Arun Kumar Shetty", "Orthopaedics", "Member"],
+  ["6", "Dr. Hana Shetty", "OBG", "Member"],
+  ["7", "Ms. Thabasam Fathima", "Clinical Pharmacist", "Member"],
+  ["8", "Mrs. Julekhabi F. Sab", "Nursing Superintendent", "Member"],
+  ["9", "Mr. Naveen Kumar R", "IT Incharge", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "hic":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Hospital Infection Control Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Department", "Position"]}
+              rows={[
+  ["1", "Dr. Harish Nayak", "General Surgery", "Chairperson"],
+  ["2", "Dr. Rekha Rai", "Microbiology", "Coordinator"],
+  ["3", "Dr. Dhanya Alva K", "General Medicine", "Secretary"],
+  ["4", "Dr. Rakesh Shetty", "General Surgery", "Member"],
+  ["5", "Dr. Harshith G C", "Community Medicine", "Member"],
+  ["6", "Dr. Arun Kumar Shetty", "Orthopaedics", "Member"],
+  ["7", "Dr. Hana Shetty", "OBG", "Member"],
+  ["8", "Dr. Abhijith Y V", "Paediatrics", "Member"],
+  ["9", "Dr. Swarna Rekha", "Anaesthesiology", "Member"],
+  ["10", "Mrs. Anet Desouza", "Emergency Medicine", "Member"],
+  ["11", "Mrs. Julekhabi F Sab", "Nursing Superintendent", "Member"],
+  ["12", "Ms. Neeshma", "Quality Coordinator", "Member"],
+  ["13", "Mrs. Kalavathi", "OT Incharge", "Member"],
+  ["14", "Mrs. Yamuna G M", "Emergency Incharge", "Member"],
+  ["15", "Mrs. Mangala N H", "ICU Incharge", "Member"],
+]}
+            />
+          </>
+        );
+
+      case "pv":
+        return (
+          <>
+            <BackButton />
+            <h2 className="text-3xl font-bold mb-6 text-[#04044a]">Pharmacovigilance Committee</h2>
+            <Table
+              head={["Sl. No", "Name", "Designation", "Position"]}
+              rows={[
+  ["1", "Dr. Harish Nayak", "Medical Superintendent – General Surgery", "Chairperson"],
+  ["2", "Dr. Ravindra S Beedimani", "Professor & HOD – Pharmacology", "Coordinator"],
+  ["3", "Dr. Sangeethanath", "Assistant Professor – Pharmacology", "Secretary"],
+  ["4", "Dr. Sadanand Naik", "Associate Professor – General Medicine", "Member"],
+  ["5", "Dr. Abhijith Y V", "Assistant Professor – Paediatrics", "Member"],
+  ["6", "Dr. Jiby V Benny", "Senior Resident – Dermatology", "Member"],
+  ["7", "Dr. Prajaktha", "Senior Resident – Psychiatry", "Member"],
+  ["8", "Dr. Sattar Khan", "Assistant Professor – General Surgery", "Member"],
+  ["9", "Dr. Hana Shetty", "Assistant Professor – OBG", "Member"],
+  ["10", "Ms. Preethi", "Clinical Pharmacist", "Member"],
+  ["11", "Mrs. Julekhabi F Sab", "Nursing Superintendent", "Member"],
+]}
+            />
+          </>
         );
 
       default:
@@ -197,32 +268,42 @@ export default function AboutSection() {
 
   return (
     <div className="flex w-full min-h-screen bg-white">
-      {/* LEFT SIDEBAR */}
-          <div className="w-1/4 p-6">
-  {[
-    ["academic", "Academic"],
-    ["rules", "Rules and Regulation"],
-    ["facilities", "Campus Facilities"],
-    ["committees", "Committees"],
-  ].map(([key, label]) => (
-    <button
-      key={key}
-      onClick={() => handleTabChange(key)}
-      className={`w-full text-left px-4 py-4 mb-3 rounded-xl transition-all duration-200 font-semibold border-2
-        ${
-          activeTab === key
-            ? "bg-blue-600 text-white border-blue-600 shadow-lg"
-            : "bg-gray-50 text-gray-700 border-transparent hover:border-blue-200"
-        }`}
-    >
-            {label}
+      {/* LEFT */}
+      <div className="w-1/4 p-6">
+        {["academic", "rules", "facilities", "committees"].map((k) => (
+          <button
+            key={k}
+            onClick={() => handleTabChange(k)}
+            className={`w-full text-left px-4 py-4 mb-3 rounded-xl font-semibold ${
+              activeTab === k ? "bg-blue-600 text-white" : "bg-gray-50"
+            }`}
+          >
+            {k.charAt(0).toUpperCase() + k.slice(1)}
           </button>
         ))}
       </div>
 
-      {/* RIGHT CONTENT */}
+      {/* RIGHT */}
       <div className="w-3/4 p-16">
-        {renderContent()}
+        {activeTab === "committees" && !activeCommittee && (
+          <>
+            <h2 className="text-5xl font-bold mb-12">Committee List</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {committees.map((c) => (
+                <button
+                  key={c.key}
+                  onClick={() => setActiveCommittee(c.key)}
+                  className="flex justify-between items-center bg-[#04044a] p-8 text-white"
+                >
+                  <span className="text-xl font-semibold">{c.name}</span>
+                  <span className="bg-white text-red-600 px-3 py-1 rounded">VIEW</span>
+                </button>
+              ))}
+            </div>
+          </>
+        )}
+
+        {activeCommittee && renderCommittee()}
       </div>
     </div>
   );

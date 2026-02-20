@@ -144,16 +144,16 @@ const paraClinicalData = {
         boxSizing: "border-box"
       }}>
         <p>
-          The Department of Forensic Medicine at Alva’s Institute of Medical Sciences and Research Centre plays a vital role in equipping MBBS students with knowledge at the intersection of medicine and law. Forensic Medicine involves the application of medical principles to assist in the administration of justice. It deals with medico-legal cases such as unnatural deaths, injuries, sexual offences, poisoning, and identification of individuals.
+          The Department of Forensic Medicine at Alva’s Institute of Medical Sciences and Research Centre plays a vital role in equipping MBBS students with knowledge at the intersection of medicine and law. Forensic Medicine involves the application of medical principles to assist in the administration of justice.
         </p>
         <p>
-          As part of the MBBS curriculum, the subject is introduced during the second professional year, with a focus on theoretical understanding as well as practical skills. Students learn how to conduct medico-legal examinations, interpret post-mortem findings, and document injuries accurately and ethically. The department also trains students in legal responsibilities, consent, medical ethics, and handling of forensic evidence.
+          As part of the MBBS curriculum, the subject is introduced during the second professional year, with a focus on theoretical understanding as well as practical skills.
         </p>
         <p>
-          Our well-equipped mortuary, demonstration halls, and museum support hands-on learning, helping students gain real-world exposure to post-mortem procedures and medico-legal documentation under the guidance of experienced faculty.
+          Our well-equipped mortuary, demonstration halls, and museum support hands-on learning.
         </p>
         <p>
-          By integrating legal awareness with medical knowledge, the Department of Forensic Medicine at Alva’s prepares future doctors to fulfil their ethical and legal duties responsibly in both clinical and community settings.
+          By integrating legal awareness with medical knowledge, the Department of Forensic Medicine prepares future doctors to fulfil their ethical and legal duties responsibly.
         </p>
       </div>
     ),
@@ -167,16 +167,42 @@ const paraClinicalData = {
   },
 
   community: { 
-    title: "Department of Community Medicine", 
-    description: "Community Medicine focuses on public health, prevention, epidemiology, and healthcare delivery to the population.",
+   title: "Department of Forensic Medicine", 
+    description: (
+      <div style={{
+        width: "100%",
+        padding: "20px",
+        lineHeight: "1.8",
+        textAlign: "justify",
+        fontSize: "16px",
+        color: "#333",
+        boxSizing: "border-box"
+      }}>
+        <p>
+          The Department of Community Medicine at Alva’s Institute of Medical Sciences and Research Centre is dedicated to training future doctors in the principles of public health and preventive medicine. Unlike other clinical specialties that focus on individual patients, Community Medicine emphasizes the health of populations—aiming to prevent diseases, promote health, and prolong a healthy life.
+        </p>
+        <p>
+          Introduced early in the MBBS curriculum and continuing throughout, Community Medicine provides students with a deep understanding of epidemiology, biostatistics, health systems, national health programs, environmental and occupational health, and health education. The department adopts a practical and field-based approach to learning, including  family adoption programme, family health studies, rural and urban health postings, health surveys, field based research and visits to public health institutions.
+        </p>
+        <p>
+          Our faculty members use interactive teaching methods, real-world case discussions, and data analysis exercises to help students apply theoretical knowledge to real-life public health challenges. Special focus is given to developing skills in research, communication, health planning, and leadership—essential qualities for any modern medical professional.
+        </p>
+        <p>
+           Through its academic, outreach, and research activities, the Department of Community Medicine plays a crucial role in shaping socially responsible and community-oriented doctors who are prepared to contribute to both clinical care and public health at large.
+        </p>
+      </div>
+    ),
     faculties: [
-      { name: "Dr Chethana K", designation: "Professor and HOD",message: `Welcome to the Department of Community Medicine.
-Community Medicine forms the foundation of understanding health in its true sense — not merely as the absence of disease, but as a state of complete physical, mental, and social well-being. It is an integral part of medical education, laying the groundwork for understanding health beyond the confines of hospitals and clinics.
-The Department of Community Medicine is dedicated to promoting community health and well-being through quality education, research, and service to the community, in alignment with the institution’s vision and objectives. We strive to educate and empower future healthcare professionals with the knowledge, skills, and values necessary to strengthen public health and deliver equitable healthcare to all.
-The learning journey in Community Medicine begins in the first year and continues through the final year, culminating in a three-month internship training. With innovative teaching-learning strategies under the CBME curriculum, students gain a strong foundation in preventive, promotive, and social aspects of medicine.
-Students also benefit from rich community exposure through the Family Adoption Programme, field visits, and training at our attached health centres, supported by field-based research and community-oriented health promotional activities in collaboration with local authorities, non-governmental organisations (NGOs), and healthcare providers on various public health issues.
-Overall, the Department will continue to be a driving force in shaping competent, compassionate, and socially responsible physicians, while supporting both faculty and students in their pursuit of excellence in research, education, and service — working together to build a healthier and more equitable society.
-`},
+      { 
+        name: "Dr Chethana K", 
+        designation: "Professor and HOD",
+        message: `Welcome to the Department of Community Medicine.
+Community Medicine forms the foundation of understanding health in its true sense — not merely as the absence of disease, but as a state of complete physical, mental, and social well-being.
+The Department of Community Medicine is dedicated to promoting community health and well-being through quality education, research, and service to the community.
+The learning journey begins in the first year and continues through the final year, culminating in internship training.
+Students benefit from rich community exposure through the Family Adoption Programme, field visits, and training at attached health centres.
+Overall, the Department continues to shape competent, compassionate, and socially responsible physicians.`
+      },
       { name: "Dr Harshith G C", designation: "Assistant Professor" },
       { name: "Dr Harshavardan", designation: "Assistant Professor" },
       { name: "Dr Bharath", designation: "Assistant Professor" },
