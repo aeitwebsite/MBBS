@@ -28,12 +28,12 @@ export default function HospitalHome() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6 md:p-12">
-      <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">
+    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 md:px-12 py-8 sm:py-10">
+      <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-gray-800">
         Hospital Services
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
         {cards.map((card, index) =>
           card.external ? (
             <a
@@ -44,7 +44,7 @@ export default function HospitalHome() {
               className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Image */}
-              <div className="h-56 overflow-hidden">
+              <div className="h-44 sm:h-52 md:h-56 overflow-hidden">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -53,11 +53,13 @@ export default function HospitalHome() {
               </div>
 
               {/* Content */}
-              <div className="p-6 text-center">
-                <h2 className="text-2xl font-bold mb-2 text-gray-800">
+              <div className="p-4 sm:p-6 text-center">
+                <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 text-gray-800">
                   {card.title}
                 </h2>
-                <p className="text-gray-600">{card.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">
+                  {card.description}
+                </p>
               </div>
             </a>
           ) : (
@@ -67,7 +69,7 @@ export default function HospitalHome() {
               className="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Image */}
-              <div className="h-56 overflow-hidden">
+              <div className="h-44 sm:h-52 md:h-56 overflow-hidden">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -76,11 +78,13 @@ export default function HospitalHome() {
               </div>
 
               {/* Content */}
-              <div className="p-6 text-center">
-                <h2 className="text-2xl font-bold mb-2 text-gray-800">
+              <div className="p-4 sm:p-6 text-center">
+                <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 text-gray-800">
                   {card.title}
                 </h2>
-                <p className="text-gray-600">{card.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">
+                  {card.description}
+                </p>
               </div>
             </Link>
           )

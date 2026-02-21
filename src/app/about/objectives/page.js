@@ -23,34 +23,32 @@ export default function Objectives() {
   ];
 
   return (
-    <div className="max-w-4xl py-6">
-      {/* Header with Dark Navy text and Dusty Blue accent line */}
-      <div className="mb-10">
-        <h2 className="text-3xl font-extrabold text-[#2A3341] mb-2">
+    <div className="w-full max-w-4xl px-4 sm:px-6 md:px-0 py-6">
+      {/* Header */}
+      <div className="mb-8 sm:mb-10">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2A3341] mb-2">
           Objectives
         </h2>
-        {/* Changed from Coral to Dusty Blue (#96BDD5) */}
-        <div className="h-1.5 w-16 bg-[#96BDD5] rounded-full"></div>
+        <div className="h-1.5 w-14 sm:w-16 bg-[#96BDD5] rounded-full"></div>
       </div>
-   
-      {/* Simple, Attractive List without numbering */}
-      <div className="space-y-6">
+
+      {/* Objectives List */}
+      <div className="space-y-5 sm:space-y-6">
         {objectives.map((obj, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="flex items-start group"
           >
-            {/* Minimalist vertical bar accent in Slate Blue */}
-            <div className="mr-5 mt-1.5">
-              {/* Changed hover color from Coral to Dusty Blue (#96BDD5) */}
-              <div className="h-10 w-1 bg-[#405D81] group-hover:bg-[#96BDD5] transition-colors duration-300 rounded-full"></div>
+            {/* Vertical Accent Bar */}
+            <div className="mr-4 sm:mr-5 mt-1.5">
+              <div className="h-8 sm:h-10 w-1 bg-[#405D81] group-hover:bg-[#96BDD5] transition-colors duration-300 rounded-full"></div>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#405D81] mb-1">
+              <h3 className="text-lg sm:text-xl font-bold text-[#405D81] mb-1">
                 {obj.title}
               </h3>
-              <p className="text-[#2A3341] leading-relaxed text-lg opacity-90">
+              <p className="text-[#2A3341] leading-relaxed text-sm sm:text-lg opacity-90 text-justify">
                 {obj.text}
               </p>
             </div>
