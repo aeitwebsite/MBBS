@@ -2,25 +2,29 @@
 
 export default function IPDPage() {
   return (
-    <div className="min-h-screen bg-gray-50 p-6 md:p-12 space-y-14">
-      
+    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 md:px-12 py-8 sm:py-10 space-y-12 sm:space-y-14">
+
       {/* TABLE 1 */}
       <div>
-        <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-1 text-gray-800">
           Alva’s Health Centre – Teaching Hospital
         </h2>
-        <p className="text-center text-gray-600 mb-6">
+        <p className="text-center text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
           Department wise In-Patient Statistics (Jan 2025 – Dec 2025)
         </p>
 
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
-          <table className="min-w-full border text-sm text-center">
+          <table className="min-w-[900px] w-full border text-xs sm:text-sm text-center">
             <thead className="bg-green-900 text-white">
               <tr>
-                {["Department","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Total"]
-                  .map(h => (
-                    <th key={h} className="p-2 border">{h}</th>
-                  ))}
+                {[
+                  "Department","Jan","Feb","Mar","Apr","May","Jun",
+                  "Jul","Aug","Sep","Oct","Nov","Dec","Total"
+                ].map((h) => (
+                  <th key={h} className="p-2 border whitespace-nowrap">
+                    {h}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -36,10 +40,12 @@ export default function IPDPage() {
                 ["ENT",153,111,128,109,108,110,126,133,128,93,66,112,1377],
                 ["Emergency",0,0,0,0,0,0,0,0,0,2,6,10,18],
                 ["Total",2835,2234,3070,2694,2805,2670,3175,3211,2727,2074,2151,3170,32816],
-              ].map((row,i)=>(
+              ].map((row, i) => (
                 <tr key={i} className="odd:bg-gray-100">
-                  {row.map((cell,j)=>(
-                    <td key={j} className="p-2 border font-medium">{cell}</td>
+                  {row.map((cell, j) => (
+                    <td key={j} className="p-2 border font-medium whitespace-nowrap">
+                      {cell}
+                    </td>
                   ))}
                 </tr>
               ))}
@@ -50,21 +56,25 @@ export default function IPDPage() {
 
       {/* TABLE 2 */}
       <div>
-        <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-1 text-gray-800">
           Alva’s Health Centre – Teaching Hospital
         </h2>
-        <p className="text-center text-gray-600 mb-6">
+        <p className="text-center text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
           Department wise In-Patient Statistics (Jan 2026 – 18 Feb 2026)
         </p>
 
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
-          <table className="min-w-full border text-sm text-center">
+          <table className="min-w-[900px] w-full border text-xs sm:text-sm text-center">
             <thead className="bg-green-900 text-white">
               <tr>
-                {["Department","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Total"]
-                  .map(h => (
-                    <th key={h} className="p-2 border">{h}</th>
-                  ))}
+                {[
+                  "Department","Jan","Feb","Mar","Apr","May","Jun",
+                  "Jul","Aug","Sep","Oct","Nov","Dec","Total"
+                ].map((h) => (
+                  <th key={h} className="p-2 border whitespace-nowrap">
+                    {h}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -80,10 +90,12 @@ export default function IPDPage() {
                 ["ENT",87,72,"","","","","","","","","","",159],
                 ["Emergency",9,5,"","","","","","","","","","",14],
                 ["Total",2793,1961,"","","","","","","","","","",4754],
-              ].map((row,i)=>(
+              ].map((row, i) => (
                 <tr key={i} className="odd:bg-gray-100">
-                  {row.map((cell,j)=>(
-                    <td key={j} className="p-2 border font-medium">{cell}</td>
+                  {row.map((cell, j) => (
+                    <td key={j} className="p-2 border font-medium whitespace-nowrap">
+                      {cell}
+                    </td>
                   ))}
                 </tr>
               ))}
