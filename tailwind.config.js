@@ -11,6 +11,9 @@ module.exports = {
           "amc-cyan": "var(--amc-cyan)",
           "amc-grayStrip": "var(--amc-grayStrip)",
         },
+        fontFamily: {
+        radio: ["'Work Sans'"],
+      },
       },
     },
     plugins: [],

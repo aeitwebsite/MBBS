@@ -31,7 +31,7 @@ export default function Programs() {
       <div className="flex w-full flex-col lg:flex-row">
 
         {/* ================= LEFT PANEL ================= */}
-        <div className="w-full lg:w-[360px] flex-shrink-0">
+        <div className="w-full lg:w-[360px] flex-shrink-0 font-radio ">
           <div className="bg-[#1f4f82] px-6 py-10 text-white">
             <h3 className="text-[22px] font-semibold leading-snug">
               Alva&apos;s Medical College <br />

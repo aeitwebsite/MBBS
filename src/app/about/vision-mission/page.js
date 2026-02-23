@@ -1,6 +1,6 @@
 export default function VisionMission() {
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-0 py-6 space-y-6 sm:space-y-8 font-sans">
+    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-0 py-6 space-y-6 sm:space-y-8 font-workSans">
       {/* Header Section */}
       <div className="bg-[#2a3341] py-3 px-4 sm:px-6 shadow-md rounded-sm">
         <h2 className="text-white text-lg sm:text-xl font-medium tracking-wide">
@@ -14,7 +14,7 @@ export default function VisionMission() {
           <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 underline decoration-2 underline-offset-6 sm:underline-offset-8">
             Vision
           </h3>
-          <p className="text-sm sm:text-lg text-gray-700 leading-relaxed italic">
+          <p className="text-sm sm:text-lg text-gray-700 leading-relaxed italic ">
             "To be a centre of excellence in medical education, research, and
             healthcare delivery, nurturing compassionate professionals dedicated
             to serving rural and underserved communities."
