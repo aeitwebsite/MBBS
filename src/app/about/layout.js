@@ -23,7 +23,8 @@ export default function AboutLayout({ children }) {
     <div className="flex min-h-screen bg-white">
 
       {/* SIDEBAR */}
-     <aside className="w-full md:w-1/3 lg:w-1/4 p-6 space-y-4">
+     <aside className="w-full md:w-[23%] lg:w-[20%] p-4 space-y-3">
+
         <Link href="/about" className={tabClass("/about")}>
           About College
         </Link>

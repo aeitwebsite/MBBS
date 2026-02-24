@@ -86,20 +86,18 @@ const preClinicalData = {
         </p>
       </div>
     ),
-
-    faculties: [
-  { 
+     hod: {
     name: "Dr. Asharani N",
-    designation: "Professor and HOD",
+    designation: "Professor & Head of Department",
     image: "/images/HOD-Biochemistry.png",
-    message: `Welcome to the Department of Biochemistry….
+    message:`Welcome to the Department of Biochemistry….
 Biochemistry forms the foundation of modern medical education, bridging basic science and clinical medicine. It helps students understand the molecular mechanisms underlying health and disease. 
 At Alva’s, we take pride in our well-equipped laboratories, committed faculty, and an academic atmosphere that fosters curiosity, innovation, and meaningful learning, making the study of biochemistry both comprehensive and clinically relevant.  
 We encourage students to participate in research projects, scientific forums, and interdisciplinary activities to broaden their perspectives and deepen their understanding of biomedical science. The department remains focused on continuous improvement, academic integrity, and the holistic development of our students as future medical professionals.
 Join us in exploring the fascinating world of biochemistry — where curiosity meets discovery and learning leads to innovation
 `
   },
-
+    faculties: [
   { name: "Dr. Somashekar Shetty", designation: "Associate Professor", image: "/images/user.png" },
   { name: "Dr. A Madhusudhana", designation: "Assistant Professor", image: "/images/user.png" },
   { name: "Dr. Nagendra", designation: "Assistant Professor", image: "/images/user.png" },

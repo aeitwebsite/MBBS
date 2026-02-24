@@ -198,7 +198,7 @@ export default function AboutSection() {
   return (
     <div className="flex w-full min-h-screen bg-white">
       {/* LEFT SIDEBAR */}
-          <div className="w-1/4 p-6">
+          <div className="w-full md:w-[23%] lg:w-[20%] p-4">
   {[
     ["academic", "Academic"],
     ["rules", "Rules and Regulation"],

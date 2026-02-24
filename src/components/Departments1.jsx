@@ -18,9 +18,9 @@ export default function Departments1({ categoryTitle, departmentData }) {
       
       {/* ================= SIDEBAR ================= */}
       <div
-        className={`w-full md:w-1/3 lg:w-1/4 p-6 bg-white 
-        ${isMobileOpen ? "hidden md:block" : "block"}`}
-      >
+  className={`w-full md:w-[23%] lg:w-[20%] p-4 bg-white
+  ${isMobileOpen ? "hidden md:block" : "block"}`}
+>
         <Link
           href="/departments"
           className="text-blue-600 font-medium mb-6 flex items-center hover:underline"
@@ -60,9 +60,10 @@ export default function Departments1({ categoryTitle, departmentData }) {
 
       {/* ================= CONTENT ================= */}
       <div
-        className={`w-full md:w-2/3 lg:w-3/4 bg-white p-8 md:p-16
-        ${isMobileOpen ? "block" : "hidden md:block"}`}
-      >
+  className={`flex-1 bg-white p-4 md:p-6
+  ${isMobileOpen ? "block" : "hidden md:block"}`}
+>
+
         <button
           onClick={() => setIsMobileOpen(false)}
           className="md:hidden mb-6 text-blue-600 font-semibold"
@@ -83,6 +84,51 @@ export default function Departments1({ categoryTitle, departmentData }) {
           </p>
         </div>
 
+        {/* ================= HOD MESSAGE ================= */}
+{activeDept?.hod && (
+  <section className="mb-16">
+    {/* 🔹 Section Title */}
+    <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-blue-600 inline-block pb-2">
+      Message from HOD
+    </h2>
+
+    {/* 🔹 HOD Card */}
+    <div className="bg-white rounded-xl shadow-md p-8 mt-6">
+      <div className="flex flex-col md:flex-row gap-8 items-start"> 
+        {/* HOD Image */}
+     <img
+  src={activeDept.hod.image || "/images/user.png"}
+  alt={activeDept.hod.name}
+  className="
+    w-60
+    h-96
+    md:w-64
+    md:h-[420px]
+    rounded-xl
+    object-cover
+    border
+    shadow-lg
+    flex-shrink-0
+  "
+/>
+        {/* HOD Content */}
+        <div>
+          <h3 className="text-2xl font-semibold text-gray-900">
+            {activeDept.hod.name}
+          </h3>
+
+          <p className="text-gray-600 mb-4">
+            {activeDept.hod.designation}
+          </p>
+
+          <p className="whitespace-pre-line text-justify leading-7 text-gray-700">
+            {activeDept.hod.message}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
         {/* ================= FACULTY GRID ================= */}
         {activeDept?.faculties && (
           <>
@@ -110,9 +156,9 @@ export default function Departments1({ categoryTitle, departmentData }) {
 
                   <button
                     onClick={() => setSelectedFaculty(f)}
-                    className="mt-4 border border-yellow-400 px-6 py-2
+                    className="mt-4 border border-blue-400 px-6 py-2
                                rounded-full transition
-                               hover:bg-yellow-400 hover:text-black
+                               hover:bg-blue-400 hover:text-black
                                hover:scale-105"
                   >
                     READ MORE
@@ -171,6 +217,8 @@ export default function Departments1({ categoryTitle, departmentData }) {
                 </p>
               </div>
             </div>
+
+
           )}
         </div>
       </div>
