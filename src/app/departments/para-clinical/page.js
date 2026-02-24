@@ -167,7 +167,6 @@ const paraClinicalData = {
   },
 
   community: { 
- HEAD
     title: "Department of Community Medicine", 
     description: "Community Medicine focuses on public health, prevention, epidemiology, and healthcare delivery to the population.",
     hod:{ 
@@ -180,44 +179,6 @@ The learning journey in Community Medicine begins in the first year and continue
 Overall, the Department will continue to be a driving force in shaping competent, compassionate, and socially responsible physicians, while supporting both faculty and students in their pursuit of excellence in research, education, and service — working together to build a healthier and more equitable society.
 `},
     faculties: [
-
-   title: "Department of Forensic Medicine", 
-    description: (
-      <div style={{
-        width: "100%",
-        padding: "20px",
-        lineHeight: "1.8",
-        textAlign: "justify",
-        fontSize: "16px",
-        color: "#333",
-        boxSizing: "border-box"
-      }}>
-        <p>
-          The Department of Community Medicine at Alva’s Institute of Medical Sciences and Research Centre is dedicated to training future doctors in the principles of public health and preventive medicine. Unlike other clinical specialties that focus on individual patients, Community Medicine emphasizes the health of populations—aiming to prevent diseases, promote health, and prolong a healthy life.
-        </p>
-        <p>
-          Introduced early in the MBBS curriculum and continuing throughout, Community Medicine provides students with a deep understanding of epidemiology, biostatistics, health systems, national health programs, environmental and occupational health, and health education. The department adopts a practical and field-based approach to learning, including  family adoption programme, family health studies, rural and urban health postings, health surveys, field based research and visits to public health institutions.
-        </p>
-        <p>
-          Our faculty members use interactive teaching methods, real-world case discussions, and data analysis exercises to help students apply theoretical knowledge to real-life public health challenges. Special focus is given to developing skills in research, communication, health planning, and leadership—essential qualities for any modern medical professional.
-        </p>
-        <p>
-           Through its academic, outreach, and research activities, the Department of Community Medicine plays a crucial role in shaping socially responsible and community-oriented doctors who are prepared to contribute to both clinical care and public health at large.
-        </p>
-      </div>
-    ),
-    faculties: [
-      { 
-        name: "Dr Chethana K", 
-        designation: "Professor and HOD",
-        message: `Welcome to the Department of Community Medicine.
-Community Medicine forms the foundation of understanding health in its true sense — not merely as the absence of disease, but as a state of complete physical, mental, and social well-being.
-The Department of Community Medicine is dedicated to promoting community health and well-being through quality education, research, and service to the community.
-The learning journey begins in the first year and continues through the final year, culminating in internship training.
-Students benefit from rich community exposure through the Family Adoption Programme, field visits, and training at attached health centres.
-Overall, the Department continues to shape competent, compassionate, and socially responsible physicians.`
-      },
-//>>>>>>> 790a03714a6e93e32ca2538e81d3eadd2388c2c7
       { name: "Dr Harshith G C", designation: "Assistant Professor" },
       { name: "Dr Harshavardan", designation: "Assistant Professor" },
       { name: "Dr Bharath", designation: "Assistant Professor" },
