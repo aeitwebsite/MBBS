@@ -9,19 +9,21 @@ export default function AboutAlvas() {
 
   return (
     <div
-      className={`p-8 rounded-xl shadow-md transition-all duration-300 ${
+      className={`p-4 sm:p-6 md:p-8 rounded-xl shadow-md transition-all duration-300 ${
         isActive
           ? "bg-gradient-to-r from-blue-900 to-blue-700 text-white"
           : "bg-gray-100 text-gray-900"
       }`}
     >
-      <h2 className="text-3xl font-bold mb-4">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4">
         About Alva’s Education Foundation
       </h2>
 
-      <p className={`text-justify leading-relaxed ${
-        isActive ? "text-gray-200" : "text-gray-700"
-      }`}>
+      <p
+        className={`text-justify leading-relaxed text-sm sm:text-base ${
+          isActive ? "text-gray-200" : "text-gray-700"
+        }`}
+      >
         Alva’s Education Foundation is dedicated to empowering students
         through quality education, strong ethical values, and leadership
         excellence. The foundation strives to create an academic environment
