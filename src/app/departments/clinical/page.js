@@ -330,6 +330,7 @@ const clinicalData = {
       { name: "Dr Arjun Kamath", designation: "Assistant Professor" },
       { name: "Dr Siddalinga", designation: "Assistant Professor" },
       { name: "Dr Dakshayini", designation: "Assistant Professor" },
+      { name: "Dr Nagaraj P ", designation: "Assistant Professor" },
       { name: "Dr Rutuparna", designation: "Senior Resident" },
       { name: "Dr Jeevan", designation: "Senior Resident" },
       { name: "Dr Vaibhav", designation: "Senior Resident" }
@@ -363,8 +364,12 @@ const clinicalData = {
       { name: "Dr Dilip Kumar", designation: "Assistant Professor" },
       { name: "Dr Venugopal K", designation: "Assistant Professor" },
       { name: "Dr Sunil B K", designation: "Assistant Professor" },
+      { name: "Dr Balagowni Nagarjuna", designation: "Assistant Professor" },
       { name: "Dr Aishwarya Suresh", designation: "Senior Resident" },
       { name: "Dr Rajath", designation: "Senior Resident" },
+      { name: "Dr Glenita Reema Pinto", designation: "Senior Resident" },
+      { name: "Dr Suresh Kumar K A", designation: "Senior Resident" },
+      { name: "Dr Poornima G S", designation: "Senior Resident" },
       { name: "Dr Ranjini Shome", designation: "Senior Resident" }
     ]
   }

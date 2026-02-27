@@ -16,7 +16,9 @@ const preClinicalData = {
       { name: "Dr. Prajwalkumar Hanchalappa Meti", designation: "Tutor", image: "/images/faculty/prajwal.jpg" },
       { name: "Dr. Ranganath Gurunath Talawar", designation: "Tutor", image: "/images/faculty/ranganath.jpg" },
       { name: "Dr. Balakrishna Y C", designation: "Tutor", image: "/images/faculty/balakrishna.jpg" },
-      { name: "Dr. Sharath H", designation: "Tutor", image: "/images/faculty/sharath.jpg" }
+      { name: "Dr. Sharath H", designation: "Tutor", image: "/images/faculty/sharath.jpg" },
+      { name: "Dr. Rahul ", designation: "Tutor", image: "/images/faculty/rahul.jpg" },
+      { name: "Dr. Satyam Jyoti ", designation: "Tutor", image: "/images/faculty/satyam.jpg" },
     ]
   },
 
@@ -55,7 +57,8 @@ const preClinicalData = {
       { name: "Dr. Deepak Martin", designation: "Tutor", image: "/images/user.png" },
       { name: "Dr. Anilreddy D N", designation: "Tutor", image: "/images/user.png" },
       { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/user.png" },
-      { name: "Dr. Mohanchandra Reddy Kesari", designation: "Tutor", image: "/images/user.png" }
+      { name: "Dr. Mohanchandra Reddy Kesari", designation: "Tutor", image: "/images/user.png" },
+      { name: "Dr. Nicole Helen Dmello", designation: "Tutor", image: "/images/user.png" },
     ]
   },
 
