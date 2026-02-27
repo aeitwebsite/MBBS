@@ -23,21 +23,20 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Nirmala", designation: "Professor" },
+      { name: "Dr Nirmala A C", designation: "Professor" },
+      { name: "Dr Bolar Sadananda Naik", designation: "Associate Professor" },
       { name: "Dr PVR Leela Mohan", designation: "Associate Professor" },
-      { name: "Dr Sadanand Naik", designation: "Associate Professor" },
-      { name: "Dr Yashaswini Shettigar", designation: "Associate Professor" },
-      { name: "Dr Pranamya Jain", designation: "Associate Professor" },
-      { name: "Dr Vipin Das", designation: "Assistant Professor" },
+      { name: "Dr Vipindas P S", designation: "Assistant Professor" },
       { name: "Dr Dithesh M", designation: "Assistant Professor" },
-      { name: "Dr Dhanya Alva", designation: "Assistant Professor" },
-      { name: "KR Joshi", designation: "Assistant Professor" },
+      { name: "Dr Dhanya Alva K", designation: "Assistant Professor" },
       { name: "Dr Manukiran", designation: "Assistant Professor" },
       { name: "Dr Chaithra", designation: "Assistant Professor" },
-      { name: "Dr Harshan Vardhan", designation: "Senior Resident" },
-      { name: "Dr Rachel Luke", designation: "Senior Resident" },
-      { name: "Dr Abhilash", designation: "Senior Resident" },
+      { name: "Dr Harshavardhan R", designation: "Senior Resident" },
+      { name: "Dr Rachel R Luke", designation: "Senior Resident" },
+      { name: "Dr Abhilash N", designation: "Senior Resident" },
       { name: "Dr Chethan", designation: "Senior Resident" },
+      { name: "Dr Vaibhav S Jain", designation: "Senior Resident" },
+      { name: "Dr Rajashekhar Mulimani", designation: "Senior Resident" },
       { name: "Dr Anup Raikar", designation: "Senior Resident" }
     ]
   },
@@ -63,22 +62,22 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Harish Nayak", designation: "Medical Superintendent" },
-      { name: "Dr Sathyanarayan", designation: "Professor" },
-      { name: "Dr Gaurav Prasad", designation: "Associate Professor" },
-      { name: "Dr K K Sandeep", designation: "Associate Professor" },
+      { name: "Dr Pangal Harish Nayak", designation: "Medical Superintendent" },
+      { name: "Dr Sathyanarayan V", designation: "Professor" },
+      { name: "Dr Gaurav Prasad", designation: "Professor" },
+      { name: "Dr  Varadaraju.A.K", designation: "Associate Professor" },
       { name: "Dr Praveen G P", designation: "Associate Professor" },
-      { name: "Dr Prajwal", designation: "Assistant Professor" },
-      { name: "Dr Abhiroop", designation: "Assistant Professor" },
-      { name: "Dr Rakesh Shetty", designation: "Assistant Professor" },
-      { name: "Dr Sattarkhan", designation: "Assistant Professor" },
+      { name: "Dr Sattar Khan ", designation: "Assistant Professor" },
+      { name: "Dr Prajwal K Rao", designation: "Assistant Professor" },
+      { name: "Dr Rakesh Shivram Shetty", designation: "Assistant Professor" },
+      { name: "Dr Hyadalu Ramu Abhirup ", designation: "Assistant Professor" },
       { name: "Dr Nithin Prabhu", designation: "Assistant Professor" },
-      { name: "Dr Snehashree", designation: "Senior Resident" },
-      { name: "Dr Vishruth", designation: "Senior Resident" },
+      { name: "Dr Snehashree M", designation: "Senior Resident" },
+      { name: "Dr Sujay C ", designation: "Senior Resident" },
       { name: "Dr Sathkar U Shetty", designation: "Senior Resident" },
-      { name: "Dr Sharanabasappa", designation: "Senior Resident" },
+      { name: "Dr N Ganesh Nandan Varma  ", designation: "Senior Resident" },
       { name: "Dr Mrudula", designation: "Senior Resident" },
-      { name: "Dr Vinay Vasu Bangera", designation: "Tutor" }
+      { name: "Dr Nishchit Hegde", designation: "Assistant Professor" }
     ]
   },
 
@@ -103,15 +102,16 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Vasantha T", designation: "Professor" },
-      { name: "Dr Ushakiran", designation: "Professor" },
-      { name: "Dr Manjunath", designation: "Associate Professor" },
+      { name: "Dr C BUshakiran", designation: "Professor" },
+      { name: "Dr Vasantha T", designation: "Associate Professor" },
+      
+      { name: "Dr aghavendra M Doddamani  ", designation: " Professor" },
       { name: "Dr Pooja", designation: "Assistant Professor" },
       { name: "Dr Abhijith Y V", designation: "Assistant Professor" },
-      { name: "Dr Shivaram Rai", designation: "Assistant Professor" },
-      { name: "Dr Anup", designation: "Assistant Professor" },
-      { name: "Dr Pratheeth", designation: "Senior Resident" },
-      { name: "Dr Archana", designation: "Senior Resident" },
+      { name: "Dr A Shivaram Rai", designation: "Assistant Professor" },
+      { name: "Dr  Pooja S Wali", designation: "Assistant Professor" },
+      { name: "Dr Prathith", designation: "Senior Resident" },
+      { name: "Dr Archana D V", designation: "Senior Resident" },
       { name: "Dr Charan R K", designation: "Senior Resident" }
     ]
   },
@@ -137,17 +137,17 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Rajashekara M Hangarki", designation: "Professor & HOD" },
-      { name: "Dr Ramesh", designation: "Associate Professor" },
-      { name: "Dr Shabeena Inayath", designation: "Associate Professor" },
+      { name: "Dr Rajashekara M Hangarki", designation: "Professor" },
+      { name: "Dr Ramesha", designation: "Associate Professor" },
+      { name: "Dr Santhi Mothukuri ", designation: "Associate Professor" },
       { name: "Dr Srilatha Bhat", designation: "Associate Professor" },
-      { name: "Dr Smitha Murthy", designation: "Assistant Professor" },
-      { name: "Dr Hana", designation: "Assistant Professor" },
-      { name: "Dr Sruthi Prajwal", designation: "Assistant Professor" },
-      { name: "Dr Faswila", designation: "Assistant Professor" },
-      { name: "Dr Anvita Rao", designation: "Senior Resident" },
-      { name: "Dr Sharath Chandra", designation: "Senior Resident" },
-      { name: "Dr Priyanka", designation: "Senior Resident" },
+      { name: "Dr Shabina Mohamed Adil ", designation: "Assistant Professor" },
+      { name: "Dr Hana Shetty", designation: "Assistant Professor" },
+      { name: "Dr Sruthi A G", designation: "Assistant Professor" },
+      { name: "Dr Faswila M", designation: "Assistant Professor" },
+      { name: "Dr Anvitha Shatananda Rao", designation: "Senior Resident" },
+      { name: "Dr Sharathchandra Rao", designation: "Senior Resident" },
+      { name: "Dr Shreya Vaidya", designation: "Senior Resident" },
       { name: "Dr Sannidhi", designation: "Senior Resident" }
     ]
   },
@@ -173,15 +173,15 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Sachin Shetty", designation: "Professor" },
-      { name: "Dr Chaithanya Shetty", designation: "Associate Professor" },
+      { name: "Dr Sachin Sarvotham Shetty", designation: "Professor" },
+      { name: "Dr Jampani Ravitheja", designation: "Associate Professor" },
       { name: "Dr Arjun Ballal", designation: "Assistant Professor" },
-      { name: "Dr Ranjith Kumar", designation: "Assistant Professor" },
-      { name: "Dr Arun Shetty", designation: "Assistant Professor" },
-      { name: "Dr Hannan Sheikh", designation: "Assistant Professor" },
-      { name: "Dr Nihal Rai", designation: "Assistant Professor" },
-      { name: "Dr Prakyath", designation: "Senior Resident" },
-      { name: "Dr Naveen Chandrakant Raikar", designation: "Senior Resident" },
+     { name: "Dr Ranjith Kumar", designation: "Assistant Professor" },
+      { name: "Dr Arun Kumar Shetty", designation: "Assistant Professor" },
+      { name: "Dr Hannan Sheikh Kabir", designation: "Assistant Professor" },
+      { name: "Dr Nihal R Rai", designation: "Assistant Professor" },
+      { name: "Dr Prakyath Mahadev Gowda", designation: "Senior Resident" },
+      { name: "Dr Naveen Raikar", designation: "Senior Resident" },
       { name: "Dr Pratheeksh P", designation: "Senior Resident" },
       { name: "Dr Vamshikrishna", designation: "Senior Resident" }
     ]
@@ -208,12 +208,12 @@ const clinicalData = {
       </div>
     ),
     faculties: [
-      { name: "Dr Cynthia", designation: "Professor" },
-      { name: "Dr Vikram Jain", designation: "Associate Professor" },
-      { name: "Dr A L Rao", designation: "Assistant Professor" },
-      { name: "Dr Aravinda Kini", designation: "Assistant Professor" },
-      { name: "Dr Smrithi", designation: "Senior Resident" },
-      { name: "Dr Jayanthi Shenoy", designation: "Senior Resident" }
+      { name: "Dr Cynthia Arunachalam ", designation: "Professor" },
+      { name: "Dr  Roopashree ", designation: "Associate Professor" },
+      { name: "Dr Laxminarayana Aroor Rao", designation: "Assistant Professor" },
+      { name: "Dr Aravind Achutha Kini", designation: "Assistant Professor" },
+      { name: "Dr  Tanvi Ravindranath Rai ", designation: "Senior Resident" },
+      { name: "Dr Vikram Jain ", designation: "Assistant Professor" }
     ]
   },
 
@@ -242,8 +242,8 @@ const clinicalData = {
       { name: "Dr Mahaveer Jain", designation: "Associate Professor" },
       { name: "Dr Aishwarya Ramakrishna", designation: "Assistant Professor" },
       { name: "Dr Rajesh Havaladar", designation: "Assistant Professor" },
-      { name: "Dr Shwetha Poojary", designation: "Senior Resident" },
-      { name: "Dr Shamanth", designation: "Deputy Medical Superintendent" },
+      { name: "Dr Shwetha C Poojary", designation: "Senior Resident" },
+      { name: "Dr Shamanth Manohar Shetty", designation: "Senior Resident" },
       { name: "Dr Bevin Biju Thomas", designation: "Tutor" }
     ]
   },
