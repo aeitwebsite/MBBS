@@ -88,7 +88,7 @@ export default function AboutSection() {
     <div className="flex w-full min-h-screen bg-gray-100">
 
       {/* LEFT SIDEBAR */}
-     <div className="w-1/4 bg-white shadow-md p-4 space-y-2">
+    <div className="w-full md:w-[23%] lg:w-[20%] bg-white shadow-md p-4 space-y-3">
   {[
     ["photoGallery", "Photo Gallery"],
     ["videoGallery", "Video Gallery"],
