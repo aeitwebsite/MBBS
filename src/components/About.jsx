@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutCollegePage() {
   return (
-    <div className="w-full bg-white px-4 sm:px-6 md:px-10 pb-8 pt-4">
+    <div className="w-full">
       {/* Page Title */}
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
         About the College

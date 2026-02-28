@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DeanMessage() {
   return (
-    <div className="w-full px-4 sm:px-6 md:px-8">
+    <div className="w-full">
       <h1 className="text-2xl sm:text-3xl font-bold mb-6">
         Message From The Dean
       </h1>

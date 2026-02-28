@@ -1,29 +1,14 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 
 export default function AboutAlvas() {
-  const pathname = usePathname();
-
-  const isActive = pathname === "/about/about-alvas";
-
   return (
-    <div
-      className={`p-4 sm:p-6 md:p-8 rounded-xl shadow-md transition-all duration-300 ${
-        isActive
-          ? "bg-gradient-to-r from-blue-900 to-blue-700 text-white"
-          : "bg-gray-100 text-gray-900"
-      }`}
-    >
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+    <div className="w-full">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6">
         About Alva’s Education Foundation
       </h2>
 
-      <p
-        className={`text-justify leading-relaxed text-sm sm:text-base ${
-          isActive ? "text-gray-200" : "text-gray-700"
-        }`}
-      >
+      <p className="text-gray-700 leading-relaxed text-sm sm:text-base text-justify">
         Alva’s Education Foundation is dedicated to empowering students
         through quality education, strong ethical values, and leadership
         excellence. The foundation strives to create an academic environment

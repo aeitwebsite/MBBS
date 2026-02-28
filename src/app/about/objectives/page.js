@@ -23,7 +23,7 @@ export default function Objectives() {
   ];
 
   return (
-    <div className="w-full max-w-4xl px-4 sm:px-6 md:px-0 py-6">
+    <div className="w-full">
       {/* Header */}
       <div className="mb-8 sm:mb-10">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2A3341] mb-2">
