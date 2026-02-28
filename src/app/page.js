@@ -1,5 +1,5 @@
 import ChairmanMessage from "@/components/ChairmanMessage";
-import Departments from "@/components/Departments";
+import Departments from "@/components/DepartmentsHome";
 import Programs from "@/components/Program";
 import Ourstory from "@/components/Ourstory";
 import IntroScreen from "@/components/IntroScreen";
@@ -8,11 +8,11 @@ import IntroScreen from "@/components/IntroScreen";
 export default function Home() {
   return (
     <>
-    
+
       <Programs />
       <ChairmanMessage />
       <Departments />
-      <Ourstory/>
+      <Ourstory />
 
     </>
   );
