@@ -141,12 +141,7 @@ export default function RootLayout({ children }) {
         )}
 
         {/* MOBILE DRAWER */}
-        {/* <div
-          className={`fixed top-0 right-0 w-[85%] max-w-[360px]
-          bg-white z-[1000] h-screen overflow-y-auto
-          transform transition-transform duration-300
-          ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
-        > */}
+        
         <div
   className={`fixed top-0 right-0 w-[80%] max-w-[340px]
   bg-white z-[1000] h-screen overflow-y-auto
@@ -154,47 +149,7 @@ export default function RootLayout({ children }) {
   transform transition-transform duration-300 ease-in-out
   ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
 >
-          {/* <div className="flex justify-between items-center px-4 py-4 border-b">
-            <span className="font-semibold font-radio">Menu</span>
-            <button onClick={() => setMobileMenuOpen(false)}>
-              <Cross1Icon />
-            </button>
-          </div> */}
-
-
-      {/* <div>
-  <button
-    onClick={() => setAboutOpen(!aboutOpen)}
-    className="w-full flex justify-between items-center py-2 font-medium"
-  >
-    About
-    <span>{aboutOpen ? "−" : "+"}</span>
-  </button>
-
-  {aboutOpen && (
-    <div className="flex flex-col ml-4 mt-2 space-y-2 text-gray-600">
-      <Link href="/about">About College</Link>
-      <Link href="/about/about-alvas">About Alva’s</Link>
-      <Link href="/about/chairman-message">Chairman Message</Link>
-      <Link href="/about/dean-message">Dean’s Message</Link>
-      <Link href="/about/vision-mission">Vision & Mission</Link>
-      <Link href="/about/code-of-conduct">Code of Conduct</Link>
-      <Link href="/about/objectives">Objectives</Link>
-    </div>
-  )}
-</div> */}
-          {/* <nav className="px-2">
-            {navRoutes.map((route) => (
-              <Link
-                key={route.id}
-                href={route.path}
-                className="block px-3 py-4 text-sm font-medium
-                           text-gray-700 hover:bg-gray-100 rounded-md"
-              >
-                {getRouteName(route.name)}
-              </Link>
-            ))}
-          </nav> */}
+         
 <nav className="px-2 space-y-1">
   {navRoutes.map((route) => {
 
