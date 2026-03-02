@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react"; 
 
 const tabs = [
   { label: "About College", path: "/about" },
@@ -16,6 +17,8 @@ const tabs = [
 export default function AboutLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
+
+  const [open, setOpen] = useState(false);
 
   const isActive = (path) =>
     path === "/about"
@@ -32,23 +35,62 @@ export default function AboutLayout({ children }) {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-white">
-      {/* MOBILE DROPDOWN */}
-      <div className="block md:hidden px-4 pt-4">
-        <select
-          className="w-full p-3 rounded-lg border border-gray-300 bg-white text-gray-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
-          value={tabs.find((t) => isActive(t.path))?.path}
-          onChange={(e) => router.push(e.target.value)}
-        >
-          {tabs.map((tab) => (
-            <option key={tab.path} value={tab.path}>
-              {tab.label}
-            </option>
-          ))}
-        </select>
-      </div>
+     {/* MOBILE DROPDOWN */}
+<div className="block md:hidden px-4 pt-4 relative">
+  <div className="relative">
+    <button
+      onClick={() => setOpen(!open)}
+      className="w-full px-3 py-2 text-sm font-medium text-left 
+                 bg-white border border-gray-300 rounded-md
+                 flex justify-between items-center
+                 transition-all duration-300
+                 focus:outline-none focus:ring-2 focus:ring-[#0A0B49]
+                 hover:border-[#0A0B49]"
+    >
+      {tabs.find((t) => isActive(t.path))?.label}
 
+      <span
+        className={`transition-transform duration-300 ${
+          open ? "rotate-180" : ""
+        }`}
+      >
+        ▼
+      </span>
+    </button>
+
+    <div
+      className={`absolute left-0 right-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg z-50
+                  transition-all duration-300 origin-top
+                  ${
+                    open
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-95 pointer-events-none"
+                  }`}
+    >
+      {tabs.map((tab) => (
+        <div
+          key={tab.path}
+          onClick={() => {
+            router.push(tab.path);
+            setOpen(false);
+          }}
+          className={`px-3 py-2 text-sm cursor-pointer transition-colors duration-200
+                      ${
+                        isActive(tab.path)
+                          ? "bg-[#0A0B49] text-white"
+                          : "text-gray-700 hover:bg-[#0A0B49] hover:text-white"
+                      }`}
+        >
+          {tab.label}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
       {/* SIDEBAR */}
-     <aside className="w-full md:w-[23%] lg:w-[20%] p-4 space-y-3">
+     {/* <aside className="w-full md:w-[23%] lg:w-[20%] p-4 space-y-3"> */}
+     <aside className="hidden md:block md:w-[23%] lg:w-[20%] p-4 space-y-3">
+     
 
         <Link href="/about" className={tabClass("/about")}>
           About College
