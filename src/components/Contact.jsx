@@ -12,9 +12,9 @@ export default function contactPage({ mapUrl }) {
           {/* LEFT (CONTACT DETAILS CARD) */}
           <div className="flex-1 order-1 md:order-none">
             <div className="relative">
-              <div className="absolute inset-0 blur-2xl bg-red-200/40 rounded-[32px] -z-10" />
+              <div className="absolute inset-0 blur-2xl bg-blue-200/40 rounded-[32px] -z-10" />
 
-              <div className="bg-[#dd5d52] text-white rounded-[32px] p-7 md:p-8 shadow-lg border border-white/30">
+              <div className="bg-blue-400 text-white rounded-[32px] p-7 md:p-8 shadow-lg border border-white/30">
                 <h3 className="text-2xl font-semibold text-center mb-5">
                   Alva’s College
                 </h3>
@@ -57,7 +57,7 @@ export default function contactPage({ mapUrl }) {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Contact
             </h2>
-            <div className="w-24 h-2 bg-red-500 rounded-full mt-3 mb-6" />
+            <div className="w-24 h-2 bg-blue-500 rounded-full mt-3 mb-6" />
 
             <p className="text-gray-600 mb-6 text-sm md:text-base">
               Reach out to us for admissions, course details, or any queries.
@@ -70,14 +70,14 @@ export default function contactPage({ mapUrl }) {
             <div className="flex flex-wrap gap-3">
               <a
                 href="tel:9945449784"
-                className="inline-flex items-center gap-2 rounded-full border border-red-500 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 transition"
+                className="inline-flex items-center gap-2 rounded-full border border-blue-500 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 transition"
               >
                 📞 Call Us
               </a>
 
               <a
                 href="mailto:office@aimsarc.org"
-                className="inline-flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-sm font-medium text-white hover:bg-red-600 transition"
+                className="inline-flex items-center gap-2 rounded-full bg-blue-400 px-4 py-2 text-sm font-medium text-white hover:bg-red-600 transition"
               >
                 ✉️ Send Email
               </a>

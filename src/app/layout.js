@@ -89,13 +89,13 @@ export default function RootLayout({ children }) {
       {/* LOGO */}
       <Link href="/" className="flex-shrink-0">
         <Image
-          src="/images/logo_home.png"
-          width={65}
-          height={65}
-          alt="Logo"
-          priority
-          className="object-contain"
-        />
+  src="/images/logo_home.png"
+  width={60}
+  height={60}
+  alt="Logo"
+  priority
+  className="object-contain ml-2 md:ml-0"
+/>
       </Link>
 
       {/* TITLE */}
@@ -122,13 +122,14 @@ export default function RootLayout({ children }) {
       ))}
     </nav>
 
+   
     {/* MOBILE HAMBURGER */}
-    <button
-      className="lg:hidden ml-auto flex items-center justify-center w-10 h-10"
-      onClick={() => setMobileMenuOpen(true)}
-    >
-      <HamburgerMenuIcon />
-    </button>
+<button
+  className="lg:hidden ml-auto flex items-center justify-center w-10 h-10 pr-6 lg:pr-8"
+  onClick={() => setMobileMenuOpen(true)}
+>
+  <HamburgerMenuIcon />
+</button>
 
   </div>
 </header>
@@ -149,121 +150,33 @@ export default function RootLayout({ children }) {
   transform transition-transform duration-300 ease-in-out
   ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
 >
-         
+     {/* ===== Drawer Header ===== */}
+  <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200">
+    <h2 className="text-lg font-semibold text-gray-800">
+      Menu
+    </h2>
+
+    {/* Close Button */}
+    <button
+      onClick={() => setMobileMenuOpen(false)}
+      className="text-gray-600 hover:text-black text-xl"
+    >
+      ✕
+    </button>
+  </div>
 <nav className="px-2 space-y-1">
   {navRoutes.map((route) => {
-
-    /* ================= ABOUT DROPDOWN ================= */
-    if (route.path === "/about") {
-      return (
-        <div key={route.id}>
-          <button
-            onClick={() => setAboutOpen(!aboutOpen)}
-            className="w-full flex justify-between items-center px-3 py-4 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
-          >
-            About
-            <span className={`transition-transform duration-300 ${aboutOpen ? "rotate-180" : ""}`}>
-              ▼
-            </span>
-          </button>
-
-          {aboutOpen && (
-            <div className="mt-2 flex flex-col ml-5 space-y-3 text-sm text-gray-600">
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About College</Link>
-              <Link href="/about/about-alvas" onClick={() => setMobileMenuOpen(false)}>About Alva’s</Link>
-              <Link href="/about/chairman-message" onClick={() => setMobileMenuOpen(false)}>Chairman Message</Link>
-              <Link href="/about/dean-message" onClick={() => setMobileMenuOpen(false)}>Dean’s Message</Link>
-              <Link href="/about/vision-mission" onClick={() => setMobileMenuOpen(false)}>Vision & Mission</Link>
-              <Link href="/about/code-of-conduct" onClick={() => setMobileMenuOpen(false)}>Code of Conduct</Link>
-              <Link href="/about/objectives" onClick={() => setMobileMenuOpen(false)}>Objectives</Link>
-            </div>
-          )}
-        </div>
-      );
-    }
-
-    /* ================= STUDENT PORTAL DROPDOWN ================= */
-if (route.path === "/programs") {
-  return (
-    <div key={route.id}>
-      <button
-        onClick={() => setProgramsOpen(!programsOpen)}
-        className="w-full flex justify-between items-center px-3 py-4 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
-      >
-        Student Portal
-        <span
-          className={`transition-transform duration-300 ${
-            programsOpen ? "rotate-180" : ""
-          }`}
-        >
-          ▼
-        </span>
-      </button>
-
-      {programsOpen && (
-        <div className="mt-2 flex flex-col ml-5 space-y-3 text-sm text-gray-600">
-          <Link
-            href="/programs?section=academic"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Academic
-          </Link>
-
-          <Link
-            href="/programs?section=rules"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Rules and Regulation
-          </Link>
-
-          <Link
-            href="/programs?section=facilities"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Campus Facilities
-          </Link>
-
-          <Link
-            href="/programs?section=committees"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Committees
-          </Link>
-        </div>
-      )}
-    </div>
-  );
-}
-
-    /* ================= HAPPENINGS DROPDOWN ================= */
+   /* ================= HAPPENINGS LINK ================= */
 if (route.path === "/campus-life") {
   return (
     <div key={route.id}>
-      <button
-        onClick={() => setCampusLifeOpen(!campusLifeOpen)}
+      <Link
+        href="/campus-life?tab=photoGallery"
+        onClick={() => setMobileMenuOpen(false)}
         className="w-full flex justify-between items-center px-3 py-4 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
       >
         Happenings@AIMSARC
-        <span className={`transition-transform duration-300 ${campusLifeOpen ? "rotate-180" : ""}`}>
-          ▼
-        </span>
-      </button>
-
-      {campusLifeOpen && (
-        <div className="mt-2 flex flex-col ml-5 space-y-3 text-sm text-gray-600">
-          <Link href="/campus-life?section=photo" onClick={() => setMobileMenuOpen(false)}>
-            Photo Gallery
-          </Link>
-
-          <Link href="/campus-life?section=video" onClick={() => setMobileMenuOpen(false)}>
-            Video Gallery
-          </Link>
-
-          <Link href="/campus-life?section=newsletter" onClick={() => setMobileMenuOpen(false)}>
-            Newsletter
-          </Link>
-        </div>
-      )}
+      </Link>
     </div>
   );
 }

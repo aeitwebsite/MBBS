@@ -39,14 +39,14 @@ export default function AboutLayout({ children }) {
 <div className="block md:hidden px-4 pt-4 relative">
   <div className="relative">
     <button
-      onClick={() => setOpen(!open)}
-      className="w-full px-3 py-2 text-sm font-medium text-left 
-                 bg-white border border-gray-300 rounded-md
-                 flex justify-between items-center
-                 transition-all duration-300
-                 focus:outline-none focus:ring-2 focus:ring-[#0A0B49]
-                 hover:border-[#0A0B49]"
-    >
+  onClick={() => setOpen(!open)}
+ className="w-full mt-4 px-4 py-3 text-sm font-medium text-left 
+           bg-white border border-gray-300 rounded-md
+           flex justify-between items-center
+           transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-[#0A0B49]
+           hover:border-[#0A0B49]"
+>
       {tabs.find((t) => isActive(t.path))?.label}
 
       <span
@@ -122,9 +122,9 @@ export default function AboutLayout({ children }) {
       </aside>
 
       {/* PAGE CONTENT */}
-      <main className="flex-1 px-4 sm:px-6 md:px-8 pb-8 pt-4 bg-white">
-        {children}
-      </main>
+      <main className="flex-1 px-6 sm:px-6 md:px-8 pb-8 pt-4 bg-white">
+  {children}
+</main>
     </div>
   );
 }

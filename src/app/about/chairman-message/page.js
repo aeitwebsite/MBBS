@@ -11,13 +11,16 @@ export default function ChairmanMessage() {
         {/* Chairman Image */}
         <div className="w-full md:w-auto flex justify-center">
           <Image
-            src="/images/Chairman.jpeg"
-            alt="Chairman"
-            width={320}
-            height={420}
-            className="object-cover shadow-md rounded w-48 sm:w-56 md:w-[320px] h-auto"
-            priority
-          />
+  src="/images/Chairman.jpeg"
+  alt="Chairman"
+  width={320}
+  height={420}
+  priority
+  className="object-cover shadow-md rounded 
+             w-[90%] mx-auto 
+             sm:w-56 md:w-[320px] 
+             h-auto"
+/>
         </div>
 
         {/* Message Content */}
