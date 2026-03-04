@@ -165,9 +165,9 @@ const FacultyCard = ({ faculty, onReadMore }) => {
         textAlign: "center",
         boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
         border: "1px solid #eaeaea",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        borderTop: isHovered ? "4px solid #0A0B49" : "4px solid #eaeaea",
+        transition: "transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease",
         transform: isHovered ? "translateY(-2px)" : "none",
-        borderTop: isHovered ? "4px solid #0A0B49" : "1px solid #eaeaea",
       }}
     >
       <div style={{
@@ -199,7 +199,6 @@ const FacultyCard = ({ faculty, onReadMore }) => {
         fontSize: "20px",
         fontWeight: "700",
         marginBottom: "8px",
-        textTransform: "uppercase"
       }}>
         {faculty.name}
       </h3>
@@ -207,7 +206,8 @@ const FacultyCard = ({ faculty, onReadMore }) => {
       <p style={{
         fontSize: "16px",
         color: "#4b5d73",
-        marginBottom: "30px"
+        marginBottom: "30px",
+        textAlign: "center"
       }}>
         {faculty.designation}
       </p>
@@ -254,7 +254,6 @@ export default function Departments1({ categoryTitle, departmentData }) {
       padding: "60px 20px"
     }}>
 
-      {/* Back Button */}
       <Link
         href={categoryTitle ? `/departments/${categoryTitle.toLowerCase()}` : "/departments"}
         style={{
@@ -265,18 +264,9 @@ export default function Departments1({ categoryTitle, departmentData }) {
           fontWeight: "500"
         }}
       >
-        ← Back to Departments
+        ← Back to {categoryTitle} Department
       </Link>
 
-      {/* Category Label */}
-      <p style={{
-        letterSpacing: "3px",
-        fontSize: "14px",
-        color: "#777",
-        marginBottom: "10px"
-      }}>
-        {categoryTitle.toUpperCase()}
-      </p>
 
       {/* Title */}
       <h1 style={{
@@ -312,7 +302,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
           boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.05)",
           display: "flex",
           gap: "30px",
-          alignItems: "flex-start",
+          alignItems: "center",
           flexWrap: "wrap", // Handles smaller screens
         }}>
           {departmentData.hod.image && (
@@ -329,7 +319,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
               }}
             />
           )}
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, textAlign: "center" }}>
             <h3 style={{
               fontSize: "24px",
               fontWeight: "700",
@@ -344,7 +334,8 @@ export default function Departments1({ categoryTitle, departmentData }) {
               fontWeight: "600",
               marginBottom: "20px",
               textTransform: "uppercase",
-              letterSpacing: "1px"
+              letterSpacing: "1px",
+              textAlign: "center"
             }}>
               {departmentData.hod.designation}
             </p>

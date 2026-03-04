@@ -18,6 +18,14 @@ export default function ParaClinicalDepartmentsPage() {
     <section className="min-h-screen bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
 
+        {/* Back Button */}
+        <Link
+          href="/departments"
+          className="inline-block mb-8 text-[#2563eb] font-medium hover:underline"
+        >
+          ← Back to Departments
+        </Link>
+
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-[#0A0B49] mb-4">
