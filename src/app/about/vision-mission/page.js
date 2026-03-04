@@ -2,11 +2,11 @@ export default function VisionMission() {
   return (
     <div className="w-full space-y-6 sm:space-y-8 font-workSans">
       {/* Header Section */}
-      <div className="bg-[#2a3341] py-3 px-4 sm:px-6 shadow-md rounded-sm">
+      {/* <div className="bg-[#2a3341] py-3 px-4 sm:px-6 shadow-md rounded-sm">
         <h2 className="text-white text-lg sm:text-xl font-medium tracking-wide">
           Vision & Mission
         </h2>
-      </div>
+      </div> */}
 
       <div className="space-y-6 sm:space-y-8">
         {/* Vision Card */}
