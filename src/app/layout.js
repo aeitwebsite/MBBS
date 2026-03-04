@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
         </div>
         {/* ================= NAVBAR ================= */}
         <header className="sticky top-0 z-[200] bg-white border-b">
-          <div className="w-full flex items-center h-[84px] px-7">
+          <div className="max-w-7xl mx-auto flex items-center justify-between h-[84px] px-6">
 
             {/* LOGO clickable ONLY */}
             <div className="flex items-center gap-3 shrink-0">
@@ -101,12 +101,12 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <nav className="hidden lg:flex items-center gap-8 ml-auto">
+            <nav className="hidden lg:flex items-center gap-6">
               {navRoutes.map((r) => (
                 <Link
                   key={r.id}
                   href={r.path}
-                  className="text-[14px] font-medium text-gray-700
+                  className="text-[13px] font-medium text-gray-700
                              hover:text-[#0A0B49] transition whitespace-nowrap"
                 >
                   {getRouteName(r.name)}

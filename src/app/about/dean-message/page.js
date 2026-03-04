@@ -1,64 +1,95 @@
 import Image from "next/image";
 
-export default function DeanMessage() {
+export default function AdministrativeMessages() {
   return (
-    <div className="w-full">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6">
-        Message From The Dean
+    <div className="w-full max-w-7xl mx-auto">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-10 text-[#0A0B49]">
+        Leadership Messages
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
-        {/* Dean Image */}
-        <div className="w-full md:w-auto flex justify-center">
-          <Image
-            src="/images/Dean.jpg"
-            alt="Dean"
-            width={320}
-            height={420}
-            className="object-cover shadow-md rounded w-48 sm:w-56 md:w-[320px] h-auto"
-            priority
-          />
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-20 items-start">
+        {/* ================= DEAN SECTION ================= */}
+        <div className="space-y-6">
+          <h2 className="text-xl font-bold text-[#0A0B49] border-b-2 border-blue-100 pb-2">
+            Message From The Dean
+          </h2>
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="shrink-0 mx-auto md:mx-0">
+              <Image
+                src="/images/Dean.jpg"
+                alt="Dean"
+                width={280}
+                height={380}
+                className="object-cover shadow-md rounded w-48 sm:w-56 md:w-[240px] h-auto"
+                priority
+              />
+            </div>
+
+            <div className="flex-1">
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                It is my distinct pleasure and honour to welcome you to
+                Alva’s Institute of Medical Sciences and Research Centre,
+                Moodubidire.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                As Dean, I believe that our institution is dedicated to
+                shaping medical professionals who unite scientific excellence
+                with deep human compassion.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                At Alva’s, education blends rigorous science with empathy,
+                integrity, and a strong sense of service.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-6 italic">
+                Join us in advancing the frontiers of healthcare with
+                compassion, innovation, and excellence.
+              </p>
+              <div>
+                <div className="text-base font-bold text-black">
+                  Dr. Mahabalesh Shetty
+                </div>
+                <div className="text-xs text-blue-900 font-semibold mt-1">
+                  Dean, AIMSRC
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Message Content */}
-        <div className="flex-1">
-          <p className="text-sm sm:text-base leading-relaxed text-gray-700 text-justify mb-5">
-            It is my distinct pleasure and honour to welcome you to
-            Alva’s Institute of Medical Sciences and Research Centre,
-            Moodubidire.
-          </p>
-
-          <p className="text-sm sm:text-base leading-relaxed text-gray-700 text-justify mb-5">
-            As Dean, I believe that our institution is dedicated to
-            shaping medical professionals who unite scientific excellence
-            with deep human compassion, guided by the belief that
-            healthcare is a profound responsibility to build a humane,
-            healthy, and equitable society.
-          </p>
-
-          <p className="text-sm sm:text-base leading-relaxed text-gray-700 text-justify mb-5">
-            At Alva’s, education blends rigorous science with empathy,
-            integrity, and a strong sense of service. With devoted
-            faculty, advanced facilities, and active community
-            engagement, we prepare students to meet the challenges of
-            modern medicine through knowledge, values, and ethical
-            practice.
-          </p>
-
-          <p className="text-sm sm:text-base leading-relaxed text-gray-700 text-justify mb-8">
-            Join us in advancing the frontiers of healthcare with
-            compassion, innovation, and excellence, and in shaping a
-            future where quality healthcare is accessible, ethical, and
-            truly patient-centred.
-          </p>
-
-          <div>
-            <div className="text-base sm:text-lg font-bold text-black">
-              Dr. Mahabalesh Shetty
+        {/* ================= MEDICAL SUPERINTENDENT SECTION ================= */}
+        <div className="space-y-6">
+          <h2 className="text-xl font-bold text-[#0A0B49] border-b-2 border-blue-100 pb-2">
+            Message From The Medical Superintendent
+          </h2>
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="shrink-0 mx-auto md:mx-0">
+              {/* Using a placeholder styled div as MS image is not provided */}
+              <div className="w-48 sm:w-56 md:w-[240px] aspect-[3/4] bg-[#0A0B49]/5 rounded shadow-sm border border-gray-100 flex items-center justify-center text-gray-400">
+                <span className="text-4xl">👤</span>
+              </div>
             </div>
-            <div className="text-xs sm:text-sm text-gray-600 mt-1">
-              Dean, Alva’s Institute of Medical Sciences and Research
-              Centre, Moodubidire.
+
+            <div className="flex-1">
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                I am privileged to welcome you to the clinical wing of Alva’s Institute of Medical Sciences. Our medical centre is committed to providing state-of-the-art healthcare services with a patient-first approach.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                Our mission is to provide high-quality, clinical care that is affordable and accessible to all members of our community, especially those in rural and underserved areas.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-4">
+                With a dedicated team of specialists and nursing staff, we ensure that every patient receives personalized care and the best possible clinical outcomes.
+              </p>
+              <p className="text-sm leading-relaxed text-gray-700 text-justify mb-6 italic">
+                We are focused on continuous improvement and excellence in clinical practice.
+              </p>
+              <div>
+                <div className="text-base font-bold text-black">
+                  Dr. Pangal Harish Nayak
+                </div>
+                <div className="text-xs text-blue-900 font-semibold mt-1">
+                  Medical Superintendent, AIMSRC
+                </div>
+              </div>
             </div>
           </div>
         </div>
