@@ -1,12 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Ourstory() {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <section className="w-full bg-white py-24 overflow-hidden">
       <div className="w-full px-6 md:px-[12%]">
@@ -72,34 +70,15 @@ export default function Ourstory() {
             </p>
 
             {/* READ MORE */}
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="flex items-center gap-2 text-blue-700 font-semibold group"
+            <Link
+              href="/about"
+              className="flex items-center gap-2 text-blue-700 font-semibold group w-fit"
             >
-              <span>{expanded ? "Read Less" : "Read More"}</span>
+              <span>Read More</span>
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 ➜
               </span>
-            </button>
-
-            {/* EXPANDED CONTENT */}
-            <AnimatePresence>
-              {expanded && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.4 }}
-                  className="mt-10 space-y-6"
-                >
-                  <p className="text-gray-700 text-[16px] leading-[1.8] text-justify">
-                    Guided by strong ethical values and academic discipline,
-                    AIMSRC is committed to shaping compassionate medical
-                    professionals equipped to serve society with excellence.
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            </Link>
           </motion.div>
         </div>
       </div>
