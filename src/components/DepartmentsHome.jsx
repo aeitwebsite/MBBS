@@ -57,7 +57,7 @@ export default function Departments() {
 
           <motion.div ref={leftRef} className="relative min-h-[400px] hidden lg:flex items-center justify-center">
             <motion.div style={{ y: logoY }} className="opacity-60 pointer-events-none w-full flex justify-center">
-              <Image src="/images/logo_black.jpeg" alt="Logo" width={600} height={600} className="grayscale mix-blend-multiply w-[110%] max-w-none bg-transparent" priority />
+              <Image src="/images/logo_home.png" alt="Logo" width={600} height={600} className="grayscale mix-blend-multiply w-[110%] max-w-none bg-transparent" priority />
             </motion.div>
           </motion.div>
 
