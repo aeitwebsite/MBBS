@@ -9,7 +9,7 @@ export default function Footer() {
 
                         {/* CONTACT US - LOGO ONLY */}
                         <div className="flex-1 -mt-6">
-                            
+
 
                             <img
                                 src="/images/logo_home.png"
@@ -31,7 +31,7 @@ export default function Footer() {
                         </div>
 
                         {/* CAMPUS */}
-                        <div className="flex-1">
+                        {/* <div className="flex-1">
                             <h3 className="text-xl font-bold mb-4">Campus</h3>
                             <ul className="space-y-2 text-sm">
                                 <li>
@@ -50,24 +50,24 @@ export default function Footer() {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
 
                         {/* DEPARTMENTS */}
                         <div className="flex-1">
                             <h3 className="text-xl font-bold mb-4">Departments</h3>
                             <ul className="space-y-2 text-sm">
                                 <li>
-                                    <a href="/departments/anatomy" className="hover:text-gray-300">
+                                    <a href="/departments/pre-clinical" className="hover:text-gray-300">
                                         Pre-Clinical
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/departments/physiology" className="hover:text-gray-300">
+                                    <a href="/departments/para-clinical" className="hover:text-gray-300">
                                         Para-Clinical
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/departments/biochemistry" className="hover:text-gray-300">
+                                    <a href="/departments/clinical" className="hover:text-gray-300">
                                         Clinical
                                     </a>
                                 </li>
@@ -79,13 +79,13 @@ export default function Footer() {
                             <h3 className="text-xl font-bold mb-4">About</h3>
                             <ul className="space-y-2 text-sm">
                                 <li>
-                                    <a href="/college" className="hover:text-gray-300">
+                                    <a href="/about" className="hover:text-gray-300">
                                         College
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/activities" className="hover:text-gray-300">
-                                        Activities
+                                    <a href="/about/objectives" className="hover:text-gray-300">
+                                        Objectives
                                     </a>
                                 </li>
                             </ul>

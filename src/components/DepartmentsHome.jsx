@@ -76,23 +76,41 @@ export default function Departments() {
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 loop={true}
-                coverflowEffect={{ rotate: 0, stretch: 0, depth: 150, modifier: 1.5, slideShadows: false }}
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 0,
+                  modifier: 1,
+                  slideShadows: false,
+                }}
                 autoplay={{ delay: 3500, disableOnInteraction: false }}
                 pagination={{ clickable: true, dynamicBullets: true }}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="deptSwiper"
               >
                 {departmentGroups.map((group, idx) => (
-                  <SwiperSlide key={idx} className="max-w-[260px] md:max-w-[320px] py-10">
+                  <SwiperSlide key={idx} className="max-w-[280px] py-10">
                     {({ isActive }) => (
                       <div
                         onClick={() => handleCardClick(group.cat, group.id)}
-                        className={`relative h-[400px] md:h-[450px] w-full rounded-[2.5rem] overflow-hidden transition-all duration-700 cursor-pointer bg-white/5 backdrop-blur-md border ${isActive ? "scale-105 opacity-100 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.1)]" : "scale-90 opacity-40 border-white/10"}`}
+                        className={`relative h-[400px] md:h-[450px] w-full rounded-[2.5rem] overflow-hidden transition-all duration-700 cursor-pointer bg-white/5 backdrop-blur-md border ${
+                          isActive
+                            ? "opacity-100 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.1)]"
+                            : "opacity-40 border-white/10"
+                        }`}
                       >
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-b from-white/10 to-transparent" />
                         <div className="absolute inset-0 z-0">
                           <div className="relative h-full w-full flex items-center justify-center p-8">
-                            <Image src={group.image} alt={group.title} fill className={`object-contain transition-transform duration-1000 p-6 ${isActive ? 'scale-110 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]' : 'scale-95'}`} sizes="(max-width: 768px) 260px, 320px" />
+                            <Image
+                              src={group.image}
+                              alt={group.title}
+                              fill
+                              className={`object-contain transition-transform duration-1000 p-6 ${
+                                isActive ? "drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" : ""
+                              }`}
+                              sizes="(max-width: 768px) 260px, 320px"
+                            />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B49]/80 via-transparent to-transparent z-10" />
                         </div>
