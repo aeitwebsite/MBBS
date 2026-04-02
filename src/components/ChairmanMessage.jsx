@@ -20,43 +20,80 @@ export default function ChairmanMessage() {
   fill="none"
 >
 
-{/* DNA CONNECTING BARS */}
-<line x1="75" y1="300" x2="75" y2="140" stroke="#6b7280" strokeWidth="4"/>
-<line x1="150" y1="320" x2="150" y2="120" stroke="#6b7280" strokeWidth="4"/>
-<line x1="225" y1="300" x2="225" y2="137" stroke="#6b7280" strokeWidth="4"/>
-<line x1="300" y1="200" x2="300" y2="240" stroke="#6b7280" strokeWidth="4"/>
-<line x1="375" y1="180" x2="375" y2="260" stroke="#6b7280" strokeWidth="4"/>
-<line x1="450" y1="160" x2="450" y2="280" stroke="#6b7280" strokeWidth="4"/>
-<line x1="525" y1="180" x2="525" y2="260" stroke="#6b7280" strokeWidth="4"/>
-<line x1="600" y1="200" x2="600" y2="240" stroke="#6b7280" strokeWidth="4"/>
-<line x1="675" y1="300" x2="675" y2="137" stroke="#6b7280" strokeWidth="4"/>
-<line x1="750" y1="320" x2="750" y2="120" stroke="#6b7280" strokeWidth="4"/>
-<line x1="825" y1="297" x2="825" y2="140" stroke="#6b7280" strokeWidth="4"/>
-<line x1="900" y1="240" x2="900" y2="200" stroke="#6b7280" strokeWidth="4"/>
-<line x1="975" y1="260" x2="975" y2="180" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1050" y1="280" x2="1050" y2="160" stroke="#6b7280" strokeWidth="4"/>
+{/* ANIMATED DNA GROUP */}
+<motion.g
+  animate={{ x: [-20, 20, -20], y: [-10, 10, -10] }}
+  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+>
+  {/* DNA CONNECTING BARS */}
+  {[
+    { x: 75, y1: 300, y2: 140 },
+    { x: 150, y1: 320, y2: 120 },
+    { x: 225, y1: 300, y2: 137 },
+    { x: 300, y1: 200, y2: 240 },
+    { x: 375, y1: 180, y2: 260 },
+    { x: 450, y1: 160, y2: 280 },
+    { x: 525, y1: 180, y2: 260 },
+    { x: 600, y1: 200, y2: 240 },
+    { x: 675, y1: 300, y2: 137 },
+    { x: 750, y1: 320, y2: 120 },
+    { x: 825, y1: 297, y2: 140 },
+    { x: 900, y1: 240, y2: 200 },
+    { x: 975, y1: 260, y2: 180 },
+    { x: 1050, y1: 280, y2: 160 },
+    { x: 1125, y1: 260, y2: 180 },
+    { x: 1200, y1: 240, y2: 200 },
+    { x: 1275, y1: 300, y2: 140 },
+    { x: 1350, y1: 320, y2: 120 },
+    { x: 1425, y1: 300, y2: 140 },
+    { x: 1500, y1: 240, y2: 200 },
+  ].map((bar, index) => (
+    <motion.line
+      key={index}
+      x1={bar.x}
+      y1={bar.y1}
+      x2={bar.x}
+      y2={bar.y2}
+      stroke="#6b7280"
+      strokeLinecap="round"
+      animate={{ 
+        opacity: [0.2, 1, 0.2],
+        strokeWidth: [3, 6, 3],
+        stroke: ["#6b7280", "#14D7E7", "#6b7280"]
+      }}
+      transition={{
+        duration: 2.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: index * 0.15
+      }}
+    />
+  ))}
 
-{/* EXTENDED BARS */}
-<line x1="1125" y1="260" x2="1125" y2="180" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1200" y1="240" x2="1200" y2="200" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1275" y1="300" x2="1275" y2="140" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1350" y1="320" x2="1350" y2="120" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1425" y1="300" x2="1425" y2="140" stroke="#6b7280" strokeWidth="4"/>
-<line x1="1500" y1="240" x2="1500" y2="200" stroke="#6b7280" strokeWidth="4"/>
+  {/* TOP HELIX */}
+  <motion.path
+    d="M0 200 Q150 40 300 200 T600 200 T900 200 T1200 200 T1500 200 T1600 200"
+    stroke="#14D7E7"
+    strokeLinecap="round"
+    animate={{ 
+      opacity: [0.5, 1, 0.5], 
+      strokeWidth: [4, 8, 4] 
+    }}
+    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+  />
 
-{/* TOP HELIX */}
-<path
-  d="M0 200 Q150 40 300 200 T600 200 T900 200 T1200 200 T1500 200 T1600 200"
-  stroke="#14D7E7"
-  strokeWidth="6"
-/>
-
-{/* BOTTOM HELIX */}
-<path
-  d="M0 240 Q150 400 300 240 T600 240 T900 240 T1200 240 T1500 240 T1600 240"
-  stroke="#2b1a63"
-  strokeWidth="6"
-/>
+  {/* BOTTOM HELIX */}
+  <motion.path
+    d="M0 240 Q150 400 300 240 T600 240 T900 240 T1200 240 T1500 240 T1600 240"
+    stroke="#2b1a63"
+    strokeLinecap="round"
+    animate={{ 
+      opacity: [0.4, 1, 0.4], 
+      strokeWidth: [4, 8, 4] 
+    }}
+    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+  />
+</motion.g>
 
 </motion.svg>
 

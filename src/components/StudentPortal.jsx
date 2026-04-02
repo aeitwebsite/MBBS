@@ -348,7 +348,7 @@ export default function AboutSection() {
 
           {activeTab === "committees" && !activeCommittee && (
             <>
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 md:mb-12 text-[#04044a] px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-[#04044a] border-b-2 border-blue-100 pb-2 inline-block">
                 Committee List
               </h2>
 

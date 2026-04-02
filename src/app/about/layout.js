@@ -9,6 +9,7 @@ const tabs = [
   { label: "About Alva’s", path: "/about/about-alvas" },
   { label: "Chairman Message", path: "/about/chairman-message" },
   { label: "Dean’s Message", path: "/about/dean-message" },
+  { label: "Medical Superintendent's Message", path: "/about/Medical-Superintendent-message" },
   { label: "Vision & Mission", path: "/about/vision-mission" },
   { label: "Code of Conduct", path: "/about/code-of-conduct" },
   { label: "Objectives", path: "/about/objectives" },
@@ -106,6 +107,9 @@ export default function AboutLayout({ children }) {
 
         <Link href="/about/dean-message" className={tabClass("/about/dean-message")}>
           Dean’s Message
+        </Link>
+        <Link href="/about/Medical-Superintendent-message" className={tabClass("/about/Medical-Superintendent-message")}>
+          Superintendent's Message
         </Link>
 
         <Link href="/about/vision-mission" className={tabClass("/about/vision-mission")}>
