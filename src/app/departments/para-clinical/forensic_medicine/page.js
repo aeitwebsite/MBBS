@@ -26,7 +26,7 @@ export default function ForensicMedicinePage() {
         designation: "Dean / Principal",
         email: "dean@alvas.edu.in",
         joiningDate: "15-06-2005",
-        // image: "Dean.jpg", // placeholder image mapping
+        image: "/images/dean-passport.jpeg", // placeholder image mapping
         qualifications: "MBBS, MD (Forensic Medicine)\nPhD in Forensic Sciences",
         experience: "20+ years of teaching experience.\nFormer HOD at reputed medical colleges.",
         interests: "Forensic Pathology, Medical Ethics, Law & Medicine.",
