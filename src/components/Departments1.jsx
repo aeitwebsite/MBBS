@@ -166,65 +166,72 @@ const FacultyCard = ({ faculty, onReadMore }) => {
         boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
         border: "1px solid #eaeaea",
         borderTop: isHovered ? "4px solid #0A0B49" : "4px solid #eaeaea",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease",
-        transform: isHovered ? "translateY(-2px)" : "none",
+        transition: "box-shadow 0.3s ease, border-top-color 0.3s ease",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <div style={{
-        width: "140px",
-        height: "140px",
-        borderRadius: "50%",
-        margin: "0 auto 20px auto",
-        overflow: "hidden",
-        backgroundColor: "#e5eaf2"
-      }}>
-        {faculty.image ? (
-          <img
-            src={faculty.image}
-            alt={faculty.name}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              filter: isHovered ? "grayscale(0%)" : "grayscale(100%)",
-              transition: "filter 0.3s ease",
-            }}
-          />
-        ) : (
-          <div style={{ width: "100%", height: "100%", backgroundColor: "#e5eaf2" }} />
-        )}
+      <div style={{ flex: 1 }}>
+        <div style={{
+          width: "140px",
+          height: "140px",
+          borderRadius: "50%",
+          margin: "0 auto 20px auto",
+          overflow: "hidden",
+          backgroundColor: "#e5eaf2"
+        }}>
+          {faculty.image ? (
+            <img
+              src={faculty.image}
+              alt={faculty.name}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                filter: isHovered ? "grayscale(0%)" : "grayscale(100%)",
+                transition: "filter 0.3s ease",
+              }}
+            />
+          ) : (
+            <div style={{ width: "100%", height: "100%", backgroundColor: "#e5eaf2" }} />
+          )}
+        </div>
+
+        <h3 style={{
+          fontSize: "20px",
+          fontWeight: "700",
+          marginBottom: "8px",
+          wordBreak: "break-word"
+        }}>
+          {faculty.name}
+        </h3>
+
+        <p style={{
+          fontSize: "16px",
+          color: "#4b5d73",
+          marginBottom: "30px",
+          textAlign: "center",
+          wordBreak: "break-word"
+        }}>
+          {faculty.designation}
+        </p>
       </div>
-
-      <h3 style={{
-        fontSize: "20px",
-        fontWeight: "700",
-        marginBottom: "8px",
-      }}>
-        {faculty.name}
-      </h3>
-
-      <p style={{
-        fontSize: "16px",
-        color: "#4b5d73",
-        marginBottom: "30px",
-        textAlign: "center"
-      }}>
-        {faculty.designation}
-      </p>
 
       <button
         onClick={() => onReadMore(faculty)}
         style={{
-          padding: "10px 30px",
+          padding: "10px 24px",
           borderRadius: "30px",
           border: "1.5px solid #0A0B49",
           backgroundColor: isHovered ? "#0A0B49" : "transparent",
           color: isHovered ? "#fff" : "#0A0B49",
           fontWeight: "600",
-          fontSize: "14px",
+          fontSize: "13px",
           letterSpacing: "1px",
           cursor: "pointer",
-          transition: "all 0.3s ease"
+          transition: "all 0.3s ease",
+          alignSelf: "center",
         }}>
         READ MORE
       </button>
@@ -287,7 +294,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
       }} />
 
       {/* Description */}
-      <div style={{ textAlign: "justify" }}>
+      <div style={{ textAlign: "justify", wordBreak: "break-word" }}>
         {departmentData.description}
       </div>
 
@@ -295,7 +302,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
       {departmentData.hod && (
         <div style={{
           marginTop: "50px",
-          padding: "40px",
+          padding: "clamp(20px, 5vw, 40px)",
           backgroundColor: "#f8fafc",
           borderRadius: "16px",
           borderLeft: "6px solid #2563eb",
@@ -303,6 +310,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
           display: "flex",
           gap: "30px",
           alignItems: "center",
+          justifyContent: "center",
           flexWrap: "wrap", // Handles smaller screens
         }}>
           {departmentData.hod.image && (
@@ -315,16 +323,18 @@ export default function Departments1({ categoryTitle, departmentData }) {
                 borderRadius: "12px",
                 objectFit: "cover",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-                flexShrink: 0
+                flexShrink: 0,
+                margin: "0 auto"
               }}
             />
           )}
-          <div style={{ flex: 1, textAlign: "center" }}>
+        <div style={{ flex: "1 1 300px", textAlign: "left", minWidth: "0" }}>
             <h3 style={{
               fontSize: "24px",
               fontWeight: "700",
               color: "#1e293b",
-              marginBottom: "8px"
+              marginBottom: "8px",
+              wordBreak: "break-word"
             }}>
               {departmentData.hod.name}
             </h3>
@@ -335,7 +345,8 @@ export default function Departments1({ categoryTitle, departmentData }) {
               marginBottom: "20px",
               textTransform: "uppercase",
               letterSpacing: "1px",
-              textAlign: "center"
+              textAlign: "left",
+              wordBreak: "break-word"
             }}>
               {departmentData.hod.designation}
             </p>
@@ -344,7 +355,8 @@ export default function Departments1({ categoryTitle, departmentData }) {
               lineHeight: "1.8",
               color: "#334155",
               whiteSpace: "pre-line",
-              textAlign: "justify"
+              textAlign: "left",
+              wordBreak: "break-word"
             }}>
               {departmentData.hod.message}
             </div>
@@ -369,8 +381,10 @@ export default function Departments1({ categoryTitle, departmentData }) {
 
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "30px"
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+            gap: "30px",
+            justifyContent: "center",
+            alignItems: "stretch"
           }}>
             {departmentData.faculties.map((faculty, index) => (
               <FacultyCard
