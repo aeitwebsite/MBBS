@@ -15,7 +15,7 @@ export default function AnatomyPage() {
       { name: "Dr. Rajalaxmi Rai", designation: "Associate Professor", image: "/images/faculty/rajalaxmi.jpg" },
       { name: "Dr. Satyam Jyoti ", designation: "Tutor", image: "/images/faculty/lohith.jpg" },
       { name: "Dr. Rahul", designation: "Tutor", image: "/images/faculty/ravishankar.jpg" },
-      { name: "Dr. Sourabh Shetty", designation: "Tutor", image: "/images/faculty/sourabh.jpg" },
+      { name: "Dr. Sharanabasappa Kolli", designation: "Tutor", image: "/images/faculty/sharanabasappakolli.jpg" },
       { name: "Dr. Prajwalkumar Hanchalappa Meti", designation: "Tutor", image: "/images/faculty/prajwal.jpg" },
       { name: "Dr. Ranganath Gurunath Talawar", designation: "Tutor", image: "/images/faculty/ranganath.jpg" },
       { name: "Dr. Balakrishna Y C", designation: "Tutor", image: "/images/faculty/balakrishna.jpg" },
