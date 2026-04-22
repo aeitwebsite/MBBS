@@ -8,145 +8,192 @@ const FacultyModal = ({ faculty, onClose }) => {
   if (!faculty) return null;
 
   return (
-    <div style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      zIndex: 1000,
-    }}>
+    <>
+      <style>{`
+        @media (max-width: 768px) {
+          .faculty-modal-header {
+            display: flex !important;
+            flex-direction: column !important;
+            text-align: center !important;
+            align-items: center !important;
+            padding: 20px !important;
+            gap: 15px !important;
+            border-bottom: 1px solid #eee !important;
+          }
+          .faculty-modal-info {
+            text-align: center !important;
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+          }
+          .faculty-modal-info h2 {
+            margin-bottom: 10px !important;
+            font-size: 20px !important;
+          }
+          .faculty-modal-grid {
+            display: grid !important;
+            grid-template-columns: auto auto !important;
+            gap: 8px 12px !important;
+            justify-content: center !important;
+            width: 100% !important;
+          }
+          .faculty-modal-grid div {
+            text-align: left !important;
+          }
+          .faculty-modal-img {
+            flex-shrink: 0 !important;
+            margin: 0 auto !important;
+            display: block !important;
+          }
+        }
+      `}</style>
       <div style={{
-        backgroundColor: "#fff",
-        borderRadius: "8px",
-        width: "90%",
-        maxWidth: "800px",
-        maxHeight: "90vh",
-        overflowY: "auto",
-        position: "relative",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 1000,
       }}>
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          style={{
-            position: "absolute",
-            top: "15px",
-            right: "20px",
-            background: "none",
-            border: "none",
-            fontSize: "24px",
-            cursor: "pointer",
-            color: "#666"
-          }}
-        >
-          &times;
-        </button>
-
-        {/* Modal Header */}
         <div style={{
-          display: "flex",
-          padding: "30px",
-          borderBottom: "1px solid #eee",
-          alignItems: "center",
-          gap: "30px"
-        }}>
-          {faculty.image ? (
-            <img
-              src={faculty.image}
-              alt={faculty.name}
-              style={{
-                width: "150px",
-                height: "150px",
-                borderRadius: "50%",
-                objectFit: "cover",
-                border: "4px solid #fff",
-                boxShadow: "0 0 10px rgba(0,0,0,0.1)"
-              }}
-            />
-          ) : (
-            <div style={{
-              width: "150px",
-              height: "150px",
-              borderRadius: "50%",
-              backgroundColor: "#e5eaf2",
-              border: "4px solid #fff",
-              boxShadow: "0 0 10px rgba(0,0,0,0.1)"
-            }} />
-          )}
+          backgroundColor: "#fff",
+          borderRadius: "8px",
+          width: "90%",
+          maxWidth: "800px",
+          maxHeight: "90vh",
+          overflowY: "auto",
+          position: "relative",
+        }} className="faculty-modal-container">
+          {/* Close Button */}
+          <button
+            onClick={onClose}
+            style={{
+              position: "absolute",
+              top: "15px",
+              right: "20px",
+              background: "none",
+              border: "none",
+              fontSize: "24px",
+              cursor: "pointer",
+              color: "#666"
+            }}
+          >
+            &times;
+          </button>
 
-          <div>
-            <h2 style={{ fontSize: "24px", fontWeight: "700", marginBottom: "15px" }}>
-              {faculty.name}
-            </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "8px", fontSize: "14px", color: "#333" }}>
-              <div style={{ fontWeight: "600" }}>Designation</div>
-              <div>{faculty.designation}</div>
+          {/* Modal Header */}
+          <div className="faculty-modal-header" style={{
+            display: "flex",
+            padding: "30px",
+            borderBottom: "1px solid #eee",
+            alignItems: "center",
+            gap: "30px"
+          }}>
+            {faculty.image ? (
+              <img
+                src={faculty.image}
+                alt={faculty.name}
+                className="faculty-modal-img"
+                style={{
+                  width: "150px",
+                  height: "150px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  border: "4px solid #fff",
+                  boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+                  flexShrink: 0
+                }}
+              />
+            ) : (
+              <div
+                className="faculty-modal-img"
+                style={{
+                  width: "150px",
+                  height: "150px",
+                  borderRadius: "50%",
+                  backgroundColor: "#e5eaf2",
+                  border: "4px solid #fff",
+                  boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+                  flexShrink: 0
+                }}
+              />
+            )}
 
-              <div style={{ fontWeight: "600" }}>Email</div>
-              <div>{faculty.email || "N/A"}</div>
+            <div className="faculty-modal-info">
+              <h2 style={{ fontSize: "24px", fontWeight: "700", marginBottom: "15px" }}>
+                {faculty.name}
+              </h2>
+              <div className="faculty-modal-grid" style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "8px", fontSize: "14px", color: "#333" }}>
+                <div style={{ fontWeight: "600" }}>Designation</div>
+                <div>{faculty.designation}</div>
 
-              <div style={{ fontWeight: "600" }}>Joining date</div>
-              <div>{faculty.joiningDate || "N/A"}</div>
+                <div style={{ fontWeight: "600" }}>Email</div>
+                <div>{faculty.email || "N/A"}</div>
+
+                <div style={{ fontWeight: "600" }}>Joining date</div>
+                <div>{faculty.joiningDate || "N/A"}</div>
+              </div>
             </div>
           </div>
+
+          {/* Modal Accordion Details */}
+          <div style={{ padding: "30px" }}>
+
+            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
+              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
+                Educational Qualifications <span style={{ color: "#999" }}>&#x2304;</span>
+              </summary>
+              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
+                {faculty.qualifications || "Details not available."}
+              </div>
+            </details>
+
+            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
+              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
+                Past Experience <span style={{ color: "#999" }}>&#x2304;</span>
+              </summary>
+              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
+                {faculty.experience || "Details not available."}
+              </div>
+            </details>
+
+            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
+              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
+                Areas of Interest <span style={{ color: "#999" }}>&#x2304;</span>
+              </summary>
+              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
+                {faculty.interests || "Details not available."}
+              </div>
+            </details>
+
+            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
+              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
+                Departmental Responsibilities <span style={{ color: "#999" }}>&#x2304;</span>
+              </summary>
+              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
+                {faculty.responsibilities || "Details not available."}
+              </div>
+            </details>
+
+            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
+              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
+                Professional Membership <span style={{ color: "#999" }}>&#x2304;</span>
+              </summary>
+              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
+                {faculty.memberships || "Details not available."}
+              </div>
+            </details>
+
+          </div>
+
         </div>
-
-        {/* Modal Accordion Details */}
-        <div style={{ padding: "30px" }}>
-
-          <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-            <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-              Educational Qualifications <span style={{ color: "#999" }}>&#x2304;</span>
-            </summary>
-            <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-              {faculty.qualifications || "Details not available."}
-            </div>
-          </details>
-
-          <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-            <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-              Past Experience <span style={{ color: "#999" }}>&#x2304;</span>
-            </summary>
-            <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-              {faculty.experience || "Details not available."}
-            </div>
-          </details>
-
-          <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-            <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-              Areas of Interest <span style={{ color: "#999" }}>&#x2304;</span>
-            </summary>
-            <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-              {faculty.interests || "Details not available."}
-            </div>
-          </details>
-
-          <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-            <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-              Departmental Responsibilities <span style={{ color: "#999" }}>&#x2304;</span>
-            </summary>
-            <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-              {faculty.responsibilities || "Details not available."}
-            </div>
-          </details>
-
-          <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-            <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-              Professional Membership <span style={{ color: "#999" }}>&#x2304;</span>
-            </summary>
-            <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-              {faculty.memberships || "Details not available."}
-            </div>
-          </details>
-
-        </div>
-
       </div>
-    </div>
+    </>
   );
 };
 
@@ -240,7 +287,6 @@ const FacultyCard = ({ faculty, onReadMore }) => {
   );
 };
 
-
 export default function Departments1({ categoryTitle, departmentData }) {
   const [selectedFaculty, setSelectedFaculty] = useState(null);
 
@@ -328,7 +374,7 @@ export default function Departments1({ categoryTitle, departmentData }) {
               }}
             />
           )}
-        <div style={{ flex: "1 1 300px", textAlign: "left", minWidth: "0" }}>
+          <div style={{ flex: "1 1 300px", textAlign: "left", minWidth: "0" }}>
             <h3 style={{
               fontSize: "24px",
               fontWeight: "700",
