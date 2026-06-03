@@ -50,7 +50,7 @@ Deposed in 3,000+ court cases as an Expert Witness
 300+ Drug Abuse Awareness talks reaching 65,000+ students
 Best Teacher Award (Nitte) & 15+ Police Commendations for Expertise`
       },
-      { name: "Dr Meena Kiran", designation: "Associate Professor" },
+      { name: "Dr Meena Kiran", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/forensic-med/Forens_Dr_Meena_Kiran.JPG" },
       { name: "Dr Pandu Naik", designation: "Tutor" },
       { name: "Dr Veeresh Patel S", designation: "Tutor" },
       { name: "Dr Mohammad Asif H", designation: "Tutor" }

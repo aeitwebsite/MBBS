@@ -28,7 +28,7 @@ Join us in exploring the fascinating world of biochemistry — where curiosity m
     },
     faculties: [
       { name: "Dr. A Madhusudhana", designation: "Assistant Professor", image: "/images/user.png" },
-      { name: "Dr. Nagendra", designation: "Assistant Professor", image: "/images/user.png" },
+      { name: "Dr. Nagendra K", designation: "Assistant Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Biochem_Dr_Nagendra_K.JPG" },
       { name: "Dr. Shraddha B", designation: "Assistant Professor", image: "/images/user.png" },
       { name: "Dr. Abhishek H", designation: "Tutor", image: "/images/user.png" },
       { name: "Dr. Jyothi P V", designation: "Tutor", image: "/images/user.png" },

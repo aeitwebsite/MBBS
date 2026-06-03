@@ -17,19 +17,20 @@ export default function PaediatricsPage() {
     faculties: [
       { name: "Dr C BUshakiran", designation: "Professor" },
       { name: "Dr Vasantha T", designation: "Associate Professor" },
-      
+
       { name: "Dr aghavendra M Doddamani  ", designation: " Professor" },
       { name: "Dr Pooja", designation: "Assistant Professor" },
       { name: "Dr Abhijith Y V", designation: "Assistant Professor" },
       { name: "Dr A Shivaram Rai", designation: "Assistant Professor" },
-      { name: "Dr  Pooja S Wali", designation: "Assistant Professor" },
+      { name: "Dr Pooja S Wali", designation: "Assistant Professor" },
       { name: "Dr Prathith", designation: "Senior Resident" },
       { name: "Dr Archana D V", designation: "Senior Resident" },
-      { name: "Dr Charan R K", designation: "Senior Resident" }
+      { name: "Dr Charan R K", designation: "Senior Resident" },
+      { name: "Dr Deepak Preetesh Dsouza", designation: "Senior Resident", image: "/images/profile-pic/clinical/paediatrics/Paedia_Dr_Deepak_Preetesh_Dsouza.JPG" }
     ]
-  
+
   };
 
-  
+
   return <Departments1 categoryTitle="Clinical" departmentData={data} />;
 }

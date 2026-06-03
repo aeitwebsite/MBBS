@@ -15,6 +15,7 @@ export default function AnaesthesiologyPage() {
       </>
     ),
     faculties: [
+      { name: "Dr. Glenita Reema Pinto", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Anaesth_Dr_Glenita_Reema_Pinto.JPG" },
       { name: "Dr Bhanuprakash", designation: "Professor" },
       { name: "Dr Swarna Rekha", designation: "Associate Professor" },
       { name: "Dr Sujith Haralakattta Murthy", designation: "Assistant Professor" },

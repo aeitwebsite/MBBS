@@ -16,7 +16,7 @@ export default function PsychiatryPage() {
     ),
     faculties: [
       { name: "Dr Aniruddah Shetty", designation: "Assistant Professor" },
-      { name: "Dr Prajaktha", designation: "Senior Resident" },
+      { name: "Dr Prajaktha", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG" },
       { name: "Dr Sindhu", designation: "Clinical Psychologist" }
     ]
 

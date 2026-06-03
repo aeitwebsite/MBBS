@@ -16,10 +16,15 @@ export default function PhysiologyPage() {
         </p>
       </>
     ),
+    hod: {
+      name: "Dr. Jnaneshwar Shenoy",
+      designation: "Professor & Head of Department",
+      image: "/images/profile-pic/pre-clinical/physiology/Physiology_Dr_Jnaneshwara_P_Shenoy.JPG",
+      message: `Welcome to the Department of Physiology….`
+    },
     faculties: [
-      { name: "Dr. Jnaneshwar Shenoy", designation: "Professor and HOD", image: "/images/user.png" },
       { name: "Dr. Chethan K", designation: "Associate Professor", image: "/images/user.png" },
-      { name: "Dr.  Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/user.png" },
+      { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/user.png" },
       { name: "Dr. Deepak Martin Tomy", designation: "Tutor", image: "/images/user.png" },
       { name: "Dr. Anil reddy D N", designation: "Tutor", image: "/images/user.png" },
       { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/user.png" },

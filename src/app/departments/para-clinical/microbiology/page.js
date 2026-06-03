@@ -1,11 +1,11 @@
 import Departments1 from "@/components/Departments1";
 
 export default function MicrobiologyPage() {
-    const data = {
-        title: "Department of Microbiology",
-        description: (
-            <>
-                <p>
+  const data = {
+    title: "Department of Microbiology",
+    description: (
+      <>
+        <p>
           The Department of Microbiology at Alva’s Institute of Medical Sciences and Research Centre plays a crucial role in medical education by introducing MBBS students to the world of microorganisms and their impact on human health. Microbiology is a core subject that helps students understand the etiology, pathogenesis, diagnosis, treatment, and prevention of infectious diseases—knowledge that is vital for every medical professional.
         </p>
         <p>
@@ -18,11 +18,11 @@ export default function MicrobiologyPage() {
           With a strong commitment to academic excellence and clinical relevance, the Department of Microbiology at Alva’s aims to prepare students to play an active role in disease diagnosis, prevention, and public health.
         </p>
 
-            </>
-        ),
-        faculties:  [
+      </>
+    ),
+    faculties: [
       { name: "Dr Yashwanth Rai", designation: "Professor and HOD" },
-      { name: "Dr Indira Bairy", designation: "Professor" },
+      { name: "Dr Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG" },
       { name: "Dr Rekha Rai", designation: "Associate Professor" },
       { name: "Dr Arun B", designation: "Associate Professor" },
       { name: "Dr Vishnu Teja", designation: "Assistant Professor" },
@@ -34,7 +34,7 @@ export default function MicrobiologyPage() {
       { name: "Jeevan Jogi", designation: "Tutor" }
     ]
 
-    };
+  };
 
-    return <Departments1 categoryTitle="Para-Clinical" departmentData={data} />;
+  return <Departments1 categoryTitle="Para-Clinical" departmentData={data} />;
 }

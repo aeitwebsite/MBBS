@@ -1,11 +1,11 @@
 import Departments1 from "@/components/Departments1";
 
 export default function PharmacologyPage() {
-    const data = {
-        title: "Department of Pharmacology",
-        description: (
-            <>
-                <p>
+  const data = {
+    title: "Department of Pharmacology",
+    description: (
+      <>
+        <p>
           Pharmacology is a vital discipline in medical education that bridges the gap between basic science and clinical practice. It is the study of drugs and their effects on the human body, focusing on how medications are developed, how they work, and how they are used to treat diseases. Understanding pharmacology is essential for safe and effective prescribing, patient care, and the rational use of medicines.
         </p>
         <p>
@@ -18,11 +18,16 @@ export default function PharmacologyPage() {
           By combining scientific knowledge with clinical relevance, the Department of Pharmacology plays a crucial role in shaping the professional judgment and prescribing skills of future doctors.
         </p>
 
-            </>
-        ),
-        faculties:[
-      { name: "Dr Ravindra S Beedimani", designation: "Professor and HOD" },
-      { name: "Dr Laxminarayana Bairy", designation: "Professor" },
+      </>
+    ),
+    hod: {
+      name: "Dr. Ravindra S Beedimani",
+      designation: "Professor & Head of Department",
+      image: "/images/profile-pic/para-clinical/pharmacology/Pharmaco_Dr_Ravindra_S_Beedimani.JPG",
+      message: `Welcome to the Department of Pharmacology….`
+    },
+    faculties: [
+      { name: "Dr Laxminarayana Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Pharmoco_Dr_Laxminarayana_Bairy.JPG" },
       { name: "Dr Suresh Kumar", designation: "Assistant Professor" },
       { name: "Dr Sangeethanath", designation: "Assistant Professor" },
       { name: "Dr Mohammed Yaqub Pasha", designation: "Assistant Professor" },
@@ -34,7 +39,7 @@ export default function PharmacologyPage() {
       { name: "Dr Niveditha Bhat", designation: "Tutor" }
     ]
 
-    };
+  };
 
-    return <Departments1 categoryTitle="Para-Clinical" departmentData={data} />;
+  return <Departments1 categoryTitle="Para-Clinical" departmentData={data} />;
 }

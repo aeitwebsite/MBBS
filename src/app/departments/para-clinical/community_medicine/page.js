@@ -28,7 +28,8 @@ Overall, the Department will continue to be a driving force in shaping competent
             { name: "Dr Krishna", designation: "Senior Resident" },
             { name: "Dr Mahamed Fazil", designation: "Tutor" },
             { name: "Dr Shashanka H R", designation: "Tutor" },
-            { name: "Dr Sharvya", designation: "Tutor" }
+            { name: "Dr Sharvya", designation: "Tutor" },
+            { name: "Dr Shwetha", designation: "Assistant Professor cum Statistician", image: "/images/profile-pic/para-clinical/community-med/Com_Med_Dr_Shwetha.JPG" }
         ]
 
     };

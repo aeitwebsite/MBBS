@@ -14,11 +14,11 @@ export default function DermatologyPage() {
 
       </>
     ),
-    faculties:  [
+    faculties: [
       { name: "Dr Narendra Shetty", designation: "Professor" },
       { name: "Dr Bhavishya Shetty", designation: "Assistant Professor" },
       { name: "Dr Anchitha", designation: "Senior Resident" },
-      { name: "Dr Jiby", designation: "Senior Resident" }
+      { name: "Dr Jiby", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Derma_Dr_Jiby.JPG" }
     ]
 
   };

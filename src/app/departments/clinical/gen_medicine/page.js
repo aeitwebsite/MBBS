@@ -24,10 +24,10 @@ export default function GeneralMedicinePage() {
     ),
     faculties: [
       { name: "Dr Nirmala A C", designation: "Professor" },
-      { name: "Dr Bolar Sadananda Naik", designation: "Associate Professor" },
+      { name: "Dr Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Bolar_Sadananda_Naik.JPG" },
       { name: "Dr PVR Leela Mohan", designation: "Associate Professor" },
       { name: "Dr Vipindas P S", designation: "Assistant Professor" },
-      { name: "Dr Dithesh M", designation: "Assistant Professor" },
+      { name: "Dr Dithesh M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Dithesh_M.JPG" },
       { name: "Dr Dhanya Alva K", designation: "Assistant Professor" },
       { name: "Dr Manukiran", designation: "Assistant Professor" },
       { name: "Dr Chaithra", designation: "Assistant Professor" },

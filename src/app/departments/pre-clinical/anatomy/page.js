@@ -10,8 +10,13 @@ export default function AnatomyPage() {
         </p>
       </>
     ),
+    hod: {
+      name: "Dr. Jayaprakash B",
+      designation: "Professor & Head of Department",
+      image: "/images/profile-pic/pre-clinical/anatomy/Anatom_Dr_Jayaprakash_BR.JPG",
+      message: `Welcome to the Department of Anatomy….`
+    },
     faculties: [
-      { name: "Dr. Jayaprakash B", designation: "Professor and HOD", image: "/images/faculty/jayaprakash.jpg" },
       { name: "Dr. Rajalaxmi Rai", designation: "Associate Professor", image: "/images/faculty/rajalaxmi.jpg" },
       { name: "Dr. Satyam Jyoti ", designation: "Tutor", image: "/images/faculty/lohith.jpg" },
       { name: "Dr. Rahul", designation: "Tutor", image: "/images/faculty/ravishankar.jpg" },

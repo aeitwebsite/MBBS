@@ -27,18 +27,19 @@ export default function PathologyPage() {
       { name: "Dr Magad Rangaswamy", designation: "Professor" },
       { name: "Dr Damodar", designation: "Associate Professor" },
       { name: "Dr Shivakumar", designation: "Associate Professor" },
-      { name: "Dr Sai", designation: "Assistant Professor" },
+      { name: "Dr Sai K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Sai_K.JPG" },
       { name: "Dr Vinutha", designation: "Assistant Professor" },
       { name: "Dr Pramitha", designation: "Assistant Professor" },
       { name: "Dr Rukmini Sudhakar", designation: "Associate Professor" },
       { name: "Dr Ashok Marathe", designation: "Senior Resident" },
       { name: "Dr Chaithanya", designation: "Senior Resident" },
-      { name: "Dr Arun J R", designation: "Senior Resident" },
+      { name: "Dr Arun J R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Arun_J_R.JPG" },
       { name: "Dr Yashwanth D J", designation: "Tutor" },
       { name: "Dr Karthik C", designation: "Tutor" },
-      { name: "Tarun Somalingappa Yarabal", designation: "Tutor" },
+      { name: "Dr Tarun Somalingappa Yarabal", designation: "Tutor" },
       { name: "Dr Rakshitha R", designation: "Tutor" },
-      { name: "K Anirudh Bhat", designation: "Tutor" }
+      { name: "Dr K Anirudh Bhat", designation: "Tutor" },
+      { name: "Dr Aashish Sharma K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Aashish_Sharma_K.JPG" }
     ]
 
   };

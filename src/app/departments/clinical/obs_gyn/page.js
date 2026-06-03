@@ -24,8 +24,9 @@ export default function ObsGynPage() {
       { name: "Dr Faswila M", designation: "Assistant Professor" },
       { name: "Dr Anvitha Shatananda Rao", designation: "Senior Resident" },
       { name: "Dr Sharathchandra Rao", designation: "Senior Resident" },
-      { name: "Dr Shreya Vaidya", designation: "Senior Resident" },
-      { name: "Dr Sannidhi", designation: "Senior Resident" }
+      { name: "Dr Shreya Vaidya", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/Obs_Gyn_Dr_Shreya_Vaidya.JPG" },
+      { name: "Dr Sannidhi", designation: "Senior Resident", },
+      { name: "Dr Sanjana P", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/OBG_Dr_Sanjana_P.JPG" }
     ]
 
   };
