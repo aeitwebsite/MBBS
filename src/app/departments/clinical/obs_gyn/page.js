@@ -13,20 +13,35 @@ export default function ObsGynPage() {
         </p>
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Obstetrics & Gynaecology….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Rajashekara M Hangarki", designation: "Professor" },
-      { name: "Dr Ramesha", designation: "Associate Professor" },
-      { name: "Dr Santhi Mothukuri ", designation: "Associate Professor" },
-      { name: "Dr Srilatha Bhat", designation: "Associate Professor" },
-      { name: "Dr Shabina Mohamed Adil ", designation: "Assistant Professor" },
-      { name: "Dr Hana Shetty", designation: "Assistant Professor" },
-      { name: "Dr Sruthi A G", designation: "Assistant Professor" },
-      { name: "Dr Faswila M", designation: "Assistant Professor" },
-      { name: "Dr Anvitha Shatananda Rao", designation: "Senior Resident" },
-      { name: "Dr Sharathchandra Rao", designation: "Senior Resident" },
-      { name: "Dr Shreya Vaidya", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/Obs_Gyn_Dr_Shreya_Vaidya.JPG" },
-      { name: "Dr Sannidhi", designation: "Senior Resident", },
-      { name: "Dr Sanjana P", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/OBG_Dr_Sanjana_P.JPG" }
+
+      { name: "Dr. Rajashekar Mallappa Hangarki", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Ramesha", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DGO,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Santhi Mothukuri", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prerna Sagar Bhattad", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Hana Shetty", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Faswila M", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shabina Mohamed Adil", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shruthi A G", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shreya Vaidya", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/Obs_Gyn_Dr_Shreya_Vaidya.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Anvitha Shatananda Rao", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sannidhi", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sharathchandra Rao", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,DGO,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. P Sanjana", designation: "Senior Resident", image: "/images/profile-pic/clinical/obste-gynae/OBG_Dr_Sanjana_P.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Madhura B R", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

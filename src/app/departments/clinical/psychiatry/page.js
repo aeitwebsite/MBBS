@@ -14,10 +14,25 @@ export default function PsychiatryPage() {
 
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Psychiatry….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Aniruddah Shetty", designation: "Assistant Professor" },
-      { name: "Dr Prajaktha", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG" },
-      { name: "Dr Sindhu", designation: "Clinical Psychologist" }
+
+      { name: "Dr. Kartik Kashyap", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Aniruddha Shetty", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prajakta V Rao", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sindhu K S", designation: "Clinical Psychologist", image: "", email: "", joiningDate: "", qualifications: "MSc,MPhil", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

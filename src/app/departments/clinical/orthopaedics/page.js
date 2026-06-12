@@ -15,17 +15,19 @@ export default function OrthopaedicsPage() {
       </>
     ),
     faculties: [
-      { name: "Dr Sachin Sarvotham Shetty", designation: "Professor" },
-      { name: "Dr Jampani Ravitheja", designation: "Associate Professor" },
-      { name: "Dr Arjun Ballal", designation: "Assistant Professor" },
-      { name: "Dr Ranjith Kumar", designation: "Assistant Professor" },
-      { name: "Dr Arun Kumar Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Ortho_Dr_Arun_Kumar_Shetty.JPG" },
-      { name: "Dr Hannan Sheikh Kabir", designation: "Assistant Professor" },
-      { name: "Dr Nihal R Rai", designation: "Assistant Professor" },
-      { name: "Dr Prakyath Mahadev Gowda", designation: "Senior Resident" },
-      { name: "Dr Naveen Raikar", designation: "Senior Resident" },
-      { name: "Dr Pratheeksh P", designation: "Senior Resident" },
-      { name: "Dr Vamshikrishna", designation: "Senior Resident" }
+      { name: "Dr. Sachin Sarvotham Shetty", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Jampani Ravitheja", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Geetha Kumar Pichika", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Arun Kumar Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Ortho_Dr_Arun_Kumar_Shetty.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Arjun Ballal", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nihal R Rai", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Naveen Raikar", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prakhyath Mahadev Gowda", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Pratheeksh P", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Hannan Sheikh Kabir", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Vivek O Karanagi", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Ranjith Kumar", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Chaithanya R Shetty", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

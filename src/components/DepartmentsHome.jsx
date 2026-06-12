@@ -42,7 +42,8 @@ export default function Departments() {
     { id: "physiology", cat: "pre-clinical", title: "Physiology", image: "/images/physiology.jpeg" },
     { id: "psychiatry", cat: "clinical", title: "Psychiatry", image: "/images/psychiatry.jpeg" },
     { id: "radiology", cat: "clinical", title: "Radiology", image: "/images/radio.jpeg" },
-    { id: "ent", cat: "clinical", title: "ENT", image: "/images/ent.jpeg" }
+    { id: "ent", cat: "clinical", title: "ENT", image: "/images/ent.jpeg" },
+    { id: "dentistry", car: "clinical", title: "Dentistry", image: "" }
   ];
 
   const handleCardClick = (cat, id) => {
@@ -93,11 +94,10 @@ export default function Departments() {
                     {({ isActive }) => (
                       <div
                         onClick={() => handleCardClick(group.cat, group.id)}
-                        className={`relative h-[400px] md:h-[450px] w-full rounded-[2.5rem] overflow-hidden transition-all duration-700 cursor-pointer bg-white/5 backdrop-blur-md border ${
-                          isActive
+                        className={`relative h-[400px] md:h-[450px] w-full rounded-[2.5rem] overflow-hidden transition-all duration-700 cursor-pointer bg-white/5 backdrop-blur-md border ${isActive
                             ? "opacity-100 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.1)]"
                             : "opacity-40 border-white/10"
-                        }`}
+                          }`}
                       >
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-b from-white/10 to-transparent" />
                         <div className="absolute inset-0 z-0">
@@ -106,9 +106,8 @@ export default function Departments() {
                               src={group.image}
                               alt={group.title}
                               fill
-                              className={`object-contain transition-transform duration-1000 p-6 ${
-                                isActive ? "drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" : ""
-                              }`}
+                              className={`object-contain transition-transform duration-1000 p-6 ${isActive ? "drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" : ""
+                                }`}
                               sizes="(max-width: 768px) 260px, 320px"
                             />
                           </div>

@@ -14,13 +14,31 @@ export default function OphthalmologyPage() {
 
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Ophthalmology….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Cynthia Arunachalam ", designation: "Professor" },
-      { name: "Dr  Roopashree ", designation: "Associate Professor" },
-      { name: "Dr Laxminarayana Aroor Rao", designation: "Assistant Professor" },
-      { name: "Dr Aravind Achutha Kini", designation: "Assistant Professor" },
-      { name: "Dr  Tanvi Ravindranath Rai ", designation: "Senior Resident" },
-      { name: "Dr Vikram Jain ", designation: "Assistant Professor" }
+
+      { name: "Dr. Cynthia Arunachalam", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Roopashree", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Arvind Achutha Kini", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Laxminarayana Aroor Rao", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Tanvi Ravindranath Rai", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Ranjitha", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vikram Jain", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Smruthi", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Kalary Jaynthi", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
     ]
 
   };

@@ -402,10 +402,34 @@ export default function Departments1({ categoryTitle, departmentData }) {
               color: "#334155",
               whiteSpace: "pre-line",
               textAlign: "left",
-              wordBreak: "break-word"
+              wordBreak: "break-word",
+              marginBottom: "20px"
             }}>
               {departmentData.hod.message}
             </div>
+            <button
+              onClick={() => handleReadMore(departmentData.hod)}
+              style={{
+                padding: "10px 24px",
+                borderRadius: "30px",
+                border: "1.5px solid #0A0B49",
+                backgroundColor: "#0A0B49",
+                color: "#fff",
+                fontWeight: "600",
+                fontSize: "13px",
+                letterSpacing: "1px",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.boxShadow = "0 4px 12px rgba(10, 11, 73, 0.3)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.boxShadow = "none";
+              }}
+            >
+              READ MORE
+            </button>
           </div>
         </div>
       )}

@@ -14,11 +14,27 @@ export default function DermatologyPage() {
 
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Dermatology….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Narendra Shetty", designation: "Professor" },
-      { name: "Dr Bhavishya Shetty", designation: "Assistant Professor" },
-      { name: "Dr Anchitha", designation: "Senior Resident" },
-      { name: "Dr Jiby", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Derma_Dr_Jiby.JPG" }
+
+      { name: "Dr. Vivek Mishra", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Keerthi S", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Bhavishya K Shetty", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Jiby V Benny", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Derma_Dr_Jiby.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. H Anchitha", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
     ]
 
   };

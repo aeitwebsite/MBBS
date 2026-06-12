@@ -21,17 +21,25 @@ export default function MicrobiologyPage() {
       </>
     ),
     faculties: [
-      { name: "Dr Yashwanth Rai", designation: "Professor and HOD" },
-      { name: "Dr Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG" },
-      { name: "Dr Rekha Rai", designation: "Associate Professor" },
-      { name: "Dr Arun B", designation: "Associate Professor" },
-      { name: "Dr Vishnu Teja", designation: "Assistant Professor" },
-      { name: "Dr Shruthi", designation: "Assistant Professor" },
-      { name: "Dr Ashokan", designation: "Assistant Professor" },
-      { name: "Dr Dharmarathna", designation: "Tutor" },
-      { name: "Dr Yashas P", designation: "Tutor" },
-      { name: "Dr Chethan T", designation: "Tutor" },
-      { name: "Jeevan Jogi", designation: "Tutor" }
+      { name: "Dr. Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rekha Rai", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Samira Abdul Wajid", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Aswathi Raveendran", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shruthi L Rao", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Ashokan K Kuttiyil", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Arun Kumar P", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "M.Sc, Phd", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ashwath M Nair", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Dharmarathna", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Yashas P", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Chethan T", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Jeevan Jogi", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. B Sumanth Reddy", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vinod Kumar", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vittal Gundray", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
   };

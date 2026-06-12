@@ -22,22 +22,36 @@ export default function GeneralMedicinePage() {
         </p>
       </div>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of General Medicine….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Nirmala A C", designation: "Professor" },
-      { name: "Dr Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Bolar_Sadananda_Naik.JPG" },
-      { name: "Dr PVR Leela Mohan", designation: "Associate Professor" },
-      { name: "Dr Vipindas P S", designation: "Assistant Professor" },
-      { name: "Dr Dithesh M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Dithesh_M.JPG" },
-      { name: "Dr Dhanya Alva K", designation: "Assistant Professor" },
-      { name: "Dr Manukiran", designation: "Assistant Professor" },
-      { name: "Dr Chaithra", designation: "Assistant Professor" },
-      { name: "Dr Harshavardhan R", designation: "Senior Resident" },
-      { name: "Dr Rachel R Luke", designation: "Senior Resident" },
-      { name: "Dr Abhilash N", designation: "Senior Resident" },
-      { name: "Dr Chethan", designation: "Senior Resident" },
-      { name: "Dr Vaibhav S Jain", designation: "Senior Resident" },
-      { name: "Dr Rajashekhar Mulimani", designation: "Senior Resident" },
-      { name: "Dr Anup Raikar", designation: "Senior Resident" }
+
+      { name: "Dr. Nirmala A C", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Bolar_Sadananda_Naik.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. PVR Leela Mohan", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Pranamya Jain", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Mithun S", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Dhanya Alva K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Dithesh M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Dithesh_M.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vipindas P S", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhijnya K R", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Apoorva M Kottary", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhilash N", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Anup Raikar", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Harshavardhan R", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vaibhav S Jain", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rajashekhar Mulimani", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
   };
 

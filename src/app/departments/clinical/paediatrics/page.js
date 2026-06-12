@@ -14,19 +14,34 @@ export default function PaediatricsPage() {
 
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Paediatrics….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr C BUshakiran", designation: "Professor" },
-      { name: "Dr Vasantha T", designation: "Associate Professor" },
 
-      { name: "Dr aghavendra M Doddamani  ", designation: " Professor" },
-      { name: "Dr Pooja", designation: "Assistant Professor" },
-      { name: "Dr Abhijith Y V", designation: "Assistant Professor" },
-      { name: "Dr A Shivaram Rai", designation: "Assistant Professor" },
-      { name: "Dr Pooja S Wali", designation: "Assistant Professor" },
-      { name: "Dr Prathith", designation: "Senior Resident" },
-      { name: "Dr Archana D V", designation: "Senior Resident" },
-      { name: "Dr Charan R K", designation: "Senior Resident" },
-      { name: "Dr Deepak Preetesh Dsouza", designation: "Senior Resident", image: "/images/profile-pic/clinical/paediatrics/Paedia_Dr_Deepak_Preetesh_Dsouza.JPG" }
+      { name: "Dr. C B Ushakiran", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vasantha", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Raghavendra M Doddamani", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhijith Y V", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. A Shivaram Rai", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DCH", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Harshitha M Swamy", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Deepak Preetesh DSouza", designation: "Senior Resident", image: "/images/profile-pic/clinical/paediatrics/Paedia_Dr_Deepak_Preetesh_Dsouza.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Charan R K", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prathith", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Manjunath C B", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Archana D V", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Apoorva R M", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
     ]
 
   };

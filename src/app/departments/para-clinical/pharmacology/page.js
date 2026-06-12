@@ -24,19 +24,29 @@ export default function PharmacologyPage() {
       name: "Dr. Ravindra S Beedimani",
       designation: "Professor & Head of Department",
       image: "/images/profile-pic/para-clinical/pharmacology/Pharmaco_Dr_Ravindra_S_Beedimani.JPG",
-      message: `Welcome to the Department of Pharmacology….`
+      message: `Welcome to the Department of Pharmacology….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "MBBS, MD",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
     },
     faculties: [
-      { name: "Dr Laxminarayana Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Pharmoco_Dr_Laxminarayana_Bairy.JPG" },
-      { name: "Dr Suresh Kumar", designation: "Assistant Professor" },
-      { name: "Dr Sangeethanath", designation: "Assistant Professor" },
-      { name: "Dr Mohammed Yaqub Pasha", designation: "Assistant Professor" },
-      { name: "Dr Krishnamurthy", designation: "Senior Resident" },
-      { name: "Dr Nethravathi", designation: "Senior Resident" },
-      { name: "Dr Pavan Kumar B N", designation: "Tutor" },
-      { name: "Dr Kurian S Thomas", designation: "Tutor" },
-      { name: "Dr Rabil Hussain", designation: "Tutor" },
-      { name: "Dr Niveditha Bhat", designation: "Tutor" }
+      { name: "Dr Laxminarayana Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Pharmoco_Dr_Laxminarayana_Bairy.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rekha Nayaka", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr H C Nandini", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Sangeethanath Sharma", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Chaitra R", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Krishnamurthy Kadamalakatte Hanumantha Shetty", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Abhijna Ballal R", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rajasree G", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vasu Praveen Chander Kanuru", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Pavan Kumar B N", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Kurian S Thomas", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Rabil Hussain", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Niveditha Kini", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
   };

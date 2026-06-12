@@ -1,4 +1,5 @@
 import Departments1 from "@/components/Departments1";
+import { image } from "framer-motion/client";
 
 export default function PhysiologyPage() {
   const data = {
@@ -17,18 +18,29 @@ export default function PhysiologyPage() {
       </>
     ),
     hod: {
-      name: "Dr. Jnaneshwar Shenoy",
+      name: "Dr. Jnaneshwar P Shenoy",
       designation: "Professor & Head of Department",
       image: "/images/profile-pic/pre-clinical/physiology/Physiology_Dr_Jnaneshwara_P_Shenoy.JPG",
-      message: `Welcome to the Department of Physiology….`
+      message: `Welcome to the Department of Physiology….`,
+      email: "",
+      joiningDate: "",
+      qualifications: "MBBS, MD",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
     },
     faculties: [
-      { name: "Dr. Chethan K", designation: "Associate Professor", image: "/images/user.png" },
-      { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/user.png" },
-      { name: "Dr. Deepak Martin Tomy", designation: "Tutor", image: "/images/user.png" },
-      { name: "Dr. Anil reddy D N", designation: "Tutor", image: "/images/user.png" },
-      { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/user.png" },
-      { name: "Dr. Nicole Helen Dmello ", designation: "Tutor", image: "/images/user.png" },
+      { name: "Dr. Chethan K", designation: "Associate Professor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Ganaraja Bolumbu", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Deepak Martin Tomy ", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Anil reddy D N", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nicole Helen Dmello ", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Gagan G M", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Ranjitha H G", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sowmya K", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
   };
 

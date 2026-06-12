@@ -14,16 +14,31 @@ export default function RadiologyPage() {
 
       </>
     ),
+    hod: {
+      name: "",
+      designation: "Professor & Head of Department",
+      image: "",
+      message: `Welcome to the Department of Radiology….,`,
+      email: "",
+      joiningDate: "",
+      qualifications: "",
+      experience: "",
+      interests: "",
+      responsibilities: "",
+      memberships: ""
+    },
     faculties: [
-      { name: "Dr Ramesh", designation: "Professor" },
-      { name: "Dr Keshav", designation: "Associate Professor" },
-      { name: "Dr Thilak Shetty", designation: "Assistant Professor" },
-      { name: "Dr Arjun Kamath", designation: "Assistant Professor" },
-      { name: "Dr Siddalinga", designation: "Assistant Professor" },
-      { name: "Dr Dakshayini", designation: "Assistant Professor" },
-      { name: "Dr Rutuparna", designation: "Senior Resident" },
-      { name: "Dr Jeevan", designation: "Senior Resident" },
-      { name: "Dr Vaibhav", designation: "Senior Resident" }
+
+      { name: "Dr. Ram Prakash G", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Kedarnath Dixit", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Thilak Shetty", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Dakshayini H S", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vaibhav", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Jeevan J", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rutuparna S", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nagaraj P", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Siddaling Basavraj Mindolli", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Gouri B Kaverappa", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };
