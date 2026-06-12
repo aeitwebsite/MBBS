@@ -17,7 +17,8 @@ export default function ClinicalDepartmentsPage() {
     { name: "Dermatology", slug: "dermatology" },
     { name: "Psychiatry", slug: "psychiatry" },
     { name: "Radiology", slug: "radiology" },
-    { name: "Anaesthesiology", slug: "anaesthesiology" }
+    { name: "Anaesthesiology", slug: "anaesthesiology" },
+    { name: "Dentistry", slug: "dentistry" }
   ];
 
   return (
