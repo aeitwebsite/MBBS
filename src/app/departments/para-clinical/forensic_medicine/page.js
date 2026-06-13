@@ -53,7 +53,7 @@ Best Teacher Award (Nitte) & 15+ Police Commendations for Expertise`
       { name: "Dr Meena Kiran", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/forensic-med/Forens_Dr_Meena_Kiran.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Mohammad Asif H", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Pandu Naik", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Pandu Naik", designation: "Tutor", image: "/images/profile-pic/para-clinical/forensic_medicine/Dr_Pandu_Naik.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Veeresh Patel S", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Shreyas G K", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Raza Rehman Ibrahim", designation: "Tutor", image: "/images/profile-pic/para-clinical/forensic_medicine/Dr_Raza_Rehman_Ibrahim.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },

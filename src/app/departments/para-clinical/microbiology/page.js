@@ -35,8 +35,8 @@ export default function MicrobiologyPage() {
 
       { name: "Dr. Dharmarathna", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Yashas P", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Chethan T", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Jeevan Jogi", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Chethan T", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Chethan_T.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Jeevan Jogi", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Jeevan_Jogi.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. B Sumanth Reddy", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Sumanth_Reddy_Dr_Sumanth_Reddy_124.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Vinod Kumar", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Vinod_Kumar.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Vittal Gundray", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }

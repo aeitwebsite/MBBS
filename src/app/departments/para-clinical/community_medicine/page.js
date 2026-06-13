@@ -49,11 +49,11 @@ Overall, the Department will continue to be a driving force in shaping competent
             { name: "Dr. Arya V R", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Arya_V_R.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
             { name: "Dr. Shweta", designation: "Statistician", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Shweta.png", email: "", joiningDate: "", qualifications: "MSc,Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
             { name: "Dr. Krishna Unni", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Krishna_Unni.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Tijo rahim", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr. Tijo rahim", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Tijo_rahim.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
             { name: "Dr. Meera Sashidaran", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Meera_Sasidharan_Dr_Meera_Sasidharan_99.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Bevin Biju Thomas", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr. Bevin Biju Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Bevin_Biju_Thomas.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
             { name: "Dr. Mahamed Fazil", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Vaishnavi V Kudva", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr. Vaishnavi V Kudva", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Vaishnavi_V_Kudva.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
         ]
 
     };
