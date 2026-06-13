@@ -38,7 +38,7 @@ export default function RadiologyPage() {
       { name: "Dr. Rutuparna S", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Rutuparna_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Nagaraj P", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Nagaraj_P.png", email: "", joiningDate: "", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Siddaling Basavraj Mindolli", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Gouri B Kaverappa", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Gouri B Kaverappa", designation: "Associate Professor", image: "/images/profile-pic/clinical/radiology/Dr_Gouri_B_Kaveriappa_Dr_Gouri_B_Kaveriappa_117.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

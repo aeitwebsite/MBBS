@@ -15,7 +15,7 @@ export default function OrthopaedicsPage() {
       </>
     ),
     faculties: [
-      { name: "Dr. Sachin Sarvotham Shetty", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sachin Sarvotham Shetty", designation: "Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Sachin_S_Shetty_Dr_Sachin_S_Shetty_23.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Jampani Ravitheja", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr.Geetha Kumar Pichika", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Arun Kumar Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Ortho_Dr_Arun_Kumar_Shetty.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
@@ -27,7 +27,7 @@ export default function OrthopaedicsPage() {
       { name: "Dr. Hannan Sheikh Kabir", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Hannan_Sheikh_Kabir.png", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr.Vivek O Karanagi", designation: "Senior Resident", image: "/images/profile-pic/clinical/orthopaedics/Dr_Vivek_O_Karanagi.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr.Ranjith Kumar", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Ranjith_Kumar.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr.Chaithanya R Shetty", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr.Chaithanya R Shetty", designation: "Associate Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Chaitanya_R_Shetty_Dr_Chaitanya_R_Shetty_119.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };
