@@ -29,35 +29,35 @@ export default function AnaesthesiologyPage() {
     },
     faculties: [
 
-      { name: "Dr. Bhanuprakash Satyanarayana", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Bhanuprakash Satyanarayana", designation: "Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Bhanuprakash_Satyanarayana.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Swarna Rekha Raghava Vothesar", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DA,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Balagowni Nagarjuna", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nilesh Pandurang Dixit", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Dilip Kumar S N", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Venugopala K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sujith H M", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. AV Nagabhushan", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Keerthana K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Malladihalli Kiran Ashok Kumar", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nilesh Pandurang Dixit", designation: "Associate Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Nilesh_Pandurang_Dixit.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Dilip Kumar S N", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Dilip_Kumar_S_N.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Venugopala K", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Venugopala_K.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sujith H M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Sujith_H_M.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. AV Nagabhushan", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_AV_Nagabhushan.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Keerthana K", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Keerthana_K.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Malladihalli Kiran Ashok Kumar", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Malladihalli_Kiran_Ashok_Kumar.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Glenita Reema Pinto", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Anaesth_Dr_Glenita_Reema_Pinto.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Aiswarya P Suresh", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Suresh Kumar K A", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ranjini Shome", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Poornima G S", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Aiswarya P Suresh", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Aiswarya_P_Suresh.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Suresh Kumar K A", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Suresh_Kumar_K_A.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Ranjini Shome", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Ranjini_Shome.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Poornima G S", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Poornima_G_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Nikhila Raj K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
 
 
       // { name: "Dr. Glenita Reema Pinto", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Anaesth_Dr_Glenita_Reema_Pinto.JPG", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr Bhanuprakash", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr Swarna Rekha", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+      // { name: "Dr Bhanuprakash", designation: "Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Bhanuprakash.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+      // { name: "Dr Swarna Rekha", designation: "Associate Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Swarna_Rekha.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
       // { name: "Dr Sujith Haralakattta Murthy", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr Dilip Kumar", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+      // { name: "Dr Dilip Kumar", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Dilip_Kumar.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
       // { name: "Dr Venugopal K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr Sunil B K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+      // { name: "Dr Sunil B K", designation: "Assistant Professor", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Sunil_B_K.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
       // { name: "Dr Aishwarya Suresh", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
       // { name: "Dr Rajath", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr Ranjini Shome", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" }
+      // { name: "Dr Ranjini Shome", designation: "Senior Resident", image: "/images/profile-pic/clinical/anaesthesiology/Dr_Ranjini_Shome.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
   };

@@ -30,10 +30,10 @@ export default function DentistryPage() {
         },
         faculties: [
 
-            { name: "Dr.Nagarathna D V", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr Ashish J Rai", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr Venkatesh Kodgi M", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr Nidhi Shetty", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr.Nagarathna D V", designation: "Professor", image: "/images/profile-pic/clinical/dentistry/Dr_Nagarathna_D_V.png", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr Ashish J Rai", designation: "Associate Professor", image: "/images/profile-pic/clinical/dentistry/Dr_Ashish_J_Rai.png", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr Venkatesh Kodgi M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/dentistry/Dr_Venkatesh_Kodgi_M.png", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr Nidhi Shetty", designation: "Senior Resident", image: "/images/profile-pic/clinical/dentistry/Dr_Nidhi_Shetty.png", email: "", joiningDate: "", qualifications: "BDS,MDS", experience: "", interests: "", responsibilities: "", memberships: "" },
         ]
 
     };

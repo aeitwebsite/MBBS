@@ -37,21 +37,21 @@ export default function GeneralMedicinePage() {
     },
     faculties: [
 
-      { name: "Dr. Nirmala A C", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Bolar_Sadananda_Naik.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. PVR Leela Mohan", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Nirmala A C", designation: "Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Nirmala_A_C.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Bolar_Sadananda_Naik.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. PVR Leela Mohan", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_PVR_Leela_Mohan.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Pranamya Jain", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Mithun S", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Dhanya Alva K", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Mithun S", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Mithun_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Dhanya Alva K", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Dhanya_Alva_K.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Dithesh M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen-med/Gen_Med_Dr_Dithesh_M.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vipindas P S", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhijnya K R", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vipindas P S", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Vipindas_P_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhijnya K R", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Abhijnya_K_R.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Apoorva M Kottary", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhilash N", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Anup Raikar", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Harshavardhan R", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhilash N", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_medicine/Dr_Abhilash_N.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Anup Raikar", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_medicine/Dr_Anup_Raikar.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Harshavardhan R", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_medicine/Dr_Harshavardhan_R.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Vaibhav S Jain", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rajashekhar Mulimani", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rajashekhar Mulimani", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_medicine/Dr_Rajashekhar_Mulimani.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
   };
 

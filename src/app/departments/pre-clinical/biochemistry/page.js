@@ -37,9 +37,9 @@ Join us in exploring the fascinating world of biochemistry — where curiosity m
     },
     faculties: [
       { name: "Dr. Kommi Shetty Sudhakar", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shraddha B Pattanashetti", designation: "Assistant Professor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shraddha B Pattanashetti", designation: "Assistant Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Shraddha_B_Pattanashetti.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. C R Raghushekar", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhishek H", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhishek H", designation: "Tutor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Abhishek_H.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Jyothi P V", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Shashank M S", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Rakheshpal S D", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },

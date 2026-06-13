@@ -56,7 +56,7 @@ Best Teacher Award (Nitte) & 15+ Police Commendations for Expertise`
       { name: "Dr. Pandu Naik", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Veeresh Patel S", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Shreyas G K", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Raza Rehman Ibrahim", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Raza Rehman Ibrahim", designation: "Tutor", image: "/images/profile-pic/para-clinical/forensic_medicine/Dr_Raza_Rehman_Ibrahim.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Narendra H L", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },]
 
   };

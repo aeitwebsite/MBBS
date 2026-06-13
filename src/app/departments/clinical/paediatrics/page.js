@@ -29,18 +29,18 @@ export default function PaediatricsPage() {
     },
     faculties: [
 
-      { name: "Dr. C B Ushakiran", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vasantha", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Raghavendra M Doddamani", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhijith Y V", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. C B Ushakiran", designation: "Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_C_B_Ushakiran.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vasantha", designation: "Associate Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_Vasantha.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Raghavendra M Doddamani", designation: "Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_Raghavendra_M_Doddamani.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Abhijith Y V", designation: "Assistant Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_Abhijith_Y_V.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. A Shivaram Rai", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DCH", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Harshitha M Swamy", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Harshitha M Swamy", designation: "Assistant Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_Harshitha_M_Swamy.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Deepak Preetesh DSouza", designation: "Senior Resident", image: "/images/profile-pic/clinical/paediatrics/Paedia_Dr_Deepak_Preetesh_Dsouza.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Charan R K", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Prathith", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Manjunath C B", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Archana D V", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Apoorva R M", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Archana D V", designation: "Senior Resident", image: "/images/profile-pic/clinical/paediatrics/Dr_Archana_D_V.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Apoorva R M", designation: "Assistant Professor", image: "/images/profile-pic/clinical/paediatrics/Dr_Apoorva_R_M.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
     ]
 
