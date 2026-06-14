@@ -21,7 +21,7 @@ export default function MicrobiologyPage() {
       </>
     ),
     faculties: [
-      { name: "Dr. Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Indira_Bairy.png", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Rekha Rai", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Rekha_Rai.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Samira Abdul Wajid", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },

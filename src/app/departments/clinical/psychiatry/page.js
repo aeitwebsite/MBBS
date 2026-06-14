@@ -31,7 +31,7 @@ export default function PsychiatryPage() {
 
       { name: "Dr. Kartik Kashyap", designation: "Associate Professor", image: "/images/profile-pic/clinical/psychiatry/Dr_Kartik_Kashyap.png", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Aniruddha Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/psychiatry/Dr_Aniruddha_Shetty.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Prajakta V Rao", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Dr_Prajakta_V_Rao.png", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prajakta V Rao", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Sindhu K S", designation: "Clinical Psychologist", image: "/images/profile-pic/clinical/psychiatry/Dr_Sindhu_K_S.png", email: "", joiningDate: "", qualifications: "MSc,MPhil", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 

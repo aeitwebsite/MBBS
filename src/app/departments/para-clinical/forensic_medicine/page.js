@@ -50,7 +50,7 @@ Deposed in 3,000+ court cases as an Expert Witness
 Best Teacher Award (Nitte) & 15+ Police Commendations for Expertise`
     },
     faculties: [
-      { name: "Dr Meena Kiran", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/forensic-med/Forens_Dr_Meena_Kiran.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Meena Kiran", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/forensic_medicine/Forens_Dr_Meena_Kiran.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Mohammad Asif H", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Pandu Naik", designation: "Tutor", image: "/images/profile-pic/para-clinical/forensic_medicine/Dr_Pandu_Naik.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },

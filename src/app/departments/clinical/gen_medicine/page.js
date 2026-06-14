@@ -38,7 +38,7 @@ export default function GeneralMedicinePage() {
     faculties: [
 
       // { name: "Dr. Nirmala A C", designation: "Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Nirmala_A_C.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Bolar_Sadananda_Naik.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Bolar Sadananda Naik", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Gen_Med_Dr_Bolar_Sadananda_Naik.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. PVR Leela Mohan", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_PVR_Leela_Mohan.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Pranamya Jain", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Pranamya_Dr_Pranamya_88.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Mithun S", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_medicine/Dr_Mithun_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
