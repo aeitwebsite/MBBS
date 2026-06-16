@@ -31,7 +31,7 @@ export default function PhysiologyPage() {
       memberships: ""
     },
     faculties: [
-      { name: "Dr. Chethan K", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Chethan_K.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Chethan K", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Swati_Nitin_Tikare.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Ganaraja Bolumbu", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Ganaraja_Bolumbu.png", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Deepak Martin Tomy ", designation: "Tutor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Deepak_Martin_Tomy.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
