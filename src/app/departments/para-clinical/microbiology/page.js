@@ -21,25 +21,35 @@ export default function MicrobiologyPage() {
       </>
     ),
     faculties: [
-      { name: "Dr. Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Indira Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/microbiology/Microbio_Dr_Indira_Bairy.JPG", email: "", joiningDate: "01/11/2025", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Rekha Rai", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Rekha_Rai.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Samira Abdul Wajid", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rekha Rai", designation: "Associate Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Rekha_Rai.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Aswathi Raveendran", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shruthi L Rao", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Shruthi_L_Rao.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ashokan K Kuttiyil", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Ashokan_K_Kuttiyil.png", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Arun Kumar P", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Arun_Kumar_P.png", email: "", joiningDate: "", qualifications: "", experience: "M.Sc, Phd", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Samira Abdul Wajid", designation: "Associate Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Ashwath M Nair", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Aswathi Raveendran", designation: "Assistant Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Dharmarathna", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Yashas P", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Chethan T", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Chethan_T.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Jeevan Jogi", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Jeevan_Jogi.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. B Sumanth Reddy", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Sumanth_Reddy_Dr_Sumanth_Reddy_124.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vinod Kumar", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Vinod_Kumar.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vittal Gundray", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
+      { name: "Dr. Shruthi L Rao", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Shruthi_L_Rao.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ashokan K Kuttiyil", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Ashokan_K_Kuttiyil.png", email: "", joiningDate: "01/04/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Arun Kumar P", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Arun_Kumar_P.png", email: "", joiningDate: "02/02/2026", qualifications: "", experience: "M.Sc, Phd", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ashwath M Nair", designation: "Senior Resident", image: "", email: "", joiningDate: "02/03/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Dharmarathna", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Yashas P", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Chethan T", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Chethan_T.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Jeevan Jogi", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Jeevan_Jogi.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. B Sumanth Reddy", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Sumanth_Reddy_Dr_Sumanth_Reddy_124.png", email: "", joiningDate: "01/04/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vinod Kumar", designation: "Tutor", image: "/images/profile-pic/para-clinical/microbiology/Dr_Vinod_Kumar.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vittal Gundray", designation: "Tutor", image: "", email: "", joiningDate: "02/03/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
   };

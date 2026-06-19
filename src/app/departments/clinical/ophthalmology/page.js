@@ -29,16 +29,23 @@ export default function OphthalmologyPage() {
     },
     faculties: [
 
-      { name: "Dr. Cynthia Arunachalam", designation: "Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Cynthia_Arunachalam.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Roopashree", designation: "Associate Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Roopashree.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Arvind Achutha Kini", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Laxminarayana Aroor Rao", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Laxminarayana_Aroor_Rao.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Tanvi Ravindranath Rai", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Tanvi_Ravindranath_Rai.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ranjitha", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vikram Jain", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Vikram_Jain.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Smruthi", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Smruthi.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Kalary Jaynthi", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Kalary_Jaynthi.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Cynthia Arunachalam", designation: "Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Cynthia_Arunachalam.png", email: "", joiningDate: "19/01/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
+      { name: "Dr. Roopashree", designation: "Associate Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Roopashree.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Arvind Achutha Kini", designation: "Assistant Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Laxminarayana Aroor Rao", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Laxminarayana_Aroor_Rao.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Tanvi Ravindranath Rai", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Tanvi_Ravindranath_Rai.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ranjitha", designation: "Senior Resident", image: "", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vikram Jain", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ophthalmology/Dr_Vikram_Jain.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Smruthi", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Smruthi.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Kalary Jaynthi", designation: "Senior Resident", image: "/images/profile-pic/clinical/ophthalmology/Dr_Kalary_Jaynthi.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

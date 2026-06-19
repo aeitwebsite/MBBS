@@ -29,11 +29,15 @@ export default function DermatologyPage() {
     },
     faculties: [
 
-      { name: "Dr. Vivek Mishra", designation: "Professor", image: "/images/profile-pic/clinical/dermatology/Dr_Vivek_Mishra.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Keerthi S", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Bhavishya K Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/dermatology/Dr_Bhavishya_K_Shetty.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Jiby V Benny", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Dr_Jiby_V_Benny.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. H Anchitha", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Dr_Anchitha_Dr_Anchitha_24.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Vivek Mishra", designation: "Professor", image: "/images/profile-pic/clinical/dermatology/Dr_Vivek_Mishra.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Keerthi S", designation: "Associate Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Bhavishya K Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/dermatology/Dr_Bhavishya_K_Shetty.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Jiby V Benny", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Dr_Jiby_V_Benny.png", email: "", joiningDate: "19/01/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. H Anchitha", designation: "Senior Resident", image: "/images/profile-pic/clinical/dermatology/Dr_Anchitha_Dr_Anchitha_24.png", email: "", joiningDate: "02/01/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
     ]
 

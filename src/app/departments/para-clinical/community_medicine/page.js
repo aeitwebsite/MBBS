@@ -17,7 +17,7 @@ export default function CommunityMedicinePage() {
             designation: "Professor and HOD",
             image: "",
             email: "",
-            joiningDate: "",
+            joiningDate: "15/10/2025",
             qualifications: "",
             experience: "",
             interests: "",
@@ -29,31 +29,26 @@ The Department of Community Medicine is dedicated to promoting community health 
 The learning journey in Community Medicine begins in the first year and continues through the final year, culminating in a three-month internship training. With innovative teaching-learning strategies under the CBME curriculum, students gain a strong foundation in preventive, promotive, and social aspects of medicine.
 Overall, the Department will continue to be a driving force in shaping competent, compassionate, and socially responsible physicians, while supporting both faculty and students in their pursuit of excellence in research, education, and service — working together to build a healthier and more equitable society.`
         },
-
-        hod: {
-            name: "Dr.Chethana K",
-            designation: "Professor HOD",
-            image: "",
-            message: "",
-            email: "",
-            joiningDate: "",
-            qualifications: "MBBS,MD",
-            experience: "",
-            interests: "",
-            responsibilities: "",
-            memberships: ""
-        },
         faculties: [
-            { name: "Dr. Harshith G. C", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Harshith_G_C.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Harshavardhana V Naik", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Harshavardhana_V_Naik.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Arya V R", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Arya_V_R.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Shweta", designation: "Statistician", image: "/images/profile-pic/para-clinical/community-med/Com_Med_Dr_Shwetha.JPG", email: "", joiningDate: "", qualifications: "MSc,Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Krishna Unni", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Krishna_Unni.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Tijo rahim", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" }, ///images/profile-pic/para-clinical/community_medicine/Dr_Tijo_rahim.png
-            { name: "Dr. Meera Sashidaran", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Meera_Sasidharan_Dr_Meera_Sasidharan_99.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Bevin Biju Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Bevin_Biju_Thomas.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Mahamed Fazil", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-            { name: "Dr. Vaishnavi V Kudva", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Vaishnavi_V_Kudva.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr. Harshith G. C", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Harshith_G_C.png", email: "", joiningDate: "27/10/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Harshavardhana V Naik", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Harshavardhana_V_Naik.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Arya V R", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Arya_V_R.png", email: "", joiningDate: "30/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Shweta", designation: "Statistician", image: "/images/profile-pic/para-clinical/community-med/Com_Med_Dr_Shwetha.JPG", email: "", joiningDate: "15/04/2026", qualifications: "MSc,Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Krishna Unni", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Krishna_Unni.png", email: "", joiningDate: "28/01/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Tijo rahim", designation: "Senior Resident", image: "", email: "", joiningDate: "16/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" }, ///images/profile-pic/para-clinical/community_medicine/Dr_Tijo_rahim.png
+
+            { name: "Dr. Meera Sashidaran", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Meera_Sasidharan_Dr_Meera_Sasidharan_99.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Bevin Biju Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Bevin_Biju_Thomas.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Mahamed Fazil", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+            { name: "Dr. Vaishnavi V Kudva", designation: "Tutor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Vaishnavi_V_Kudva.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
         ]
 
     };

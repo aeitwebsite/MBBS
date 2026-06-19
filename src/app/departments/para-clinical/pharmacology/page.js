@@ -34,19 +34,31 @@ export default function PharmacologyPage() {
       memberships: ""
     },
     faculties: [
-      { name: "Dr. Laxminarayana Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Pharmoco_Dr_Laxminarayana_Bairy.JPG", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rekha Nayaka", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Rekha_Nayak_Dr_Rekha_Nayak_20.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. H C Nandini", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sangeethanath Sharma", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Sangeeta_Nath_Sharma_Dr_Sangeeta_Nath_Sharma_13.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Chaitra R", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Krishnamurthy Kadamalakatte Hanumantha Shetty", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Krishnamurthy_Kadamalakatte_Hanumantha_Shetty.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhijna Ballal R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Abhijna_Ballal_R.png", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Laxminarayana Bairy", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Pharmoco_Dr_Laxminarayana_Bairy.JPG", email: "", joiningDate: "01/11/2025", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rekha Nayaka", designation: "Professor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Rekha_Nayak_Dr_Rekha_Nayak_20.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. H C Nandini", designation: "Assistant Professor", image: "", email: "", joiningDate: "02/03/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sangeethanath Sharma", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Sangeeta_Nath_Sharma_Dr_Sangeeta_Nath_Sharma_13.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Chaitra R", designation: "Assistant Professor", image: "", email: "", joiningDate: "01/05/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Krishnamurthy Kadamalakatte Hanumantha Shetty", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Krishnamurthy_Kadamalakatte_Hanumantha_Shetty.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Abhijna Ballal R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Abhijna_Ballal_R.png", email: "", joiningDate: "15/04/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
       { name: "Dr. Rajasree G", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vasu Praveen Chander Kanuru", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Vasu_Praveen_Chander_Kanuru.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Pavan Kumar B N", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Kurian S Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Kurian_S_Thomas.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rabil Hussain", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Niveditha Kini", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
+
+      { name: "Dr. Vasu Praveen Chander Kanuru", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Vasu_Praveen_Chander_Kanuru.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Pavan Kumar B N", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Kurian S Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Kurian_S_Thomas.png", email: "", joiningDate: "01/11/2025", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rabil Hussain", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Niveditha Kini", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
   };

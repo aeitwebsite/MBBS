@@ -27,7 +27,7 @@ We encourage students to participate in research projects, scientific forums, an
 Join us in exploring the fascinating world of biochemistry — where curiosity meets discovery and learning leads to innovation
       `,
       email: "",
-      joiningDate: "",
+      joiningDate: "01/09/2025",
       qualifications: "MBBS, MD",
       experience: "",
       interests: "",
@@ -35,19 +35,32 @@ Join us in exploring the fascinating world of biochemistry — where curiosity m
       memberships: "",
 
     },
+
     faculties: [
-      { name: "Dr Gayathri", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Kommi Shetty Sudhakar", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_K_Sudhakar_Dr_K_Sudhakar_120.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shraddha B Pattanashetti", designation: "Assistant Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Shraddha_B_Pattanashetti.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. C R Raghushekar", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhishek H", designation: "Tutor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Abhishek_H.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Jyothi P V", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shashank M S", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rakheshpal S D", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nagendra K", designation: "Demonstrator", image: "/images/profile-pic/pre-clinical/biochemistry/Biochem_Dr_Nagendra_K.JPG", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Abhishek K M", designation: "Tutor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Abhishek_K_M.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Arunkumar Karabasappa Byadagi", designation: "", image: "Tutor", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shreenivas D", designation: "", image: "Tutor", email: "", joiningDate: "", qualifications: "MBSS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr Gayathri", designation: "Professor", image: "", email: "", joiningDate: "01/06/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Kommi Shetty Sudhakar", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_K_Sudhakar_Dr_K_Sudhakar_120.png", email: "", joiningDate: "01/04/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Shraddha B Pattanashetti", designation: "Assistant Professor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Shraddha_B_Pattanashetti.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. C R Raghushekar", designation: "Assistant Professor", image: "", email: "", joiningDate: "13/03/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Abhishek H", designation: "Tutor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Abhishek_H.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Jyothi P V", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Shashank M S", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rakheshpal S D", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nagendra K", designation: "Demonstrator", image: "/images/profile-pic/pre-clinical/biochemistry/Biochem_Dr_Nagendra_K.JPG", email: "", joiningDate: "23/03/2026", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Abhishek K M", designation: "Tutor", image: "/images/profile-pic/pre-clinical/biochemistry/Dr_Abhishek_K_M.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Arunkumar Karabasappa Byadagi", designation: "", image: "Tutor", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Shreenivas D", designation: "", image: "Tutor", email: "", joiningDate: "02/02/2026", qualifications: "MBSS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
       { name: "Dr. Ankith", designation: "", image: "Tutor", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
   };

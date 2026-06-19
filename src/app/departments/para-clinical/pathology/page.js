@@ -37,24 +37,39 @@ export default function PathologyPage() {
       memberships: ""
     },
     faculties: [
-      { name: "Dr. Rangaswamy Maggad", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rangaswamy_Maggad.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Shivakumar S", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Shivakumar_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Damodaran A M", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Damodaran_A_M.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rukmini Sudhakar", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rukmini_Sudhakar.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Aashish Sharma K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Aashish_Sharma_K.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Pramitha M", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Pramitha_M.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sai K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Sai_K.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Arun J R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Arun_J_R.JPG", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ashok Marathe", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pathology/Dr_Ashok_Marathe.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Roshini Rochelle Rodrigues", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Balaji D R", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. K Anirudh Bhat", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_K_Anirudh_Bhat.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Karthik C", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sonia George", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Yashwanth D J", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_Yashwanth_D_J.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Samith Ahmed", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Samith_Ahmed.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vinutha B", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Vinutha_B.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-    ]
+      { name: "Dr. Rangaswamy Maggad", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rangaswamy_Maggad.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Shivakumar S", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Shivakumar_S.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Damodaran A M", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Damodaran_A_M.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rukmini Sudhakar", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rukmini_Sudhakar.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Aashish Sharma K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Aashish_Sharma_K.JPG", email: "", joiningDate: "18/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Pramitha M", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Pramitha_M.png", email: "", joiningDate: "31/10/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sai K", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Sai_K.JPG", email: "", joiningDate: "03/07/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Arun J R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pathology/Patho_Dr_Arun_J_R.JPG", email: "", joiningDate: "01/12/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ashok Marathe", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pathology/Dr_Ashok_Marathe.png", email: "", joiningDate: "03/10/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Roshini Rochelle Rodrigues", designation: "Senior Resident", image: "", email: "", joiningDate: "16/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Balaji D R", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. K Anirudh Bhat", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_K_Anirudh_Bhat.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Karthik C", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sonia George", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Yashwanth D J", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_Yashwanth_D_J.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Samith Ahmed", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Samith_Ahmed.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vinutha B", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Vinutha_B.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },]
 
     // { name: "Dr. Rangaswamy Magad", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     // { name: "Dr. Samith Ahmed", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Samith_Ahmed.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },

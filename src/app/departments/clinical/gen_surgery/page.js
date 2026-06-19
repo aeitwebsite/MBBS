@@ -28,24 +28,37 @@ export default function GeneralSurgeryPage() {
     },
     faculties: [
 
-      { name: "Dr. Pangal Harish Nayak", designation: "Medical Superintendent", image: "/images/profile-pic/clinical/gen_surgery/Dr_Pangal_Harish_Nayak.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Gaurav Prasad", designation: "Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Gaurav_Prasad.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      // { name: "Dr. Satyanarayan V", designation: "Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Satyanarayan_V.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Praveen G P", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Praveen_G_P.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Varadaraju.A.K", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sattar Khan", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sattar_Khan.png", email: "", joiningDate: "", qualifications: "MBBS,MS,MCH", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rakesh Shivram Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Rakesh_Shivram_Shetty.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Hyadalu Ramu Abhirup", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Hyadalu_Ramu_Abhirup.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nithin Prabhu", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Prajwal K Rao", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Prajwal_K_Rao.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vinay Alva", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Gen_Sur_Dr_Vinay_Alva.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nethravathi B", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sujay C", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sujay_C.png", email: "", joiningDate: "", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Dhananjaya B .M", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Dhananjaya_B_M.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sharanabasappa", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sharanabasappa.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Kuchendra HG", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Bhavya K P", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Pangal Harish Nayak", designation: "Medical Superintendent", image: "/images/profile-pic/clinical/gen_surgery/Dr_Pangal_Harish_Nayak.png", email: "", joiningDate: "09/12/2025", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
+      { name: "Dr. Gaurav Prasad", designation: "Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Gaurav_Prasad.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Praveen G P", designation: "Associate Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Praveen_G_P.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Varadaraju.A.K", designation: "Associate Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sattar Khan", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sattar_Khan.png", email: "", joiningDate: "01/01/2026", qualifications: "MBBS,MS,MCH", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rakesh Shivram Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Rakesh_Shivram_Shetty.png", email: "", joiningDate: "01/12/2025", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Hyadalu Ramu Abhirup", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Hyadalu_Ramu_Abhirup.png", email: "", joiningDate: "01/12/2025", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nithin Prabhu", designation: "Assistant Professor", image: "", email: "", joiningDate: "01/01/2026", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Prajwal K Rao", designation: "Assistant Professor", image: "/images/profile-pic/clinical/gen_surgery/Dr_Prajwal_K_Rao.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vinay Alva", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Gen_Sur_Dr_Vinay_Alva.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nethravathi B", designation: "Senior Resident", image: "", email: "", joiningDate: "01/04/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sujay C", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sujay_C.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Dhananjaya B .M", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Dhananjaya_B_M.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Sharanabasappa", designation: "Senior Resident", image: "/images/profile-pic/clinical/gen_surgery/Dr_Sharanabasappa.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Kuchendra HG", designation: "Associate Professor", image: "", email: "", joiningDate: "01/04/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Bhavya K P", designation: "Assistant Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       // { name: "Dr Pangal Harish Nayak", designation: "Medical Superintendent", image: "/images/profile-pic/clinical/gen_surgery/Dr_Pangal_Harish_Nayak.png", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },
       // { name: "Dr Sathyanarayan V", designation: "Professor", image: "", email: "", joiningDate: "", qualifications: "", experience: "", interests: "", responsibilities: "", memberships: "" },

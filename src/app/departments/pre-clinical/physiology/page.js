@@ -31,15 +31,24 @@ export default function PhysiologyPage() {
       memberships: ""
     },
     faculties: [
-      { name: "Dr. Chethan K", designation: "Associate Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Swati_Nitin_Tikare.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ganaraja Bolumbu", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Ganaraja_Bolumbu.png", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Deepak Martin Tomy ", designation: "Tutor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Deepak_Martin_Tomy.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Anil reddy D N", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Nigel_Preston_Quadros.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nicole Helen Dmello ", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Gagan G M", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Ranjitha H G", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Chethan K", designation: "Associate Professor", image: "", email: "", joiningDate: "01/11/2025", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Swati Nitin Tikare ", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Swati_Nitin_Tikare.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ganaraja Bolumbu", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Ganaraja_Bolumbu.png", email: "", joiningDate: "13/04/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Deepak Martin Tomy ", designation: "Tutor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Deepak_Martin_Tomy.png", email: "", joiningDate: "01/11/2025", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Anil reddy D N", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nigel Preston Quadros", designation: "Tutor", image: "/images/profile-pic/pre-clinical/physiology/Dr_Nigel_Preston_Quadros.png", email: "", joiningDate: "01/11/2025", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nicole Helen Dmello ", designation: "Tutor", image: "/images/user.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Gagan G M", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Ranjitha H G", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+
       { name: "Dr. Sowmya K", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
   };
