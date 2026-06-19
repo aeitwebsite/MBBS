@@ -28,11 +28,11 @@ export default function ENTPage() {
       memberships: ""
     },
     faculties: [
-      { name: "Dr.Mahaveer Jain", designation: "Associate Professor", image: "/images/profile-pic/clinical/ent/Dr_Mahaveer_Jain.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Rajesh Radhakrishna Havaldar", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ent/ENT_Dr_Rajesh_Radhakrishna_Havaladar.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Aishwarya Ramakrishnan", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ent/ENT_Dr_Aishwarya_Ramakrishna.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Shamanth Manohar Shetty", designation: "Senior Resident", image: "/images/profile-pic/clinical/ent/ENT_Dr_Shamanth_Manohar_Shetty.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Tushara", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Mahaveer Jain", designation: "Associate Professor", image: "/images/profile-pic/clinical/ent/Dr_Mahaveer_Jain.png", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rajesh Radhakrishna Havaldar", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ent/ENT_Dr_Rajesh_Radhakrishna_Havaladar.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Aishwarya Ramakrishnan", designation: "Assistant Professor", image: "/images/profile-pic/clinical/ent/ENT_Dr_Aishwarya_Ramakrishna.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Shamanth Manohar Shetty", designation: "Senior Resident", image: "/images/profile-pic/clinical/ent/ENT_Dr_Shamanth_Manohar_Shetty.JPG", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Tushara", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };
