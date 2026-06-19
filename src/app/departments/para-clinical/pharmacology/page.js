@@ -43,9 +43,9 @@ export default function PharmacologyPage() {
       { name: "Dr. Abhijna Ballal R", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Abhijna_Ballal_R.png", email: "", joiningDate: "", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Rajasree G", designation: "Senior Resident", image: "", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Vasu Praveen Chander Kanuru", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Vasu_Praveen_Chander_Kanuru.png", email: "", joiningDate: "", qualifications: "MBBS, MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Pavan Kumar B N", designation: "Tutor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Pavan_Kumar_B_N.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Pavan Kumar B N", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Kurian S Thomas", designation: "Tutor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Kurian_S_Thomas.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rabil Hussain", designation: "Tutor", image: "/images/profile-pic/para-clinical/pharmacology/Dr_Rabil_Hussain.png", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rabil Hussain", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Niveditha Kini", designation: "Tutor", image: "", email: "", joiningDate: "", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" }
     ]
 
