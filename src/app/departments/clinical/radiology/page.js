@@ -28,17 +28,25 @@ export default function RadiologyPage() {
       memberships: ""
     },
     faculties: [
+      { name: "Dr. Ram Prakash G", designation: "Professor", image: "/images/profile-pic/clinical/radiology/Dr_Ram_Prakash_G.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Ram Prakash G", designation: "Professor", image: "/images/profile-pic/clinical/radiology/Dr_Ram_Prakash_G.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Kedarnath Dixit", designation: "Associate Professor", image: "/images/profile-pic/clinical/radiology/Dr_Kedarnath_Dixit.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Thilak Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Thilak_Shetty.png", email: "", joiningDate: "", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Dakshayini H S", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Dakshayini_H_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Vaibhav", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Vaibhav.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Jeevan J", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Jeevan_J.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Rutuparna S", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Rutuparna_S.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Nagaraj P", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Nagaraj_P.png", email: "", joiningDate: "", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Siddaling Basavraj Mindolli", designation: "Assistant Professor", image: "", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Gouri B Kaverappa", designation: "Associate Professor", image: "/images/profile-pic/clinical/radiology/Dr_Gouri_B_Kaveriappa_Dr_Gouri_B_Kaveriappa_117.png", email: "", joiningDate: "", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Kedarnath Dixit", designation: "Associate Professor", image: "/images/profile-pic/clinical/radiology/Dr_Kedarnath_Dixit.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Thilak Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Thilak_Shetty.png", email: "", joiningDate: "02/12/2025", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Dakshayini H S", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Dakshayini_H_S.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Vaibhav", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Vaibhav.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Jeevan J", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Jeevan_J.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Rutuparna S", designation: "Senior Resident", image: "/images/profile-pic/clinical/radiology/Dr_Rutuparna_S.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Nagaraj P", designation: "Assistant Professor", image: "/images/profile-pic/clinical/radiology/Dr_Nagaraj_P.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,DMRD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Siddaling Basavraj Mindolli", designation: "Assistant Professor", image: "", email: "", joiningDate: "18/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+
+      { name: "Dr. Gouri B Kaverappa", designation: "Associate Professor", image: "/images/profile-pic/clinical/radiology/Dr_Gouri_B_Kaveriappa_Dr_Gouri_B_Kaveriappa_117.png", email: "", joiningDate: "28/04/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };

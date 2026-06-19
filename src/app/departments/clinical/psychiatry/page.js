@@ -31,8 +31,8 @@ export default function PsychiatryPage() {
 
       { name: "Dr. Kartik Kashyap", designation: "Associate Professor", image: "/images/profile-pic/clinical/psychiatry/Dr_Kartik_Kashyap.png", email: "", joiningDate: "01/04/2026", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
       { name: "Dr. Aniruddha Shetty", designation: "Assistant Professor", image: "/images/profile-pic/clinical/psychiatry/Dr_Aniruddha_Shetty.png", email: "", joiningDate: "01/09/2025", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Prajakta V Rao", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG", email: "", joiningDate: "", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
-      { name: "Dr. Sindhu K S", designation: "Clinical Psychologist", image: "/images/profile-pic/clinical/psychiatry/Dr_Sindhu_K_S.png", email: "", joiningDate: "", qualifications: "MSc,MPhil", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Prajakta V Rao", designation: "Senior Resident", image: "/images/profile-pic/clinical/psychiatry/Psychia_Dr_Prajaktha.JPG", email: "", joiningDate: "29/10/2025", qualifications: "MBBS,DPM,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Sindhu K S", designation: "Clinical Psychologist", image: "/images/profile-pic/clinical/psychiatry/Dr_Sindhu_K_S.png", email: "", joiningDate: "04/05/2026", qualifications: "MSc,MPhil", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]
 
   };
