@@ -36,7 +36,7 @@ Overall, the Department will continue to be a driving force in shaping competent
 
             { name: "Dr. Arya V R", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Arya_V_R.png", email: "", joiningDate: "30/03/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-            { name: "Dr. Shweta", designation: "Statistician", image: "/images/profile-pic/para-clinical/community-med/Com_Med_Dr_Shwetha.JPG", email: "", joiningDate: "15/04/2026", qualifications: "MSc,Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+            { name: "Dr. Shweta", designation: "Assistant Professor cum Statistician", image: "/images/profile-pic/para-clinical/community-med/Com_Med_Dr_Shwetha.JPG", email: "", joiningDate: "15/04/2026", qualifications: "MSc,Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
 
             { name: "Dr. Krishna Unni", designation: "Senior Resident", image: "/images/profile-pic/para-clinical/community_medicine/Dr_Krishna_Unni.png", email: "", joiningDate: "28/01/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 

@@ -25,11 +25,11 @@ export default function AnatomyPage() {
     },
 
     faculties: [
-      { name: "Dr. Rajalaxmi Rai", designation: "Associate Professor", image: "/images/faculty/rajalaxmi.jpg", email: "", joiningDate: "01/01/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rajalaxmi Rai", designation: "Associate Professor", image: "/images/profile-pic/pre-clinical/anatomy/Anatomy_Dr_Rajalaxmi_Rai.jpeg", email: "", joiningDate: "01/01/2026", qualifications: "M.Sc, Phd", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Satyam Jyoti", designation: "Tutor", image: "/images/faculty/satyam.jpg", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Satyam Jyoti", designation: "Tutor", image: "/images/profile-pic/pre-clinical/anatomy/Anatomy_Dr_Satyam_Jyoti.jpeg", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Rahul", designation: "Tutor", image: "/images/faculty/ravishankar.jpg", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rahul", designation: "Tutor", image: "/images/profile-pic/pre-clinical/anatomy/Anatomy_Dr_Rahul.jpeg", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Sharanabasappa Kolli", designation: "Tutor", image: "/images/profile-pic/pre-clinical/anatomy/Dr_Sharanabasappa_Kolli.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
