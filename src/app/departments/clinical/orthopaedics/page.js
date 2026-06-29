@@ -25,7 +25,7 @@ export default function OrthopaedicsPage() {
 
       { name: "Dr. Arjun Ballal", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Arjun_Ballal.png", email: "", joiningDate: "01/12/2025", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Nihal R Rai", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Nihal_R_Rai.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Rekha R Rai", designation: "Assistant Professor", image: "/images/profile-pic/clinical/orthopaedics/Dr_Rekha_R_Rai.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,MS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Naveen Raikar", designation: "Senior Resident", image: "/images/profile-pic/clinical/orthopaedics/Dr_Naveen_Raikar.png", email: "", joiningDate: "02/03/2026", qualifications: "MBBS,DNB", experience: "", interests: "", responsibilities: "", memberships: "" },
 
