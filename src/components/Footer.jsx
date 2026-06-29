@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="flex-1">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <p className="leading-relaxed text-sm mb-4">
-              Alva&apos;s Medical Centre <br />
+              Alva&apos;s Institute of Medical Sciences and research centre <br />
               Dakshina Kannada, Karnataka.
             </p>
 

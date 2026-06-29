@@ -123,7 +123,6 @@ export default function contactPage({ mapUrl }) {
                   <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 shadow-inner group-hover/item:bg-white/10 transition-colors text-sm">📞</div>
                   <div className="pt-1 text-sm md:text-base">
                     <div className="mb-1"><span className="font-semibold text-white">Mobile:</span> 9448130574</div>
-                    <div><span className="font-semibold text-white">Office:</span> 08258-236821</div>
                   </div>
                 </div>
 
