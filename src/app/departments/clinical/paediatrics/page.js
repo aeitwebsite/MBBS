@@ -31,9 +31,26 @@ export default function PaediatricsPage() {
 
       { name: "Dr. Rangaswamy Maggad", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rangaswamy_Maggad.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
+      {
+        name: "Major (Dr.) Abhijith Y. V. (Retd.)",
+        designation: "Assistant Professor",
+        image: "/images/profile-pic/clinical/paediatrics/Paed_Dr_Abhijith_Y_V.jpg",
+        email: "",
+        joiningDate: "01/11/2025",
+        qualifications: "MBBS, MD (Paediatrics), MBA (HCS), DPSM, DPAA, PGPN",
+        experience: `1. Assistant Professor, BGS Global Institute of Medical Sciences and Hospital, Research Centre, Bengaluru (02 years 07 months)
+2. Senior Resident, BGS Global Institute of Medical Sciences and Hospital, Research Centre, Bengaluru (01 year 01 month)`,
+        interests: "Paediatric Sleep Medicine, Allergy, Asthma",
+        responsibilities: "Assistant Professor; Coordination of academic and clinical work",
+        achievements: `1. Indian Academy of Paediatrics Basic & Advanced Life support instructor (IAP BLS ALS)
+        2. Malnad Icons Award 2025, Western Army Commander commendation card citation 2013 Armed Forces of India, 
+        3. Mangaluru Red Cross society Youth icon award 2023`,
+        memberships: "IMA, IAP (Life Member), ISAAS (Life Member)"
+      },
+
       { name: "Dr. Shivakumar S", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Shivakumar_S.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Damodaran A M", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Damodaran_A_M.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Damodaran A M", designation: "Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Rukmini Sudhakar", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Rukmini_Sudhakar.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
@@ -51,7 +68,7 @@ export default function PaediatricsPage() {
 
       { name: "Dr. Balaji D R", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. K Anirudh Bhat", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_K_Anirudh_Bhat.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. K Anirudh Bhat", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Karthik C", designation: "Tutor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
@@ -59,7 +76,7 @@ export default function PaediatricsPage() {
 
       { name: "Dr. Yashwanth D J", designation: "Tutor", image: "/images/profile-pic/para-clinical/pathology/Dr_Yashwanth_D_J.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS", experience: "", interests: "", responsibilities: "", memberships: "" },
 
-      { name: "Dr. Samith Ahmed", designation: "Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Samith_Ahmed.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
+      { name: "Dr. Samith Ahmed", designation: "Professor", image: "", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
 
       { name: "Dr. Vinutha B", designation: "Assistant Professor", image: "/images/profile-pic/para-clinical/pathology/Dr_Vinutha_B.png", email: "", joiningDate: "02/02/2026", qualifications: "MBBS,MD", experience: "", interests: "", responsibilities: "", memberships: "" },
     ]

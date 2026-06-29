@@ -5,7 +5,46 @@ import { useState } from "react";
 
 // The Modal Component
 const FacultyModal = ({ faculty, onClose }) => {
+  const [activeSection, setActiveSection] = useState(null);
+
   if (!faculty) return null;
+
+  const sections = [
+    {
+      id: "qualifications",
+      title: "Educational Qualifications",
+      content: faculty.qualifications || "Details not available.",
+    },
+    {
+      id: "experience",
+      title: "Past Experience",
+      content: faculty.experience || "Details not available.",
+    },
+    {
+      id: "interests",
+      title: "Areas of Interest",
+      content: faculty.interests || "Details not available.",
+    },
+    {
+      id: "responsibilities",
+      title: "Departmental Responsibilities",
+      content: faculty.responsibilities || "Details not available.",
+    },
+    {
+      id: "achievements",
+      title: "Achievements",
+      content: faculty.achievements || "Details not available.",
+    },
+    {
+      id: "memberships",
+      title: "Professional Membership",
+      content: faculty.memberships || "Details not available.",
+    },
+  ];
+
+  const toggleSection = (id) => {
+    setActiveSection((current) => (current === id ? null : id));
+  };
 
   return (
     <>
@@ -46,6 +85,60 @@ const FacultyModal = ({ faculty, onClose }) => {
             margin: 0 auto !important;
             display: block !important;
           }
+        }
+
+        .faculty-accordion-item {
+          border-bottom: 1px solid #eee;
+        }
+
+        .faculty-accordion-button {
+          width: 100%;
+          background: none;
+          border: none;
+          padding: 18px 0;
+          text-align: left;
+          font-weight: 600;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #111;
+          transition: color 0.25s ease;
+        }
+
+        .faculty-accordion-button:hover {
+          color: #0a0b49;
+        }
+
+        .faculty-accordion-icon {
+          width: 32px;
+          height: 32px;
+          border-radius: 999px;
+          background: #f1f5f9;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          color: #334155;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          transform: rotate(0deg);
+        }
+
+        .faculty-accordion-icon.open {
+          transform: rotate(90deg);
+          background-color: #e2e8f0;
+        }
+
+        .faculty-accordion-panel {
+          overflow: hidden;
+          transition: max-height 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
+        }
+
+        .faculty-accordion-content {
+          color: #555;
+          font-size: 14px;
+          white-space: pre-line;
+          line-height: 1.7;
         }
       `}</style>
       <div style={{
@@ -143,52 +236,36 @@ const FacultyModal = ({ faculty, onClose }) => {
 
           {/* Modal Accordion Details */}
           <div style={{ padding: "30px" }}>
-
-            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-                Educational Qualifications <span style={{ color: "#999" }}>&#x2304;</span>
-              </summary>
-              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-                {faculty.qualifications || "Details not available."}
-              </div>
-            </details>
-
-            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-                Past Experience <span style={{ color: "#999" }}>&#x2304;</span>
-              </summary>
-              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-                {faculty.experience || "Details not available."}
-              </div>
-            </details>
-
-            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-                Areas of Interest <span style={{ color: "#999" }}>&#x2304;</span>
-              </summary>
-              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-                {faculty.interests || "Details not available."}
-              </div>
-            </details>
-
-            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-                Departmental Responsibilities <span style={{ color: "#999" }}>&#x2304;</span>
-              </summary>
-              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-                {faculty.responsibilities || "Details not available."}
-              </div>
-            </details>
-
-            <details style={{ marginBottom: "10px", borderBottom: "1px solid #eee" }}>
-              <summary style={{ padding: "15px 0", fontWeight: "600", cursor: "pointer", display: "flex", justifyContent: "space-between", outline: "none" }}>
-                Professional Membership <span style={{ color: "#999" }}>&#x2304;</span>
-              </summary>
-              <div style={{ padding: "0 0 15px 0", color: "#555", fontSize: "14px", whiteSpace: "pre-line" }}>
-                {faculty.memberships || "Details not available."}
-              </div>
-            </details>
-
+            {sections.map((section) => {
+              const isOpen = activeSection === section.id;
+              return (
+                <div className="faculty-accordion-item" key={section.id}>
+                  <button
+                    type="button"
+                    className="faculty-accordion-button"
+                    onClick={() => toggleSection(section.id)}
+                    aria-expanded={isOpen}
+                  >
+                    {section.title}
+                    <span className={`faculty-accordion-icon ${isOpen ? "open" : ""}`}>
+                      ▶
+                    </span>
+                  </button>
+                  <div
+                    className="faculty-accordion-panel"
+                    style={{
+                      maxHeight: isOpen ? "900px" : "0",
+                      opacity: isOpen ? 1 : 0,
+                      padding: isOpen ? "0 0 15px 0" : "0",
+                    }}
+                  >
+                    <div className="faculty-accordion-content">
+                      {section.content}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
         </div>
