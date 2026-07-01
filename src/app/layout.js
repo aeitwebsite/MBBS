@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
 
 {/* ================= NAVBAR ================= */}
 <header className="sticky top-0 z-[200] bg-white border-b shadow-sm">
-  <div className="w-full flex items-center h-[70px] md:h-[90px] px-4 md:px-10">
+  <div className="w-full flex items-center h-[90px] md:h-[115px] px-4 md:px-10">
 
     {/* LEFT SECTION */}
     <div className="flex items-center gap-4">
@@ -90,8 +90,8 @@ export default function RootLayout({ children }) {
       <Link href="/" className="flex-shrink-0">
         <Image
   src="/images/logo_home.png"
-  width={60}
-  height={60}
+  width={76}
+  height={76}
   alt="Logo"
   priority
   className="object-contain ml-2 md:ml-0"
@@ -100,22 +100,22 @@ export default function RootLayout({ children }) {
 
       {/* TITLE */}
       <div className="leading-tight font-worksans">
-        <div className="text-[14px] md:text-[18px] font-semibold text-[#0A0B49]">
+        <div className="text-[16px] md:text-[22px] font-bold text-[#0A0B49] tracking-wide">
           ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
         </div>
-        <div className="text-[12px] md:text-[15px] font-medium text-[#0A0B49]">
+        <div className="text-[13px] md:text-[17px] font-semibold text-[#0A0B49] tracking-wider mt-0.5">
           AND RESEARCH CENTRE
         </div>
       </div>
     </div>
 
     {/* DESKTOP NAV */}
-    <nav className="hidden lg:flex items-center gap-10 ml-auto">
+    <nav className="hidden lg:flex items-center gap-12 ml-auto">
       {navRoutes.map((r) => (
         <Link
           key={r.id}
           href={r.path}
-          className="text-[15px] font-medium text-gray-700 hover:text-[#0A0B49] transition whitespace-nowrap"
+          className="text-[17px] md:text-[18px] font-semibold text-gray-700 hover:text-[#0A0B49] transition whitespace-nowrap"
         >
           {getRouteName(r.name)}
         </Link>
@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
    
     {/* MOBILE HAMBURGER */}
 <button
-  className="lg:hidden ml-auto flex items-center justify-center w-10 h-10 pr-6 lg:pr-8"
+  className="lg:hidden ml-auto flex items-center justify-center w-12 h-12 pr-6 lg:pr-8"
   onClick={() => setMobileMenuOpen(true)}
 >
   <HamburgerMenuIcon />
