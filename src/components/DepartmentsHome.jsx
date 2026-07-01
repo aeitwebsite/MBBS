@@ -43,7 +43,7 @@ export default function Departments() {
     { id: "psychiatry", cat: "clinical", title: "Psychiatry", image: "/images/psychiatry.jpeg" },
     { id: "radiology", cat: "clinical", title: "Radiology", image: "/images/radio.jpeg" },
     { id: "ent", cat: "clinical", title: "ENT", image: "/images/ent.jpeg" },
-    { id: "dentistry", car: "clinical", title: "Dentistry", image: "" }
+    { id: "dentistry", cat: "clinical", title: "Dentistry", image: "/images/clinical.png" }
   ];
 
   const handleCardClick = (cat, id) => {
@@ -102,14 +102,16 @@ export default function Departments() {
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-b from-white/10 to-transparent" />
                         <div className="absolute inset-0 z-0">
                           <div className="relative h-full w-full flex items-center justify-center p-8">
-                            <Image
-                              src={group.image}
-                              alt={group.title}
-                              fill
-                              className={`object-contain transition-transform duration-1000 p-6 ${isActive ? "drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" : ""
-                                }`}
-                              sizes="(max-width: 768px) 260px, 320px"
-                            />
+                            {group.image ? (
+                              <Image
+                                src={group.image}
+                                alt={group.title}
+                                fill
+                                className={`object-contain transition-transform duration-1000 p-6 ${isActive ? "drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" : ""
+                                  }`}
+                                sizes="(max-width: 768px) 260px, 320px"
+                              />
+                            ) : null}
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B49]/80 via-transparent to-transparent z-10" />
                         </div>
