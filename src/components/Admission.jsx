@@ -34,7 +34,7 @@ export default function AboutSection() {
               For queries:
               <div className="mt-2 space-y-1">
                 <div><strong>08258-236821 to 238111 (8 lines)</strong></div>
-                <div><strong>Ph:</strong> 9945449784</div>
+                <div><strong>Ph:</strong> 7337731333</div>
                 <div>
                   <strong>Email:</strong>{" "}
                   <a

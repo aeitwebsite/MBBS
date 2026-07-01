@@ -34,7 +34,7 @@ export default function contactPage({ mapUrl }) {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
-                  href="tel:9945449784"
+                  href="tel:7337731333"
                   className="inline-flex items-center gap-2 rounded-full border-2 border-[#04044a] px-6 py-3 text-sm md:text-base font-bold text-[#04044a] hover:bg-[#04044a] hover:text-white transition-all duration-300 hover:shadow-lg group shadow-sm bg-white"
                 >
                   <span className="group-hover:animate-bounce">📞</span> Call Us
@@ -81,7 +81,7 @@ export default function contactPage({ mapUrl }) {
                         📞
                       </div>
                       <p className="text-blue-50 text-sm md:text-base">
-                        <span className="font-semibold text-white">Phone:</span> 9945449784
+                        <span className="font-semibold text-white">Phone:</span> 7337731333
                       </p>
                     </div>
 

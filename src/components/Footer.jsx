@@ -31,7 +31,7 @@ export default function Footer() {
               Dakshina Kannada, Karnataka.
             </p>
 
-            <p className="text-sm text-gray-300">Phone No: 9945449784</p>
+            <p className="text-sm text-gray-300">Phone No: 7337731333</p>
 
           </div>
           {/* CAMPUS */}

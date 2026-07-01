@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
 <div className="w-full bg-[#0A0B49] text-white text-xs md:text-sm font-worksans">
   <div className="w-full flex items-center justify-between px-4 md:px-10 h-[34px]">
     <span className="tracking-wide whitespace-nowrap">
-      +91-9945449784
+      +91-7337731333
     </span>
 
     <Link

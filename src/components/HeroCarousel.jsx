@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const images = [
   "/images/banner-3.jpg",
@@ -73,6 +74,14 @@ export default function HeroCarousel() {
         <h1 className="font-serif text-2xl md:text-3xl lg:text-[40px] font-light max-w-4xl leading-tight text-white select-none">
           A Centre of Excellence in Medical Education, Research &amp; Healthcare Delivery
         </h1>
+
+        {/* Admissions Link */}
+        <Link
+          href="/admissions"
+          className="mt-8 inline-block bg-[#EAAA00] hover:bg-[#d19c00] text-black font-black px-8 py-3.5 text-[13px] tracking-wider uppercase transition-all duration-300 hover:scale-105 shadow-md rounded"
+        >
+          Explore Admissions
+        </Link>
       </div>
 
       {/* Bottom Controls */}
