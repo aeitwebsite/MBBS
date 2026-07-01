@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
     </Link>
 
     {/* DESKTOP NAV */}
-    <nav className="hidden lg:flex items-center gap-10 ml-auto">
+    <nav className="hidden nav:flex items-center gap-10 ml-auto">
       {navRoutes.map((r) => (
         <Link
           key={r.id}
@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
    
     {/* MOBILE HAMBURGER */}
 <button
-  className="lg:hidden ml-auto flex items-center justify-center w-11 h-11 pr-6 lg:pr-8"
+  className="nav:hidden ml-auto flex items-center justify-center w-11 h-11 pr-6 nav:pr-8"
   onClick={() => setMobileMenuOpen(true)}
 >
   <HamburgerMenuIcon />
