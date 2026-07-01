@@ -423,7 +423,7 @@ export default function AboutSection() {
                   {/* Rule 1 */}
                   <div className="group bg-white p-5 md:p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1 md:w-2 h-full bg-blue-400"></div>
-                    <div className="flex items-start">
+                    <div className="flex items-center">
                       <div className="bg-blue-50 text-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-bold text-lg md:text-xl shrink-0 mr-3 md:mr-4 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                         🛡️
                       </div>
@@ -437,7 +437,7 @@ export default function AboutSection() {
                   {/* Rule 2 */}
                   <div className="group bg-white p-5 md:p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1 md:w-2 h-full bg-blue-400"></div>
-                    <div className="flex items-start">
+                    <div className="flex items-center">
                       <div className="bg-blue-50 text-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-bold text-lg md:text-xl shrink-0 mr-3 md:mr-4 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                         📅
                       </div>
@@ -451,7 +451,7 @@ export default function AboutSection() {
                   {/* Rule 3 */}
                   <div className="group bg-white p-5 md:p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1 md:w-2 h-full bg-blue-400"></div>
-                    <div className="flex items-start">
+                    <div className="flex items-center">
                       <div className="bg-blue-50 text-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-bold text-lg md:text-xl shrink-0 mr-3 md:mr-4 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                         👔
                       </div>
@@ -465,7 +465,7 @@ export default function AboutSection() {
                   {/* Rule 4 */}
                   <div className="group bg-white p-5 md:p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1 md:w-2 h-full bg-blue-400"></div>
-                    <div className="flex items-start">
+                    <div className="flex items-center">
                       <div className="bg-blue-50 text-blue-500 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full font-bold text-lg md:text-xl shrink-0 mr-3 md:mr-4 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shadow-sm">
                         🚷
                       </div>

@@ -2,7 +2,7 @@
 
 export default function contactPage({ mapUrl }) {
   const MAP_URL =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.127816043799!2d74.9685597!3d13.0216525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a6595ce3ffff%3A0x583bc4fb8e6c3453!2sAlva%E2%80%99s%20Homoeopathic%20Medical%20College!5e0!3m2!1sen!2sin!4v1764321870203!5m2!1sen!2sin";
+    "https://maps.google.com/maps?q=13.018361,74.969028&z=17&output=embed";
 
   return (
     <div className="bg-gray-50 relative overflow-hidden flex flex-col items-center">
@@ -34,7 +34,7 @@ export default function contactPage({ mapUrl }) {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
-                  href="tel:9945449784"
+                  href="tel:7337731333"
                   className="inline-flex items-center gap-2 rounded-full border-2 border-[#04044a] px-6 py-3 text-sm md:text-base font-bold text-[#04044a] hover:bg-[#04044a] hover:text-white transition-all duration-300 hover:shadow-lg group shadow-sm bg-white"
                 >
                   <span className="group-hover:animate-bounce">📞</span> Call Us
@@ -81,7 +81,7 @@ export default function contactPage({ mapUrl }) {
                         📞
                       </div>
                       <p className="text-blue-50 text-sm md:text-base">
-                        <span className="font-semibold text-white">Phone:</span> 9945449784
+                        <span className="font-semibold text-white">Phone:</span> 7337731333
                       </p>
                     </div>
 
@@ -189,11 +189,45 @@ export default function contactPage({ mapUrl }) {
       {/* MAP SECTION */}
       <section className="w-full px-6 md:px-12 pb-20 relative z-10 flex flex-col items-center">
         <div className="w-full max-w-6xl">
-          <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#04044a] flex items-center">
-              <span className="bg-white shadow-sm border border-gray-100 p-2.5 rounded-xl mr-3 text-2xl">🗺️</span> Route Map
-            </h2>
-            <div className="h-0.5 bg-gray-200 flex-1 ml-4 rounded-full hidden sm:block" />
+          
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div className="flex items-center gap-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#04044a] flex items-center">
+                <span className="bg-white shadow-sm border border-gray-100 p-2.5 rounded-xl mr-3 flex items-center justify-center">
+                  <svg className="w-7 h-7" viewBox="0 0 24 24">
+                    <path d="M19.5 9.75c0-4.14-3.36-7.5-7.5-7.5S4.5 5.61 4.5 9.75c0 3.32 2.16 6.13 5.17 7.15L12 21.5l2.33-4.6c3.01-1.02 5.17-3.83 5.17-7.15z" fill="#34A853" />
+                    <path d="M12 2.25c-4.14 0-7.5 3.36-7.5 7.5 0 2.25 1 4.27 2.58 5.63l4.92-9.84V2.25z" fill="#4285F4" />
+                    <path d="M12 5.54l-4.92 9.84c1.36 1.01 3.07 1.62 4.92 1.62 4.14 0 7.5-3.36 7.5-7.5 0-1.57-.49-3.03-1.31-4.24l-6.19 9.88" fill="#FBBC05" />
+                    <path d="M12 5.54v11.46c.86 0 1.68-.15 2.45-.42L12 5.54z" fill="#EA4335" />
+                    <circle cx="12" cy="9.75" r="2.5" fill="#FFFFFF" />
+                  </svg>
+                </span>
+                Route Map
+              </h2>
+            </div>
+            
+            {/* Open in Map Apps Links */}
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=13.018361,74.969028"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 py-2 text-xs md:text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition shadow-sm"
+              >
+                <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                  <path d="M19.5 9.75c0-4.14-3.36-7.5-7.5-7.5S4.5 5.61 4.5 9.75c0 3.32 2.16 6.13 5.17 7.15L12 21.5l2.33-4.6c3.01-1.02 5.17-3.83 5.17-7.15z" fill="#34A853" />
+                  <path d="M12 2.25c-4.14 0-7.5 3.36-7.5 7.5 0 2.25 1 4.27 2.58 5.63l4.92-9.84V2.25z" fill="#4285F4" />
+                  <path d="M12 5.54l-4.92 9.84c1.36 1.01 3.07 1.62 4.92 1.62 4.14 0 7.5-3.36 7.5-7.5 0-1.57-.49-3.03-1.31-4.24l-6.19 9.88" fill="#FBBC05" />
+                  <path d="M12 5.54v11.46c.86 0 1.68-.15 2.45-.42L12 5.54z" fill="#EA4335" />
+                  <circle cx="12" cy="9.75" r="2.5" fill="#FFFFFF" />
+                </svg>
+                <span>Open in Google Maps</span>
+              </a>
+                <svg className="w-4 h-4 shrink-0 transition-colors" viewBox="0 0 170 170" fill="currentColor">
+                </svg>
+                <span>Open in Apple Maps</span>
+              </a>
+            </div>
           </div>
 
           <div className="w-full bg-white p-2 md:p-4 rounded-[2.5rem] shadow-xl border border-gray-100 group">
@@ -201,7 +235,7 @@ export default function contactPage({ mapUrl }) {
               <div className="absolute inset-0 pointer-events-none rounded-[2rem] shadow-inner z-10"></div>
               <iframe
                 src={MAP_URL}
-                className="w-full h-[400px] md:h-[550px] transition-transform duration-700 group-hover:scale-[1.01]"
+                className="w-full h-[400px] md:h-[550px] transition-all duration-700 group-hover:scale-[1.01] grayscale-0 md:grayscale hover:md:grayscale-0"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"

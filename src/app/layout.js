@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
 <div className="w-full bg-[#0A0B49] text-white text-xs md:text-sm font-worksans">
   <div className="w-full flex items-center justify-between px-4 md:px-10 h-[34px]">
     <span className="tracking-wide whitespace-nowrap">
-      +91-9945449784
+      +91-7337731333
     </span>
 
     <Link
@@ -81,41 +81,38 @@ export default function RootLayout({ children }) {
 
 {/* ================= NAVBAR ================= */}
 <header className="sticky top-0 z-[200] bg-white border-b shadow-sm">
-  <div className="w-full flex items-center h-[70px] md:h-[90px] px-4 md:px-10">
+  <div className="w-full flex items-center h-[80px] md:h-[100px] px-4 md:px-6 xl:px-10">
 
-    {/* LEFT SECTION */}
-    <div className="flex items-center gap-4">
-
+    {/* LEFT SECTION / HOME LINK */}
+    <Link href="/" className="flex items-center gap-4 flex-shrink-0 group">
       {/* LOGO */}
-      <Link href="/" className="flex-shrink-0">
-        <Image
-  src="/images/logo_home.png"
-  width={60}
-  height={60}
-  alt="Logo"
-  priority
-  className="object-contain ml-2 md:ml-0"
-/>
-      </Link>
+      <Image
+        src="/images/logo_home.png"
+        width={66}
+        height={66}
+        alt="Logo"
+        priority
+        className="object-contain ml-2 md:ml-0"
+      />
 
       {/* TITLE */}
       <div className="leading-tight font-worksans">
-        <div className="text-[14px] md:text-[18px] font-semibold text-[#0A0B49]">
+        <div className="text-[15px] md:text-[19px] font-bold text-[#0A0B49] tracking-wide group-hover:text-blue-700 transition-colors">
           ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
         </div>
-        <div className="text-[12px] md:text-[15px] font-medium text-[#0A0B49]">
+        <div className="text-[12px] md:text-[15px] font-semibold text-[#0A0B49] tracking-wider mt-0.5 group-hover:text-blue-700 transition-colors">
           AND RESEARCH CENTRE
         </div>
       </div>
-    </div>
+    </Link>
 
     {/* DESKTOP NAV */}
-    <nav className="hidden lg:flex items-center gap-10 ml-auto">
+    <nav className="hidden xl:flex items-center gap-6 xl:gap-8 ml-auto">
       {navRoutes.map((r) => (
         <Link
           key={r.id}
           href={r.path}
-          className="text-[15px] font-medium text-gray-700 hover:text-[#0A0B49] transition whitespace-nowrap"
+          className="text-[15px] md:text-[16px] font-semibold text-gray-700 hover:text-[#0A0B49] transition whitespace-nowrap"
         >
           {getRouteName(r.name)}
         </Link>
@@ -125,7 +122,7 @@ export default function RootLayout({ children }) {
    
     {/* MOBILE HAMBURGER */}
 <button
-  className="lg:hidden ml-auto flex items-center justify-center w-10 h-10 pr-6 lg:pr-8"
+  className="xl:hidden ml-auto flex items-center justify-center w-11 h-11 pr-6 xl:pr-8"
   onClick={() => setMobileMenuOpen(true)}
 >
   <HamburgerMenuIcon />
