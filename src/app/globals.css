@@ -12,11 +12,11 @@
 body {
   /* Updated to only use Work Sans */
   font-family: 'Work Sans';
-  @apply bg-white text-black text-[16px] md:text-[18px] leading-relaxed;
+  @apply bg-white text-gray-700 text-[16px] md:text-[18px] leading-relaxed;
 }
 
 p {
-  @apply text-[16px] md:text-[18px] leading-relaxed text-justify text-gray-700;
+  @apply text-[16px] md:text-[18px] leading-relaxed text-justify;
 }
 
 h1 {

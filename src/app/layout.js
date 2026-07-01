@@ -83,31 +83,28 @@ export default function RootLayout({ children }) {
 <header className="sticky top-0 z-[200] bg-white border-b shadow-sm">
   <div className="w-full flex items-center h-[80px] md:h-[100px] px-4 md:px-10">
 
-    {/* LEFT SECTION */}
-    <div className="flex items-center gap-4">
-
+    {/* LEFT SECTION / HOME LINK */}
+    <Link href="/" className="flex items-center gap-4 flex-shrink-0 group">
       {/* LOGO */}
-      <Link href="/" className="flex-shrink-0">
-        <Image
-  src="/images/logo_home.png"
-  width={66}
-  height={66}
-  alt="Logo"
-  priority
-  className="object-contain ml-2 md:ml-0"
-/>
-      </Link>
+      <Image
+        src="/images/logo_home.png"
+        width={66}
+        height={66}
+        alt="Logo"
+        priority
+        className="object-contain ml-2 md:ml-0"
+      />
 
       {/* TITLE */}
       <div className="leading-tight font-worksans">
-        <div className="text-[15px] md:text-[19px] font-bold text-[#0A0B49] tracking-wide">
+        <div className="text-[15px] md:text-[19px] font-bold text-[#0A0B49] tracking-wide group-hover:text-blue-700 transition-colors">
           ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES
         </div>
-        <div className="text-[12px] md:text-[15px] font-semibold text-[#0A0B49] tracking-wider mt-0.5">
+        <div className="text-[12px] md:text-[15px] font-semibold text-[#0A0B49] tracking-wider mt-0.5 group-hover:text-blue-700 transition-colors">
           AND RESEARCH CENTRE
         </div>
       </div>
-    </div>
+    </Link>
 
     {/* DESKTOP NAV */}
     <nav className="hidden lg:flex items-center gap-10 ml-auto">

@@ -11,23 +11,27 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-12">
 
           {/* LOGO */}
-          <div className="flex-1 -mt-6">
+          <div className="flex-1 -mt-6 flex flex-col items-center gap-2 text-center">
             <img
               src="/images/logo_home.png"
               alt="Alvas Logo"
               className="w-28"
             />
+            <div className="text-xs font-bold tracking-wider text-gray-200 mt-2">
+              ALVA&apos;S INSTITUTE OF MEDICAL SCIENCES <br />
+              AND RESEARCH CENTRE
+            </div>
           </div>
 
           {/* CONTACT */}
           <div className="flex-1">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="leading-relaxed text-sm mb-4">
+            <p className="leading-relaxed text-sm mb-4 text-gray-300">
               Alva&apos;s Institute of Medical Sciences and research centre <br />
               Dakshina Kannada, Karnataka.
             </p>
 
-            <p className="text-sm">Phone No: 9945449784</p>
+            <p className="text-sm text-gray-300">Phone No: 9945449784</p>
 
           </div>
           {/* CAMPUS */}

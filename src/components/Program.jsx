@@ -39,7 +39,7 @@ export default function Programs() {
               Education & Healthcare
             </h3>
 
-            <p className="mt-4 text-sm opacity-90">
+            <p className="mt-4 text-sm text-white opacity-90">
               Delivering quality medical education with modern infrastructure
               and experienced faculty.
             </p>
