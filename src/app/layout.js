@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
 
 {/* ================= NAVBAR ================= */}
 <header className="sticky top-0 z-[200] bg-white border-b shadow-sm">
-  <div className="w-full flex items-center h-[80px] md:h-[100px] px-4 md:px-10">
+  <div className="w-full flex items-center h-[80px] md:h-[100px] px-4 md:px-6 xl:px-10">
 
     {/* LEFT SECTION / HOME LINK */}
     <Link href="/" className="flex items-center gap-4 flex-shrink-0 group">
@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
     </Link>
 
     {/* DESKTOP NAV */}
-    <nav className="hidden nav:flex items-center gap-10 ml-auto">
+    <nav className="hidden xl:flex items-center gap-6 xl:gap-8 ml-auto">
       {navRoutes.map((r) => (
         <Link
           key={r.id}
@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
    
     {/* MOBILE HAMBURGER */}
 <button
-  className="nav:hidden ml-auto flex items-center justify-center w-11 h-11 pr-6 nav:pr-8"
+  className="xl:hidden ml-auto flex items-center justify-center w-11 h-11 pr-6 xl:pr-8"
   onClick={() => setMobileMenuOpen(true)}
 >
   <HamburgerMenuIcon />

@@ -3,10 +3,6 @@
 
 @import "tailwindcss";
 
-@theme {
-  --breakpoint-nav: 1124px;
-}
-
 :root {
   --amc-navy: #0A0B49;
   --amc-cyan: #14D7E7;
