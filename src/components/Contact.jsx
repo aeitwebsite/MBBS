@@ -2,7 +2,7 @@
 
 export default function contactPage({ mapUrl }) {
   const MAP_URL =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.127816043799!2d74.9685597!3d13.0216525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a6595ce3ffff%3A0x583bc4fb8e6c3453!2sAlva%E2%80%99s%20Homoeopathic%20Medical%20College!5e0!3m2!1sen!2sin!4v1764321870203!5m2!1sen!2sin";
+    "https://maps.google.com/maps?q=13.018361,74.969028&z=17&output=embed";
 
   return (
     <div className="bg-gray-50 relative overflow-hidden flex flex-col items-center">
@@ -202,7 +202,10 @@ export default function contactPage({ mapUrl }) {
               <iframe
                 src={MAP_URL}
                 className="w-full h-[400px] md:h-[550px] transition-transform duration-700 group-hover:scale-[1.01]"
-                style={{ border: 0 }}
+                style={{
+                  border: 0,
+                  filter: "invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)",
+                }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
