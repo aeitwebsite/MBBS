@@ -12,7 +12,7 @@ export default function AboutSection() {
           </h1>
 
           <p className="text-gray-700 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
-            Admissions at <strong>AIMSRC</strong> are conducted strictly based on
+            Admissions at <strong>AIMSARC</strong> are conducted strictly based on
             <strong> NEET-UG merit</strong> in line with NMC and Government of India guidelines.
           </p>
 

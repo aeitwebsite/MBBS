@@ -189,7 +189,7 @@ export default function contactPage({ mapUrl }) {
       {/* MAP SECTION */}
       <section className="w-full px-6 md:px-12 pb-20 relative z-10 flex flex-col items-center">
         <div className="w-full max-w-6xl">
-          
+
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
             <div className="flex items-center gap-4">
               <h2 className="text-2xl md:text-3xl font-bold text-[#04044a] flex items-center">
@@ -205,7 +205,7 @@ export default function contactPage({ mapUrl }) {
                 Route Map
               </h2>
             </div>
-            
+
             {/* Open in Map Apps Links */}
             <div className="flex flex-wrap gap-3">
               <a
@@ -223,10 +223,9 @@ export default function contactPage({ mapUrl }) {
                 </svg>
                 <span>Open in Google Maps</span>
               </a>
-                <svg className="w-4 h-4 shrink-0 transition-colors" viewBox="0 0 170 170" fill="currentColor">
-                </svg>
-                <span>Open in Apple Maps</span>
-              </a>
+              <svg className="w-4 h-4 shrink-0 transition-colors" viewBox="0 0 170 170" fill="currentColor">
+              </svg>
+              <span>Open in Apple Maps</span>
             </div>
           </div>
 
