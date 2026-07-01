@@ -78,7 +78,7 @@ export default function HeroCarousel() {
         {/* Admissions Link */}
         <Link
           href="/admissions"
-          className="mt-8 inline-block bg-[#EAAA00] hover:bg-[#d19c00] text-black font-black px-8 py-3.5 text-[13px] tracking-wider uppercase transition-all duration-300 hover:scale-105 shadow-md rounded"
+          className="mt-8 inline-block border-2 border-white text-white hover:bg-white hover:text-black font-black px-8 py-3.5 text-[13px] tracking-wider uppercase transition-all duration-300 hover:scale-105 shadow-md rounded"
         >
           Explore Admissions
         </Link>
