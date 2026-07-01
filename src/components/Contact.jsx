@@ -189,11 +189,52 @@ export default function contactPage({ mapUrl }) {
       {/* MAP SECTION */}
       <section className="w-full px-6 md:px-12 pb-20 relative z-10 flex flex-col items-center">
         <div className="w-full max-w-6xl">
-          <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#04044a] flex items-center">
-              <span className="bg-white shadow-sm border border-gray-100 p-2.5 rounded-xl mr-3 text-2xl">🗺️</span> Route Map
-            </h2>
-            <div className="h-0.5 bg-gray-200 flex-1 ml-4 rounded-full hidden sm:block" />
+          
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <div className="flex items-center gap-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#04044a] flex items-center">
+                <span className="bg-white shadow-sm border border-gray-100 p-2.5 rounded-xl mr-3 flex items-center justify-center">
+                  <svg className="w-7 h-7" viewBox="0 0 24 24">
+                    <path d="M19.5 9.75c0-4.14-3.36-7.5-7.5-7.5S4.5 5.61 4.5 9.75c0 3.32 2.16 6.13 5.17 7.15L12 21.5l2.33-4.6c3.01-1.02 5.17-3.83 5.17-7.15z" fill="#34A853" />
+                    <path d="M12 2.25c-4.14 0-7.5 3.36-7.5 7.5 0 2.25 1 4.27 2.58 5.63l4.92-9.84V2.25z" fill="#4285F4" />
+                    <path d="M12 5.54l-4.92 9.84c1.36 1.01 3.07 1.62 4.92 1.62 4.14 0 7.5-3.36 7.5-7.5 0-1.57-.49-3.03-1.31-4.24l-6.19 9.88" fill="#FBBC05" />
+                    <path d="M12 5.54v11.46c.86 0 1.68-.15 2.45-.42L12 5.54z" fill="#EA4335" />
+                    <circle cx="12" cy="9.75" r="2.5" fill="#FFFFFF" />
+                  </svg>
+                </span>
+                Route Map
+              </h2>
+            </div>
+            
+            {/* Open in Map Apps Links */}
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=13.018361,74.969028"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 py-2 text-xs md:text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition shadow-sm"
+              >
+                <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                  <path d="M19.5 9.75c0-4.14-3.36-7.5-7.5-7.5S4.5 5.61 4.5 9.75c0 3.32 2.16 6.13 5.17 7.15L12 21.5l2.33-4.6c3.01-1.02 5.17-3.83 5.17-7.15z" fill="#34A853" />
+                  <path d="M12 2.25c-4.14 0-7.5 3.36-7.5 7.5 0 2.25 1 4.27 2.58 5.63l4.92-9.84V2.25z" fill="#4285F4" />
+                  <path d="M12 5.54l-4.92 9.84c1.36 1.01 3.07 1.62 4.92 1.62 4.14 0 7.5-3.36 7.5-7.5 0-1.57-.49-3.03-1.31-4.24l-6.19 9.88" fill="#FBBC05" />
+                  <path d="M12 5.54v11.46c.86 0 1.68-.15 2.45-.42L12 5.54z" fill="#EA4335" />
+                  <circle cx="12" cy="9.75" r="2.5" fill="#FFFFFF" />
+                </svg>
+                <span>Open in Google Maps</span>
+              </a>
+              <a
+                href="https://maps.apple.com/?q=13.018361,74.969028"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 py-2 text-xs md:text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition shadow-sm"
+              >
+                <svg className="w-4 h-4 shrink-0 text-black group-hover:text-blue-600 transition-colors" viewBox="0 0 170 170" fill="currentColor">
+                  <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.38.13-9.13-1.91-14.26-6.12-3.41-2.73-7.25-7.46-11.51-14.21-12.22-19.24-18.33-38.32-18.33-57.24 0-15.01 4.14-27.13 12.43-36.37 8.29-9.23 18.23-13.89 29.83-13.97 6.13 0 12.56 1.76 19.28 5.28 6.72 3.51 10.97 5.27 12.75 5.27 1.63 0 5.66-1.63 12.11-4.89 6.45-3.26 12.39-4.83 17.82-4.7 15.35.38 27.06 6.03 35.12 16.95-12.56 7.64-18.75 18-18.57 31.06.18 10.23 3.96 18.75 11.33 25.53 7.37 6.78 16.03 10.43 25.99 10.95.12.38.24.88.38 1.5 1.51 5.37.5 11.62-2.18 18.75zm-38.83-118c0-8.48 2.97-15.82 8.92-22 5.95-6.17 13.12-9.42 21.5-9.75.12 1 .18 1.94.18 2.81 0 8.01-2.92 15.19-8.77 21.53-5.84 6.33-13.1 9.68-21.78 10.05-.12-.86-.18-1.74-.18-2.64z" />
+                </svg>
+                <span>Open in Apple Maps</span>
+              </a>
+            </div>
           </div>
 
           <div className="w-full bg-white p-2 md:p-4 rounded-[2.5rem] shadow-xl border border-gray-100 group">
@@ -201,11 +242,8 @@ export default function contactPage({ mapUrl }) {
               <div className="absolute inset-0 pointer-events-none rounded-[2rem] shadow-inner z-10"></div>
               <iframe
                 src={MAP_URL}
-                className="w-full h-[400px] md:h-[550px] transition-transform duration-700 group-hover:scale-[1.01]"
-                style={{
-                  border: 0,
-                  filter: "grayscale(100%) contrast(1.1) brightness(1.05)",
-                }}
+                className="w-full h-[400px] md:h-[550px] transition-all duration-700 group-hover:scale-[1.01] grayscale-0 md:grayscale hover:md:grayscale-0"
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
