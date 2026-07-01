@@ -70,8 +70,8 @@ export default function HeroCarousel() {
         <div className="w-14 h-[1px] bg-[#EAAA00] my-5" />
 
         {/* Tagline */}
-        <h1 className="font-serif text-3xl md:text-4xl lg:text-[44px] font-light max-w-3xl leading-tight text-white select-none">
-          Connecting the Best Minds in Science and Patient Care
+        <h1 className="font-serif text-2xl md:text-3xl lg:text-[40px] font-light max-w-4xl leading-tight text-white select-none">
+          A Centre of Excellence in Medical Education, Research &amp; Healthcare Delivery
         </h1>
       </div>
 
