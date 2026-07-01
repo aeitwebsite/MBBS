@@ -204,7 +204,7 @@ export default function contactPage({ mapUrl }) {
                 className="w-full h-[400px] md:h-[550px] transition-transform duration-700 group-hover:scale-[1.01]"
                 style={{
                   border: 0,
-                  filter: "invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)",
+                  filter: "grayscale(100%) contrast(1.1) brightness(1.05)",
                 }}
                 allowFullScreen
                 loading="lazy"
